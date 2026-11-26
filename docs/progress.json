@@ -1,0 +1,429 @@
+{
+  "summary": {
+    "native_compiling": 56694,
+    "native_total": 58075,
+    "native_percent": 97.62,
+    "compile_errors_remaining": 78,
+    "failing_tus": [
+      "JNI_ExternalBridges.cpp",
+      "TU32_MenuControllerPart12.cpp",
+      "chatv2_Connectivity.cpp",
+      "gameswf_runtime.cpp",
+      "glf_ThreadMgr.cpp",
+      "glitch_IDevice.cpp",
+      "glitch_collada_part02.cpp",
+      "glitch_collada_part03.cpp",
+      "glitch_scene_part02.cpp",
+      "havok_internal_0.cpp",
+      "iap_Command.cpp",
+      "vox_VoxArchive.cpp",
+      "vox_vs.cpp"
+    ]
+  },
+  "engine_libraries": [
+    {
+      "name": "havok",
+      "refactored": 597,
+      "compiled": 9171,
+      "sync": 173,
+      "missing": 95,
+      "total": 10036
+    },
+    {
+      "name": "glitch",
+      "refactored": 40,
+      "compiled": 5612,
+      "sync": 349,
+      "missing": 88,
+      "total": 6089
+    },
+    {
+      "name": "openssl",
+      "refactored": 0,
+      "compiled": 4616,
+      "sync": 0,
+      "missing": 0,
+      "total": 4616
+    },
+    {
+      "name": "gameswf",
+      "refactored": 3,
+      "compiled": 2369,
+      "sync": 260,
+      "missing": 26,
+      "total": 2658
+    },
+    {
+      "name": "vox",
+      "refactored": 59,
+      "compiled": 1539,
+      "sync": 79,
+      "missing": 12,
+      "total": 1689
+    },
+    {
+      "name": "glf",
+      "refactored": 44,
+      "compiled": 1533,
+      "sync": 13,
+      "missing": 18,
+      "total": 1608
+    },
+    {
+      "name": "boost",
+      "refactored": 0,
+      "compiled": 1450,
+      "sync": 0,
+      "missing": 14,
+      "total": 1464
+    },
+    {
+      "name": "gaia",
+      "refactored": 2,
+      "compiled": 1025,
+      "sync": 0,
+      "missing": 0,
+      "total": 1027
+    },
+    {
+      "name": "glwebtools",
+      "refactored": 6,
+      "compiled": 1007,
+      "sync": 0,
+      "missing": 0,
+      "total": 1013
+    },
+    {
+      "name": "freetype",
+      "refactored": 0,
+      "compiled": 702,
+      "sync": 0,
+      "missing": 0,
+      "total": 702
+    },
+    {
+      "name": "sociallib",
+      "refactored": 0,
+      "compiled": 620,
+      "sync": 0,
+      "missing": 0,
+      "total": 620
+    },
+    {
+      "name": "iap",
+      "refactored": 0,
+      "compiled": 558,
+      "sync": 14,
+      "missing": 4,
+      "total": 576
+    },
+    {
+      "name": "harfbuzz",
+      "refactored": 29,
+      "compiled": 483,
+      "sync": 0,
+      "missing": 8,
+      "total": 520
+    },
+    {
+      "name": "ChatLibv2",
+      "refactored": 20,
+      "compiled": 343,
+      "sync": 79,
+      "missing": 4,
+      "total": 446
+    },
+    {
+      "name": "grapher",
+      "refactored": 19,
+      "compiled": 389,
+      "sync": 0,
+      "missing": 7,
+      "total": 415
+    },
+    {
+      "name": "Glotv3",
+      "refactored": 2,
+      "compiled": 336,
+      "sync": 0,
+      "missing": 6,
+      "total": 344
+    },
+    {
+      "name": "tinyxml",
+      "refactored": 62,
+      "compiled": 165,
+      "sync": 0,
+      "missing": 0,
+      "total": 227
+    },
+    {
+      "name": "jsoncpp",
+      "refactored": 58,
+      "compiled": 161,
+      "sync": 0,
+      "missing": 0,
+      "total": 219
+    },
+    {
+      "name": "savemanager",
+      "refactored": 0,
+      "compiled": 191,
+      "sync": 0,
+      "missing": 0,
+      "total": 191
+    },
+    {
+      "name": "oi",
+      "refactored": 0,
+      "compiled": 136,
+      "sync": 0,
+      "missing": 0,
+      "total": 136
+    },
+    {
+      "name": "popuplib",
+      "refactored": 0,
+      "compiled": 17,
+      "sync": 0,
+      "missing": 0,
+      "total": 17
+    }
+  ],
+  "game_subsystems": [
+    {
+      "name": "Grapher",
+      "refactored": 970,
+      "compiled": 2534,
+      "sync": 0,
+      "missing": 6,
+      "total": 3510
+    },
+    {
+      "name": "Core/XmlData",
+      "refactored": 450,
+      "compiled": 1273,
+      "sync": 0,
+      "missing": 0,
+      "total": 1723
+    },
+    {
+      "name": "Physics",
+      "refactored": 0,
+      "compiled": 1638,
+      "sync": 0,
+      "missing": 3,
+      "total": 1641
+    },
+    {
+      "name": "AI",
+      "refactored": 0,
+      "compiled": 1627,
+      "sync": 0,
+      "missing": 0,
+      "total": 1627
+    },
+    {
+      "name": "Rendering",
+      "refactored": 0,
+      "compiled": 1270,
+      "sync": 0,
+      "missing": 0,
+      "total": 1270
+    },
+    {
+      "name": "Weapon",
+      "refactored": 0,
+      "compiled": 1243,
+      "sync": 0,
+      "missing": 0,
+      "total": 1243
+    },
+    {
+      "name": "Character",
+      "refactored": 0,
+      "compiled": 1185,
+      "sync": 0,
+      "missing": 0,
+      "total": 1185
+    },
+    {
+      "name": "Combat",
+      "refactored": 0,
+      "compiled": 1056,
+      "sync": 0,
+      "missing": 0,
+      "total": 1056
+    },
+    {
+      "name": "Online",
+      "refactored": 0,
+      "compiled": 1007,
+      "sync": 0,
+      "missing": 0,
+      "total": 1007
+    },
+    {
+      "name": "Spawn",
+      "refactored": 0,
+      "compiled": 886,
+      "sync": 0,
+      "missing": 0,
+      "total": 886
+    },
+    {
+      "name": "CoreStates",
+      "refactored": 0,
+      "compiled": 671,
+      "sync": 0,
+      "missing": 0,
+      "total": 671
+    },
+    {
+      "name": "Core/Application",
+      "refactored": 0,
+      "compiled": 601,
+      "sync": 0,
+      "missing": 0,
+      "total": 601
+    },
+    {
+      "name": "Navigation",
+      "refactored": 0,
+      "compiled": 581,
+      "sync": 0,
+      "missing": 0,
+      "total": 581
+    },
+    {
+      "name": "Menu",
+      "refactored": 0,
+      "compiled": 438,
+      "sync": 123,
+      "missing": 0,
+      "total": 561
+    },
+    {
+      "name": "HUD",
+      "refactored": 0,
+      "compiled": 500,
+      "sync": 0,
+      "missing": 0,
+      "total": 500
+    },
+    {
+      "name": "Vehicle",
+      "refactored": 0,
+      "compiled": 494,
+      "sync": 0,
+      "missing": 0,
+      "total": 494
+    },
+    {
+      "name": "Core/Memory",
+      "refactored": 0,
+      "compiled": 38,
+      "sync": 0,
+      "missing": 0,
+      "total": 38
+    },
+    {
+      "name": "Animation",
+      "refactored": 0,
+      "compiled": 15,
+      "sync": 0,
+      "missing": 0,
+      "total": 15
+    }
+  ],
+  "platform_and_dalvik": [
+    {
+      "name": "dex:google",
+      "refactored": 0,
+      "compiled": 2866,
+      "sync": 0,
+      "missing": 0,
+      "total": 2866
+    },
+    {
+      "name": "libgenerator",
+      "refactored": 44,
+      "compiled": 1943,
+      "sync": 0,
+      "missing": 0,
+      "total": 1987
+    },
+    {
+      "name": "JNI Bridges",
+      "refactored": 291,
+      "compiled": 628,
+      "sync": 46,
+      "missing": 4,
+      "total": 969
+    },
+    {
+      "name": "dex:gameloft",
+      "refactored": 64,
+      "compiled": 472,
+      "sync": 0,
+      "missing": 0,
+      "total": 536
+    },
+    {
+      "name": "dex:android.v4",
+      "refactored": 0,
+      "compiled": 506,
+      "sync": 0,
+      "missing": 0,
+      "total": 506
+    },
+    {
+      "name": "dex:facebook",
+      "refactored": 0,
+      "compiled": 413,
+      "sync": 0,
+      "missing": 0,
+      "total": 413
+    },
+    {
+      "name": "dex:amazon",
+      "refactored": 0,
+      "compiled": 226,
+      "sync": 0,
+      "missing": 0,
+      "total": 226
+    },
+    {
+      "name": "dex:misc",
+      "refactored": 0,
+      "compiled": 37,
+      "sync": 0,
+      "missing": 0,
+      "total": 37
+    },
+    {
+      "name": "dex:bda",
+      "refactored": 0,
+      "compiled": 29,
+      "sync": 0,
+      "missing": 0,
+      "total": 29
+    },
+    {
+      "name": "dex:loopj",
+      "refactored": 0,
+      "compiled": 17,
+      "sync": 0,
+      "missing": 0,
+      "total": 17
+    },
+    {
+      "name": "dex:sec",
+      "refactored": 0,
+      "compiled": 6,
+      "sync": 0,
+      "missing": 0,
+      "total": 6
+    }
+  ]
+}

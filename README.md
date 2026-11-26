@@ -20,6 +20,14 @@
 
 <br/>
 
+<div align="center">
+  <img src="docs/progress.svg" alt="Codebase Progress Treemap" width="100%" />
+</div>
+
+<sub><b>Interactive Breakdown:</b> Hover over any module block in the treemap above (when opened directly) or view the full per-library &amp; per-TU report in <a href="docs/progress.html"><code>docs/progress.html</code></a> (raw metrics: <a href="docs/progress.json"><code>docs/progress.json</code></a>).</sub>
+
+<br/>
+
 > [!WARNING]
 > **Work-in-Progress Build Status** — This repo does **not** compile into a finished binary out of the box yet. Roughly **99.1%** of C++ translation units compile cleanly under Clang/Ninja, with **13 translation units (78 compiler errors)** left to wire up across forward declarations and recovered middleware methods.
 

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gangstar Vegas Decomp — Progress</title>
+  <style>
+    :root {
+      --bg: #090714;
+      --card: #121024;
+      --border: rgba(168, 85, 247, 0.24);
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at 15% 0%, rgba(255,42,133,0.12), transparent 40%),
+                  radial-gradient(circle at 85% 10%, rgba(0,229,255,0.10), transparent 40%),
+                  var(--bg);
+      color: var(--text);
+      max-width: 1060px;
+      margin: 0 auto;
+      padding: 28px 18px 64px;
+      line-height: 1.5;
+    }
+    a { color: #38bdf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 900;
+      background: linear-gradient(90deg, #ff3b9a, #ff9e2c, #c084fc, #22d3ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2 {
+      margin-top: 36px;
+      margin-bottom: 12px;
+      font-size: 19px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    h3 { font-size: 15px; margin: 18px 0 10px; color: #e2e8f0; }
+    img.map { width: 100%; height: auto; display: block; border-radius: 18px; }
+    .meta { color: var(--muted); font-size: 13px; margin: 12px 0 24px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      overflow-x: auto;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { padding: 7px 10px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    th { color: var(--muted); font-weight: 600; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+    td.n, th.n { text-align: right; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; white-space: nowrap; }
+    td.name { white-space: nowrap; }
+    td.notes { white-space: nowrap; font-size: 11.5px; }
+    code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; color: #e2e8f0; }
+    .bar { background: #090d16; width: 100%; min-width: 130px; height: 11px; border-radius: 6px; overflow: hidden; }
+    .bar i { display: block; height: 11px; border-radius: 6px; }
+    .cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
+    @media (max-width: 780px) { .cols { grid-template-columns: 1fr; } }
+    .tag { display: inline-block; padding: 1px 6px; border-radius: 999px; font-family: ui-monospace, monospace; font-size: 10.5px; }
+    .tag.cyan { background: rgba(34,211,238,0.15); color: #67e8f9; }
+    .tag.amber { background: rgba(245,158,11,0.18); color: #fcd34d; }
+    .tag.pink { background: rgba(255,42,133,0.18); color: #f472b6; }
+    .muted { color: #64748b; font-size: 11.5px; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>Gangstar Vegas v1.8.2f — Decompilation Progress</h1>
+    <div><a id="repo-link" href="../">Repository</a> · <a href="progress.json">progress.json</a></div>
+  </div>
+  <script>
+    (function() {
+      var m = location.hostname.match(/^([^.]+)\.github\.io$/);
+      var seg = location.pathname.split('/').filter(Boolean)[0];
+      if (m && seg) document.getElementById('repo-link').href = 'https://github.com/' + m[1] + '/' + seg;
+    })();
+  </script>
+
+  <img class="map" src="progress.svg" alt="Codebase Progress Treemap">
+
+  <p class="meta">
+    Proportional squarified treemap across all 20 engine/middleware libraries, 18 Core &amp; Gameplay subsystems, Android JNI bridges, <code>libgenerator.so</code>, and 4,634 Dalvik classes. Hover over any module box in the SVG above to inspect exact counts.
+  </p>
+
+  <h2>Still Needed for Clean ARM32 Link</h2>
+  <div class="cols">
+    <div class="card">
+      <h3>Compiler Errors by Failing Translation Unit (78 total)</h3>
+      <table>
+        <tr><th>Translation Unit</th><th>Relative Share</th><th class="n">Errors</th></tr>
+        <tr><td class="name"><code>glf_ThreadMgr.cpp</code></td><td><div class="bar"><i style="width:97.5%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">39</td></tr>
+<tr><td class="name"><code>gameswf_runtime.cpp</code></td><td><div class="bar"><i style="width:65.0%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">26</td></tr>
+<tr><td class="name"><code>glitch_scene_part02.cpp</code></td><td><div class="bar"><i style="width:5.0%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">2</td></tr>
+<tr><td class="name"><code>chatv2_Connectivity.cpp</code></td><td><div class="bar"><i style="width:5.0%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">2</td></tr>
+<tr><td class="name"><code>TU32_MenuControllerPart12.cpp</code></td><td><div class="bar"><i style="width:2.5%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">1</td></tr>
+<tr><td class="name"><code>glitch_IDevice.cpp</code></td><td><div class="bar"><i style="width:2.5%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">1</td></tr>
+<tr><td class="name"><code>glitch_collada_part02.cpp</code></td><td><div class="bar"><i style="width:2.5%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">1</td></tr>
+<tr><td class="name"><code>glitch_collada_part03.cpp</code></td><td><div class="bar"><i style="width:2.5%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">1</td></tr>
+<tr><td class="name"><code>havok_internal_0.cpp</code></td><td><div class="bar"><i style="width:2.5%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">1</td></tr>
+<tr><td class="name"><code>iap_Command.cpp</code></td><td><div class="bar"><i style="width:2.5%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">1</td></tr>
+<tr><td class="name"><code>vox_VoxArchive.cpp</code></td><td><div class="bar"><i style="width:2.5%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">1</td></tr>
+<tr><td class="name"><code>vox_vs.cpp</code></td><td><div class="bar"><i style="width:2.5%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">1</td></tr>
+<tr><td class="name"><code>JNI_ExternalBridges.cpp</code></td><td><div class="bar"><i style="width:2.5%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">1</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h3>Remaining Engineering Tasks</h3>
+      <table>
+        <tr><th>Task</th><th class="n">Remaining</th></tr>
+        <tr><td><code>havok</code> missing methods, helpers &amp; quicksorts</td><td class="n">95</td></tr>
+        <tr><td><code>glitch</code> missing methods, PVS &amp; sort helpers</td><td class="n">88</td></tr>
+        <tr><td><code>DecompForwardDecls.h</code> prototype sync (<code>glf</code>, <code>gameswf</code>, <code>vox</code>, <code>iap</code>, <code>chatv2</code>)</td><td class="n">64</td></tr>
+        <tr><td>Truncated <code>sret</code> / dropped-arg call sites (<code>havok</code> &amp; <code>glitch</code>)</td><td class="n">35</td></tr>
+        <tr><td><code>RelocatedDataInit.cpp</code> vtable &amp; dispatcher bindings</td><td class="n">17</td></tr>
+        <tr><td>Live GLES2 boot verification &amp; C++14 cleanup pass</td><td class="n">Pending</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <h2>Engine &amp; Middleware Libraries (<code>G4_UP8Shop/lib/</code>)</h2>
+  <div class="card">
+    <table>
+      <tr><th>Library</th><th>Progress</th><th class="n">Compiling</th><th class="n">Total</th><th class="n">%</th><th>Breakdown</th></tr>
+      <tr><td class="name"><code>boost</code></td><td><div class="bar"><i style="width:99.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">1,450</td><td class="n">1,464</td><td class="n"><b>99.0%</b></td><td class="notes"><span class="tag pink">14 stub</span></td></tr>
+<tr><td class="name"><code>ChatLibv2</code></td><td><div class="bar"><i style="width:81.4%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">363</td><td class="n">446</td><td class="n"><b>81.4%</b></td><td class="notes"><span class="tag cyan">20 C++14</span> <span class="tag amber">79 sync</span> <span class="tag pink">4 stub</span></td></tr>
+<tr><td class="name"><code>freetype</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">702</td><td class="n">702</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>gaia</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">1,027</td><td class="n">1,027</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="tag cyan">2 C++14</span></td></tr>
+<tr><td class="name"><code>gameswf</code></td><td><div class="bar"><i style="width:89.2%;background:linear-gradient(90deg,#8b5cf6,#22d3ee)"></i></div></td><td class="n">2,372</td><td class="n">2,658</td><td class="n"><b>89.2%</b></td><td class="notes"><span class="tag cyan">3 C++14</span> <span class="tag amber">260 sync</span> <span class="tag pink">26 stub</span></td></tr>
+<tr><td class="name"><code>glf</code></td><td><div class="bar"><i style="width:98.1%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">1,577</td><td class="n">1,608</td><td class="n"><b>98.1%</b></td><td class="notes"><span class="tag cyan">44 C++14</span> <span class="tag amber">13 sync</span> <span class="tag pink">18 stub</span></td></tr>
+<tr><td class="name"><code>glitch</code></td><td><div class="bar"><i style="width:92.8%;background:linear-gradient(90deg,#8b5cf6,#22d3ee)"></i></div></td><td class="n">5,652</td><td class="n">6,089</td><td class="n"><b>92.8%</b></td><td class="notes"><span class="tag cyan">40 C++14</span> <span class="tag amber">349 sync</span> <span class="tag pink">88 stub</span></td></tr>
+<tr><td class="name"><code>Glotv3</code></td><td><div class="bar"><i style="width:98.3%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">338</td><td class="n">344</td><td class="n"><b>98.3%</b></td><td class="notes"><span class="tag cyan">2 C++14</span> <span class="tag pink">6 stub</span></td></tr>
+<tr><td class="name"><code>glwebtools</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">1,013</td><td class="n">1,013</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="tag cyan">6 C++14</span></td></tr>
+<tr><td class="name"><code>grapher</code></td><td><div class="bar"><i style="width:98.3%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">408</td><td class="n">415</td><td class="n"><b>98.3%</b></td><td class="notes"><span class="tag cyan">19 C++14</span> <span class="tag pink">7 stub</span></td></tr>
+<tr><td class="name"><code>harfbuzz</code></td><td><div class="bar"><i style="width:98.5%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">512</td><td class="n">520</td><td class="n"><b>98.5%</b></td><td class="notes"><span class="tag cyan">29 C++14</span> <span class="tag pink">8 stub</span></td></tr>
+<tr><td class="name"><code>havok</code></td><td><div class="bar"><i style="width:97.3%;background:linear-gradient(90deg,#8b5cf6,#22d3ee)"></i></div></td><td class="n">9,768</td><td class="n">10,036</td><td class="n"><b>97.3%</b></td><td class="notes"><span class="tag cyan">597 C++14</span> <span class="tag amber">173 sync</span> <span class="tag pink">95 stub</span></td></tr>
+<tr><td class="name"><code>iap</code></td><td><div class="bar"><i style="width:96.9%;background:linear-gradient(90deg,#8b5cf6,#22d3ee)"></i></div></td><td class="n">558</td><td class="n">576</td><td class="n"><b>96.9%</b></td><td class="notes"><span class="tag amber">14 sync</span> <span class="tag pink">4 stub</span></td></tr>
+<tr><td class="name"><code>jsoncpp</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">219</td><td class="n">219</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="tag cyan">58 C++14</span></td></tr>
+<tr><td class="name"><code>oi</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">136</td><td class="n">136</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>openssl</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">4,616</td><td class="n">4,616</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>popuplib</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">17</td><td class="n">17</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>savemanager</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">191</td><td class="n">191</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>sociallib</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">620</td><td class="n">620</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>tinyxml</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">227</td><td class="n">227</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="tag cyan">62 C++14</span></td></tr>
+<tr><td class="name"><code>vox</code></td><td><div class="bar"><i style="width:94.6%;background:linear-gradient(90deg,#8b5cf6,#22d3ee)"></i></div></td><td class="n">1,598</td><td class="n">1,689</td><td class="n"><b>94.6%</b></td><td class="notes"><span class="tag cyan">59 C++14</span> <span class="tag amber">79 sync</span> <span class="tag pink">12 stub</span></td></tr>
+    </table>
+  </div>
+
+  <h2>Core &amp; Gameplay Subsystems (<code>G4_UP8Shop/sources/</code>)</h2>
+  <div class="card">
+    <table>
+      <tr><th>Subsystem</th><th>Progress</th><th class="n">Compiling</th><th class="n">Total</th><th class="n">%</th><th>Breakdown</th></tr>
+      <tr><td class="name"><code>AI</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">1,627</td><td class="n">1,627</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>Animation</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">15</td><td class="n">15</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>Character</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">1,185</td><td class="n">1,185</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>Combat</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">1,056</td><td class="n">1,056</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>Core/Application</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">601</td><td class="n">601</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>Core/Memory</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">38</td><td class="n">38</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>Core/XmlData</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">1,723</td><td class="n">1,723</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="tag cyan">450 C++14</span></td></tr>
+<tr><td class="name"><code>CoreStates</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">671</td><td class="n">671</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>Grapher</code></td><td><div class="bar"><i style="width:99.8%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">3,504</td><td class="n">3,510</td><td class="n"><b>99.8%</b></td><td class="notes"><span class="tag cyan">970 C++14</span> <span class="tag pink">6 stub</span></td></tr>
+<tr><td class="name"><code>HUD</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">500</td><td class="n">500</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>Menu</code></td><td><div class="bar"><i style="width:78.1%;background:linear-gradient(90deg,#f59e0b,#ff2a85)"></i></div></td><td class="n">438</td><td class="n">561</td><td class="n"><b>78.1%</b></td><td class="notes"><span class="tag amber">123 sync</span></td></tr>
+<tr><td class="name"><code>Navigation</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">581</td><td class="n">581</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>Online</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">1,007</td><td class="n">1,007</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>Physics</code></td><td><div class="bar"><i style="width:99.8%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">1,638</td><td class="n">1,641</td><td class="n"><b>99.8%</b></td><td class="notes"><span class="tag pink">3 stub</span></td></tr>
+<tr><td class="name"><code>Rendering</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">1,270</td><td class="n">1,270</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>Spawn</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">886</td><td class="n">886</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>Vehicle</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">494</td><td class="n">494</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>Weapon</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">1,243</td><td class="n">1,243</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+    </table>
+  </div>
+
+  <h2>Android JNI, Generator &amp; Dalvik Packages</h2>
+  <div class="card">
+    <table>
+      <tr><th>Component</th><th>Progress</th><th class="n">Compiling</th><th class="n">Total</th><th class="n">%</th><th>Breakdown</th></tr>
+      <tr><td class="name"><code>dex:amazon</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">226</td><td class="n">226</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>dex:android.v4</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">506</td><td class="n">506</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>dex:bda</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">29</td><td class="n">29</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>dex:facebook</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">413</td><td class="n">413</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>dex:gameloft</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">536</td><td class="n">536</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="tag cyan">64 C++14</span></td></tr>
+<tr><td class="name"><code>dex:google</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">2,866</td><td class="n">2,866</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>dex:loopj</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">17</td><td class="n">17</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>dex:misc</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">37</td><td class="n">37</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>dex:sec</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">6</td><td class="n">6</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="muted">Clean compile</span></td></tr>
+<tr><td class="name"><code>JNI Bridges</code></td><td><div class="bar"><i style="width:94.8%;background:linear-gradient(90deg,#8b5cf6,#22d3ee)"></i></div></td><td class="n">919</td><td class="n">969</td><td class="n"><b>94.8%</b></td><td class="notes"><span class="tag cyan">291 C++14</span> <span class="tag amber">46 sync</span> <span class="tag pink">4 stub</span></td></tr>
+<tr><td class="name"><code>libgenerator</code></td><td><div class="bar"><i style="width:100.0%;background:linear-gradient(90deg,#10b981,#22d3ee)"></i></div></td><td class="n">1,987</td><td class="n">1,987</td><td class="n"><b>100.0%</b></td><td class="notes"><span class="tag cyan">44 C++14</span></td></tr>
+    </table>
+  </div>
+</body>
+</html>

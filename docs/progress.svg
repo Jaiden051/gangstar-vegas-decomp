@@ -1,0 +1,694 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 960" width="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0716"/>
+      <stop offset="50%" stop-color="#101327"/>
+      <stop offset="100%" stop-color="#091322"/>
+    </linearGradient>
+    <linearGradient id="edgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2a85" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="barCyanGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="barAmberPink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ff2a85"/>
+    </linearGradient>
+    <pattern id="waffle" width="5" height="5" patternUnits="userSpaceOnUse">
+      <path d="M 5 0 L 0 0 0 5" fill="none" stroke="#0b0716" stroke-width="1.05"/>
+    </pattern>
+  </defs>
+  <rect x="2" y="2" width="996" height="956" rx="18" fill="url(#bg)" stroke="url(#edgeGrad)" stroke-width="2"/>
+  <text x="24" y="34" fill="#f8fafc" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="17.5" font-weight="800">CODEBASE PROGRESS MAP  ·  <tspan fill="#22d3ee" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">97.62%</tspan> <tspan fill="#94a3b8" font-size="12.5" font-weight="500">(56,694/58,075 native)</tspan></text>
+  <rect x="565" y="22" width="10" height="10" rx="2" fill="#22d3ee"/><text x="580" y="31" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11">Clean C++14</text>
+  <rect x="667" y="22" width="10" height="10" rx="2" fill="#2ea043"/><text x="682" y="31" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11">Compiled</text>
+  <rect x="757" y="22" width="10" height="10" rx="2" fill="#f59e0b"/><text x="772" y="31" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11">Header Sync</text>
+  <rect x="867" y="22" width="10" height="10" rx="2" fill="#ff2a85"/><text x="882" y="31" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11">Missing/Stub</text>
+  <text x="24" y="64" fill="#f1f5f9" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13.5" font-weight="700">Large Engine Libraries: <tspan fill="#38bdf8" font-family="ui-monospace, monospace">96.0%</tspan> <tspan fill="#94a3b8" font-weight="400" font-family="ui-monospace, monospace">(27,033/28,160)</tspan></text>
+  <rect x="23" y="71" width="542" height="292" rx="5" fill="#06040d" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1"/>
+  <g>
+    <title>havok: 9,768/10,036 (97.3%) · 597 clean C++14 · 173 header/caller sync · 95 missing/stubs</title>
+    <clipPath id="c_2177814"><rect x="25.00" y="73.00" width="190.45" height="288.00" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_2177814)">
+      <rect x="25.00" y="70.00" width="195.00" height="295.00" fill="#2ea043"/>
+      <rect x="25.00" y="70.00" width="195.00" height="5.00" fill="#06b6d4"/>
+      <rect x="25.00" y="75.00" width="195.00" height="10.00" fill="#06b6d4"/>
+      <rect x="25.00" y="85.00" width="100.00" height="5.00" fill="#06b6d4"/>
+      <rect x="105.00" y="355.00" width="115.00" height="5.00" fill="#f59e0b"/>
+      <rect x="25.00" y="360.00" width="85.00" height="5.00" fill="#f59e0b"/>
+      <rect x="110.00" y="360.00" width="110.00" height="5.00" fill="#ff2a85"/>
+      <rect x="25.00" y="70.00" width="195.00" height="295.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="25.00" y="73.00" width="190.45" height="288.00" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="29.50" y="87.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">havok</text>
+    <text x="29.50" y="100.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">97%</text>
+  </g>
+  <g>
+    <title>glitch: 5,652/6,089 (92.8%) · 40 clean C++14 · 349 header/caller sync · 88 missing/stubs</title>
+    <clipPath id="c_7893579"><rect x="217.45" y="73.00" width="203.28" height="162.95" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_7893579)">
+      <rect x="215.00" y="70.00" width="210.00" height="170.00" fill="#2ea043"/>
+      <rect x="215.00" y="70.00" width="45.00" height="5.00" fill="#06b6d4"/>
+      <rect x="330.00" y="225.00" width="95.00" height="5.00" fill="#f59e0b"/>
+      <rect x="215.00" y="230.00" width="210.00" height="5.00" fill="#f59e0b"/>
+      <rect x="215.00" y="235.00" width="105.00" height="5.00" fill="#f59e0b"/>
+      <rect x="320.00" y="235.00" width="105.00" height="5.00" fill="#ff2a85"/>
+      <rect x="215.00" y="70.00" width="210.00" height="170.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="217.45" y="73.00" width="203.28" height="162.95" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="221.95" y="87.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">glitch</text>
+    <text x="221.95" y="100.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">93%</text>
+  </g>
+  <g>
+    <title>openssl: 4,616/4,616 (100.0%)</title>
+    <clipPath id="c_6639214"><rect x="217.45" y="237.95" width="203.28" height="123.05" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_6639214)">
+      <rect x="215.00" y="235.00" width="210.00" height="130.00" fill="#2ea043"/>
+      <rect x="215.00" y="235.00" width="210.00" height="130.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="217.45" y="237.95" width="203.28" height="123.05" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="221.95" y="252.45" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">openssl</text>
+    <text x="221.95" y="265.45" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>gameswf: 2,372/2,658 (89.2%) · 3 clean C++14 · 260 header/caller sync · 26 missing/stubs</title>
+    <clipPath id="c_2557602"><rect x="422.73" y="73.00" width="140.27" height="101.90" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_2557602)">
+      <rect x="420.00" y="70.00" width="145.00" height="105.00" fill="#2ea043"/>
+      <rect x="420.00" y="70.00" width="5.00" height="5.00" fill="#06b6d4"/>
+      <rect x="525.00" y="160.00" width="40.00" height="5.00" fill="#f59e0b"/>
+      <rect x="420.00" y="165.00" width="145.00" height="5.00" fill="#f59e0b"/>
+      <rect x="420.00" y="170.00" width="115.00" height="5.00" fill="#f59e0b"/>
+      <rect x="535.00" y="170.00" width="30.00" height="5.00" fill="#ff2a85"/>
+      <rect x="420.00" y="70.00" width="145.00" height="105.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="422.73" y="73.00" width="140.27" height="101.90" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="427.23" y="87.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">gameswf</text>
+    <text x="427.23" y="100.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">89%</text>
+  </g>
+  <g>
+    <title>vox: 1,598/1,689 (94.6%) · 59 clean C++14 · 79 header/caller sync · 12 missing/stubs</title>
+    <clipPath id="c_3218114"><rect x="422.73" y="176.90" width="70.88" height="126.88" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_3218114)">
+      <rect x="420.00" y="175.00" width="75.00" height="130.00" fill="#2ea043"/>
+      <rect x="420.00" y="175.00" width="70.00" height="5.00" fill="#06b6d4"/>
+      <rect x="465.00" y="295.00" width="30.00" height="5.00" fill="#f59e0b"/>
+      <rect x="420.00" y="300.00" width="60.00" height="5.00" fill="#f59e0b"/>
+      <rect x="480.00" y="300.00" width="15.00" height="5.00" fill="#ff2a85"/>
+      <rect x="420.00" y="175.00" width="75.00" height="130.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="422.73" y="176.90" width="70.88" height="126.88" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="427.23" y="189.90" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">vox</text>
+    <text x="427.23" y="202.90" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">95%</text>
+  </g>
+  <g>
+    <title>glf: 1,577/1,608 (98.1%) · 44 clean C++14 · 13 header/caller sync · 18 missing/stubs</title>
+    <clipPath id="c_7818869"><rect x="495.61" y="176.90" width="67.39" height="126.88" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_7818869)">
+      <rect x="495.00" y="175.00" width="70.00" height="130.00" fill="#2ea043"/>
+      <rect x="495.00" y="175.00" width="50.00" height="5.00" fill="#06b6d4"/>
+      <rect x="530.00" y="300.00" width="15.00" height="5.00" fill="#f59e0b"/>
+      <rect x="545.00" y="300.00" width="20.00" height="5.00" fill="#ff2a85"/>
+      <rect x="495.00" y="175.00" width="70.00" height="130.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="495.61" y="176.90" width="67.39" height="126.88" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="500.11" y="189.90" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">glf</text>
+    <text x="500.11" y="202.90" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">98%</text>
+  </g>
+  <g>
+    <title>boost: 1,450/1,464 (99.0%) · 14 missing/stubs</title>
+    <clipPath id="c_8889372"><rect x="422.73" y="305.77" width="140.27" height="55.23" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_8889372)">
+      <rect x="420.00" y="305.00" width="145.00" height="60.00" fill="#2ea043"/>
+      <rect x="550.00" y="360.00" width="15.00" height="5.00" fill="#ff2a85"/>
+      <rect x="420.00" y="305.00" width="145.00" height="60.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="422.73" y="305.77" width="140.27" height="55.23" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="427.23" y="320.27" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">boost</text>
+    <text x="427.23" y="333.27" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">99%</text>
+  </g>
+  <text x="584" y="64" fill="#f1f5f9" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13.5" font-weight="700">Medium &amp; Small Libraries: <tspan fill="#38bdf8" font-family="ui-monospace, monospace">98.1%</tspan> <tspan fill="#94a3b8" font-weight="400" font-family="ui-monospace, monospace">(6,331/6,453)</tspan></text>
+  <rect x="583" y="71" width="394" height="292" rx="5" fill="#06040d" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1"/>
+  <g>
+    <title>gaia: 1,027/1,027 (100.0%) · 2 clean C++14</title>
+    <clipPath id="c_8176089"><rect x="585.00" y="73.00" width="121.92" height="144.00" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_8176089)">
+      <rect x="585.00" y="70.00" width="125.00" height="150.00" fill="#2ea043"/>
+      <rect x="585.00" y="70.00" width="5.00" height="5.00" fill="#06b6d4"/>
+      <rect x="585.00" y="70.00" width="125.00" height="150.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="585.00" y="73.00" width="121.92" height="144.00" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="589.50" y="87.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">gaia</text>
+    <text x="589.50" y="100.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>glwebtools: 1,013/1,013 (100.0%) · 6 clean C++14</title>
+    <clipPath id="c_9884623"><rect x="585.00" y="219.00" width="121.92" height="142.00" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_9884623)">
+      <rect x="585.00" y="215.00" width="125.00" height="150.00" fill="#2ea043"/>
+      <rect x="585.00" y="215.00" width="20.00" height="5.00" fill="#06b6d4"/>
+      <rect x="585.00" y="215.00" width="125.00" height="150.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="585.00" y="219.00" width="121.92" height="142.00" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="589.50" y="233.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">glwebtools</text>
+    <text x="589.50" y="246.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>freetype: 702/702 (100.0%)</title>
+    <clipPath id="c_5799716"><rect x="708.92" y="73.00" width="97.15" height="122.73" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_5799716)">
+      <rect x="705.00" y="70.00" width="105.00" height="130.00" fill="#2ea043"/>
+      <rect x="705.00" y="70.00" width="105.00" height="130.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="708.92" y="73.00" width="97.15" height="122.73" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="713.42" y="87.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">freetype</text>
+    <text x="713.42" y="100.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>sociallib: 620/620 (100.0%)</title>
+    <clipPath id="c_7162479"><rect x="808.08" y="73.00" width="85.57" height="122.73" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_7162479)">
+      <rect x="805.00" y="70.00" width="90.00" height="130.00" fill="#2ea043"/>
+      <rect x="805.00" y="70.00" width="90.00" height="130.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="808.08" y="73.00" width="85.57" height="122.73" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="812.58" y="87.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">sociallib</text>
+    <text x="812.58" y="100.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>iap: 558/576 (96.9%) · 14 header/caller sync · 4 missing/stubs</title>
+    <clipPath id="c_5807432"><rect x="895.64" y="73.00" width="79.36" height="122.73" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_5807432)">
+      <rect x="895.00" y="70.00" width="80.00" height="130.00" fill="#2ea043"/>
+      <rect x="910.00" y="195.00" width="50.00" height="5.00" fill="#f59e0b"/>
+      <rect x="960.00" y="195.00" width="15.00" height="5.00" fill="#ff2a85"/>
+      <rect x="895.00" y="70.00" width="80.00" height="130.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="895.64" y="73.00" width="79.36" height="122.73" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="900.14" y="87.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">iap</text>
+    <text x="900.14" y="100.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">97%</text>
+  </g>
+  <g>
+    <title>harfbuzz: 512/520 (98.5%) · 29 clean C++14 · 8 missing/stubs</title>
+    <clipPath id="c_1254267"><rect x="708.92" y="197.73" width="100.97" height="86.97" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_1254267)">
+      <rect x="705.00" y="195.00" width="105.00" height="90.00" fill="#2ea043"/>
+      <rect x="705.00" y="195.00" width="105.00" height="5.00" fill="#06b6d4"/>
+      <rect x="780.00" y="280.00" width="30.00" height="5.00" fill="#ff2a85"/>
+      <rect x="705.00" y="195.00" width="105.00" height="90.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="708.92" y="197.73" width="100.97" height="86.97" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="713.42" y="212.23" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">harfbuzz</text>
+    <text x="713.42" y="225.23" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">98%</text>
+  </g>
+  <g>
+    <title>ChatLibv2: 363/446 (81.4%) · 20 clean C++14 · 79 header/caller sync · 4 missing/stubs</title>
+    <clipPath id="c_6363069"><rect x="708.92" y="286.69" width="100.97" height="74.31" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_6363069)">
+      <rect x="705.00" y="285.00" width="105.00" height="80.00" fill="#2ea043"/>
+      <rect x="705.00" y="285.00" width="75.00" height="5.00" fill="#06b6d4"/>
+      <rect x="705.00" y="350.00" width="105.00" height="5.00" fill="#f59e0b"/>
+      <rect x="705.00" y="355.00" width="105.00" height="5.00" fill="#f59e0b"/>
+      <rect x="705.00" y="360.00" width="90.00" height="5.00" fill="#f59e0b"/>
+      <rect x="795.00" y="360.00" width="15.00" height="5.00" fill="#ff2a85"/>
+      <rect x="705.00" y="285.00" width="105.00" height="80.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="708.92" y="286.69" width="100.97" height="74.31" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="713.42" y="301.19" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">ChatLibv2</text>
+    <text x="713.42" y="314.19" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">81%</text>
+  </g>
+  <g>
+    <title>grapher: 408/415 (98.3%) · 19 clean C++14 · 7 missing/stubs</title>
+    <clipPath id="c_8703864"><rect x="811.89" y="197.73" width="88.28" height="78.98" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_8703864)">
+      <rect x="810.00" y="195.00" width="95.00" height="85.00" fill="#2ea043"/>
+      <rect x="810.00" y="195.00" width="75.00" height="5.00" fill="#06b6d4"/>
+      <rect x="880.00" y="275.00" width="25.00" height="5.00" fill="#ff2a85"/>
+      <rect x="810.00" y="195.00" width="95.00" height="85.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="811.89" y="197.73" width="88.28" height="78.98" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="816.39" y="212.23" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">grapher</text>
+    <text x="816.39" y="225.23" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">98%</text>
+  </g>
+  <g>
+    <title>Glotv3: 338/344 (98.3%) · 2 clean C++14 · 6 missing/stubs</title>
+    <clipPath id="c_7414923"><rect x="902.17" y="197.73" width="72.83" height="78.98" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_7414923)">
+      <rect x="900.00" y="195.00" width="75.00" height="85.00" fill="#2ea043"/>
+      <rect x="900.00" y="195.00" width="5.00" height="5.00" fill="#06b6d4"/>
+      <rect x="955.00" y="275.00" width="20.00" height="5.00" fill="#ff2a85"/>
+      <rect x="900.00" y="195.00" width="75.00" height="85.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="902.17" y="197.73" width="72.83" height="78.98" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="906.67" y="212.23" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">Glotv3</text>
+    <text x="906.67" y="225.23" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">98%</text>
+  </g>
+  <g>
+    <title>tinyxml: 227/227 (100.0%) · 62 clean C++14</title>
+    <clipPath id="c_4552950"><rect x="811.89" y="278.71" width="45.44" height="82.29" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_4552950)">
+      <rect x="810.00" y="275.00" width="50.00" height="90.00" fill="#2ea043"/>
+      <rect x="810.00" y="275.00" width="50.00" height="5.00" fill="#06b6d4"/>
+      <rect x="810.00" y="280.00" width="50.00" height="15.00" fill="#06b6d4"/>
+      <rect x="810.00" y="295.00" width="45.00" height="5.00" fill="#06b6d4"/>
+      <rect x="810.00" y="275.00" width="50.00" height="90.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="811.89" y="278.71" width="45.44" height="82.29" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="816.39" y="291.71" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">tinyxm</text>
+  </g>
+  <g>
+    <title>jsoncpp: 219/219 (100.0%) · 58 clean C++14</title>
+    <clipPath id="c_5701550"><rect x="859.33" y="278.71" width="43.77" height="82.29" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_5701550)">
+      <rect x="855.00" y="275.00" width="50.00" height="90.00" fill="#2ea043"/>
+      <rect x="855.00" y="275.00" width="50.00" height="5.00" fill="#06b6d4"/>
+      <rect x="855.00" y="280.00" width="50.00" height="15.00" fill="#06b6d4"/>
+      <rect x="855.00" y="295.00" width="40.00" height="5.00" fill="#06b6d4"/>
+      <rect x="855.00" y="275.00" width="50.00" height="90.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="859.33" y="278.71" width="43.77" height="82.29" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="863.83" y="290.21" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">jsoncpp</text>
+  </g>
+  <g>
+    <title>savemanager: 191/191 (100.0%)</title>
+    <clipPath id="c_9483893"><rect x="905.10" y="278.71" width="69.90" height="44.80" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_9483893)">
+      <rect x="905.00" y="275.00" width="75.00" height="50.00" fill="#2ea043"/>
+      <rect x="905.00" y="275.00" width="75.00" height="50.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="905.10" y="278.71" width="69.90" height="44.80" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="909.60" y="291.71" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">savemanage</text>
+    <text x="909.60" y="304.71" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>oi: 136/136 (100.0%)</title>
+    <clipPath id="c_9683596"><rect x="905.10" y="325.51" width="61.91" height="35.49" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_9683596)">
+      <rect x="905.00" y="325.00" width="65.00" height="40.00" fill="#2ea043"/>
+      <rect x="905.00" y="325.00" width="65.00" height="40.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="905.10" y="325.51" width="61.91" height="35.49" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="909.60" y="338.51" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">oi</text>
+  </g>
+  <g>
+    <title>popuplib: 17/17 (100.0%)</title>
+    <clipPath id="c_7067850"><rect x="969.01" y="325.51" width="5.99" height="35.49" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_7067850)">
+      <rect x="965.00" y="325.00" width="15.00" height="40.00" fill="#2ea043"/>
+      <rect x="965.00" y="325.00" width="15.00" height="40.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="969.01" y="325.51" width="5.99" height="35.49" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+  </g>
+  <text x="24" y="390" fill="#f1f5f9" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13.5" font-weight="700">Core &amp; Gameplay Subsystems: <tspan fill="#38bdf8" font-family="ui-monospace, monospace">99.3%</tspan> <tspan fill="#94a3b8" font-weight="400" font-family="ui-monospace, monospace">(18,477/18,609)</tspan></text>
+  <rect x="23" y="397" width="542" height="282" rx="5" fill="#06040d" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1"/>
+  <g>
+    <title>Grapher: 3,504/3,510 (99.8%) · 970 clean C++14 · 6 missing/stubs</title>
+    <clipPath id="c_675814"><rect x="25.00" y="399.00" width="149.85" height="185.81" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_675814)">
+      <rect x="25.00" y="395.00" width="150.00" height="190.00" fill="#2ea043"/>
+      <rect x="25.00" y="395.00" width="150.00" height="5.00" fill="#06b6d4"/>
+      <rect x="25.00" y="400.00" width="150.00" height="45.00" fill="#06b6d4"/>
+      <rect x="25.00" y="445.00" width="75.00" height="5.00" fill="#06b6d4"/>
+      <rect x="165.00" y="580.00" width="10.00" height="5.00" fill="#ff2a85"/>
+      <rect x="25.00" y="395.00" width="150.00" height="190.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="25.00" y="399.00" width="149.85" height="185.81" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="29.50" y="413.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">Grapher</text>
+    <text x="29.50" y="426.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>Core/XmlData: 1,723/1,723 (100.0%) · 450 clean C++14</title>
+    <clipPath id="c_9157475"><rect x="25.00" y="586.81" width="149.85" height="90.19" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_9157475)">
+      <rect x="25.00" y="585.00" width="150.00" height="95.00" fill="#2ea043"/>
+      <rect x="25.00" y="585.00" width="150.00" height="5.00" fill="#06b6d4"/>
+      <rect x="25.00" y="590.00" width="150.00" height="15.00" fill="#06b6d4"/>
+      <rect x="25.00" y="605.00" width="145.00" height="5.00" fill="#06b6d4"/>
+      <rect x="25.00" y="585.00" width="150.00" height="95.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="25.00" y="586.81" width="149.85" height="90.19" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="29.50" y="601.31" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">Core/XmlData</text>
+    <text x="29.50" y="614.31" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>Physics: 1,638/1,641 (99.8%) · 3 missing/stubs</title>
+    <clipPath id="c_191388"><rect x="176.85" y="399.00" width="92.83" height="138.60" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_191388)">
+      <rect x="175.00" y="395.00" width="95.00" height="145.00" fill="#2ea043"/>
+      <rect x="265.00" y="535.00" width="5.00" height="5.00" fill="#ff2a85"/>
+      <rect x="175.00" y="395.00" width="95.00" height="145.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="176.85" y="399.00" width="92.83" height="138.60" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="181.35" y="413.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">Physics</text>
+    <text x="181.35" y="426.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>AI: 1,627/1,627 (100.0%)</title>
+    <clipPath id="c_4667010"><rect x="176.85" y="539.60" width="92.83" height="137.40" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_4667010)">
+      <rect x="175.00" y="535.00" width="95.00" height="145.00" fill="#2ea043"/>
+      <rect x="175.00" y="535.00" width="95.00" height="145.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="176.85" y="539.60" width="92.83" height="137.40" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="181.35" y="554.10" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">AI</text>
+    <text x="181.35" y="567.10" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>Rendering: 1,270/1,270 (100.0%)</title>
+    <clipPath id="c_6337739"><rect x="271.68" y="399.00" width="105.31" height="94.16" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_6337739)">
+      <rect x="270.00" y="395.00" width="110.00" height="100.00" fill="#2ea043"/>
+      <rect x="270.00" y="395.00" width="110.00" height="100.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="271.68" y="399.00" width="105.31" height="94.16" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="276.18" y="413.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">Rendering</text>
+    <text x="276.18" y="426.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>Weapon: 1,243/1,243 (100.0%)</title>
+    <clipPath id="c_463934"><rect x="271.68" y="495.16" width="105.31" height="92.12" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_463934)">
+      <rect x="270.00" y="495.00" width="110.00" height="95.00" fill="#2ea043"/>
+      <rect x="270.00" y="495.00" width="110.00" height="95.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="271.68" y="495.16" width="105.31" height="92.12" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="276.18" y="509.66" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">Weapon</text>
+    <text x="276.18" y="522.66" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>Character: 1,185/1,185 (100.0%)</title>
+    <clipPath id="c_9066202"><rect x="271.68" y="589.28" width="105.31" height="87.72" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_9066202)">
+      <rect x="270.00" y="585.00" width="110.00" height="95.00" fill="#2ea043"/>
+      <rect x="270.00" y="585.00" width="110.00" height="95.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="271.68" y="589.28" width="105.31" height="87.72" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="276.18" y="603.78" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">Character</text>
+    <text x="276.18" y="616.78" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>Combat: 1,056/1,056 (100.0%)</title>
+    <clipPath id="c_514408"><rect x="378.99" y="399.00" width="93.21" height="88.12" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_514408)">
+      <rect x="375.00" y="395.00" width="100.00" height="95.00" fill="#2ea043"/>
+      <rect x="375.00" y="395.00" width="100.00" height="95.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="378.99" y="399.00" width="93.21" height="88.12" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="383.49" y="413.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">Combat</text>
+    <text x="383.49" y="426.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>Online: 1,007/1,007 (100.0%)</title>
+    <clipPath id="c_3097568"><rect x="474.21" y="399.00" width="88.79" height="88.12" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_3097568)">
+      <rect x="470.00" y="395.00" width="95.00" height="95.00" fill="#2ea043"/>
+      <rect x="470.00" y="395.00" width="95.00" height="95.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="474.21" y="399.00" width="88.79" height="88.12" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="478.71" y="413.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">Online</text>
+    <text x="478.71" y="426.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>Spawn: 886/886 (100.0%)</title>
+    <clipPath id="c_8415031"><rect x="378.99" y="489.12" width="103.85" height="66.01" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_8415031)">
+      <rect x="375.00" y="485.00" width="110.00" height="75.00" fill="#2ea043"/>
+      <rect x="375.00" y="485.00" width="110.00" height="75.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="378.99" y="489.12" width="103.85" height="66.01" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="383.49" y="503.62" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">Spawn</text>
+    <text x="383.49" y="516.62" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>CoreStates: 671/671 (100.0%)</title>
+    <clipPath id="c_3373449"><rect x="484.84" y="489.12" width="78.16" height="66.01" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_3373449)">
+      <rect x="480.00" y="485.00" width="85.00" height="75.00" fill="#2ea043"/>
+      <rect x="480.00" y="485.00" width="85.00" height="75.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="484.84" y="489.12" width="78.16" height="66.01" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="489.34" y="503.62" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">CoreStates</text>
+    <text x="489.34" y="516.62" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>Core/Application: 601/601 (100.0%)</title>
+    <clipPath id="c_5025950"><rect x="378.99" y="557.13" width="76.80" height="59.97" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_5025950)">
+      <rect x="375.00" y="555.00" width="85.00" height="65.00" fill="#2ea043"/>
+      <rect x="375.00" y="555.00" width="85.00" height="65.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="378.99" y="557.13" width="76.80" height="59.97" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="383.49" y="571.63" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">Core/Appli</text>
+    <text x="383.49" y="584.63" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>Navigation: 581/581 (100.0%)</title>
+    <clipPath id="c_6517114"><rect x="378.99" y="619.10" width="76.80" height="57.90" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_6517114)">
+      <rect x="375.00" y="615.00" width="85.00" height="65.00" fill="#2ea043"/>
+      <rect x="375.00" y="615.00" width="85.00" height="65.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="378.99" y="619.10" width="76.80" height="57.90" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="383.49" y="633.60" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">Navigation</text>
+    <text x="383.49" y="646.60" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>Menu: 438/561 (78.1%) · 123 header/caller sync</title>
+    <clipPath id="c_707308"><rect x="457.80" y="557.13" width="54.68" height="78.41" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_707308)">
+      <rect x="455.00" y="555.00" width="60.00" height="85.00" fill="#2ea043"/>
+      <rect x="470.00" y="620.00" width="45.00" height="5.00" fill="#f59e0b"/>
+      <rect x="455.00" y="625.00" width="60.00" height="10.00" fill="#f59e0b"/>
+      <rect x="455.00" y="635.00" width="60.00" height="5.00" fill="#f59e0b"/>
+      <rect x="455.00" y="555.00" width="60.00" height="85.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="457.80" y="557.13" width="54.68" height="78.41" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="462.30" y="570.13" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">Menu</text>
+  </g>
+  <g>
+    <title>HUD: 500/500 (100.0%)</title>
+    <clipPath id="c_5762997"><rect x="514.48" y="557.13" width="48.52" height="78.41" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_5762997)">
+      <rect x="510.00" y="555.00" width="55.00" height="85.00" fill="#2ea043"/>
+      <rect x="510.00" y="555.00" width="55.00" height="85.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="514.48" y="557.13" width="48.52" height="78.41" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="518.98" y="570.13" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">HUD</text>
+  </g>
+  <g>
+    <title>Vehicle: 494/494 (100.0%)</title>
+    <clipPath id="c_7488906"><rect x="457.80" y="637.54" width="94.82" height="39.46" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_7488906)">
+      <rect x="455.00" y="635.00" width="100.00" height="45.00" fill="#2ea043"/>
+      <rect x="455.00" y="635.00" width="100.00" height="45.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="457.80" y="637.54" width="94.82" height="39.46" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="462.30" y="652.04" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">Vehicle</text>
+    <text x="462.30" y="665.04" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>Core/Memory: 38/38 (100.0%)</title>
+    <clipPath id="c_5434180"><rect x="554.61" y="637.54" width="8.39" height="27.72" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_5434180)">
+      <rect x="550.00" y="635.00" width="15.00" height="35.00" fill="#2ea043"/>
+      <rect x="550.00" y="635.00" width="15.00" height="35.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="554.61" y="637.54" width="8.39" height="27.72" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+  </g>
+  <g>
+    <title>Animation: 15/15 (100.0%)</title>
+    <clipPath id="c_5288082"><rect x="554.61" y="667.27" width="8.39" height="9.73" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_5288082)">
+      <rect x="550.00" y="665.00" width="15.00" height="15.00" fill="#2ea043"/>
+      <rect x="550.00" y="665.00" width="15.00" height="15.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="554.61" y="667.27" width="8.39" height="9.73" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+  </g>
+  <text x="584" y="390" fill="#f1f5f9" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13.5" font-weight="700">JNI, Generator &amp; Dalvik Classes: <tspan fill="#38bdf8" font-family="ui-monospace, monospace">99.3%</tspan> <tspan fill="#94a3b8" font-weight="400" font-family="ui-monospace, monospace">(7,542/7,592)</tspan></text>
+  <rect x="583" y="397" width="394" height="282" rx="5" fill="#06040d" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1"/>
+  <g>
+    <title>dex:google: 2,866/2,866 (100.0%)</title>
+    <clipPath id="c_269983"><rect x="585.00" y="399.00" width="145.98" height="278.00" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_269983)">
+      <rect x="585.00" y="395.00" width="150.00" height="285.00" fill="#2ea043"/>
+      <rect x="585.00" y="395.00" width="150.00" height="285.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="585.00" y="399.00" width="145.98" height="278.00" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="589.50" y="413.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">google</text>
+    <text x="589.50" y="426.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>libgenerator: 1,987/1,987 (100.0%) · 44 clean C++14</title>
+    <clipPath id="c_7553468"><rect x="732.98" y="399.00" width="242.02" height="115.72" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_7553468)">
+      <rect x="730.00" y="395.00" width="245.00" height="120.00" fill="#2ea043"/>
+      <rect x="730.00" y="395.00" width="130.00" height="5.00" fill="#06b6d4"/>
+      <rect x="730.00" y="395.00" width="245.00" height="120.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="732.98" y="399.00" width="242.02" height="115.72" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="737.48" y="413.50" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">libgenerator</text>
+    <text x="737.48" y="426.50" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>JNI Bridges: 919/969 (94.8%) · 291 clean C++14 · 46 header/caller sync · 4 missing/stubs</title>
+    <clipPath id="c_5899564"><rect x="732.98" y="516.72" width="84.33" height="160.28" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_5899564)">
+      <rect x="730.00" y="515.00" width="90.00" height="165.00" fill="#2ea043"/>
+      <rect x="730.00" y="515.00" width="90.00" height="5.00" fill="#06b6d4"/>
+      <rect x="730.00" y="520.00" width="90.00" height="40.00" fill="#06b6d4"/>
+      <rect x="730.00" y="560.00" width="80.00" height="5.00" fill="#06b6d4"/>
+      <rect x="760.00" y="670.00" width="60.00" height="5.00" fill="#f59e0b"/>
+      <rect x="730.00" y="675.00" width="80.00" height="5.00" fill="#f59e0b"/>
+      <rect x="810.00" y="675.00" width="10.00" height="5.00" fill="#ff2a85"/>
+      <rect x="730.00" y="515.00" width="90.00" height="165.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="732.98" y="516.72" width="84.33" height="160.28" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="737.48" y="531.22" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">JNI Bridges</text>
+    <text x="737.48" y="544.22" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">95%</text>
+  </g>
+  <g>
+    <title>dex:gameloft: 536/536 (100.0%) · 64 clean C++14</title>
+    <clipPath id="c_4429857"><rect x="819.31" y="516.72" width="79.12" height="93.53" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_4429857)">
+      <rect x="815.00" y="515.00" width="85.00" height="100.00" fill="#2ea043"/>
+      <rect x="815.00" y="515.00" width="85.00" height="5.00" fill="#06b6d4"/>
+      <rect x="815.00" y="520.00" width="85.00" height="5.00" fill="#06b6d4"/>
+      <rect x="815.00" y="525.00" width="35.00" height="5.00" fill="#06b6d4"/>
+      <rect x="815.00" y="515.00" width="85.00" height="100.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="819.31" y="516.72" width="79.12" height="93.53" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="823.81" y="531.22" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">gameloft</text>
+    <text x="823.81" y="544.22" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>dex:android.v4: 506/506 (100.0%)</title>
+    <clipPath id="c_2589612"><rect x="900.42" y="516.72" width="74.58" height="93.53" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_2589612)">
+      <rect x="900.00" y="515.00" width="75.00" height="100.00" fill="#2ea043"/>
+      <rect x="900.00" y="515.00" width="75.00" height="100.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="900.42" y="516.72" width="74.58" height="93.53" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="904.92" y="531.22" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">android.v</text>
+    <text x="904.92" y="544.22" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>dex:facebook: 413/413 (100.0%)</title>
+    <clipPath id="c_7862488"><rect x="819.31" y="612.26" width="87.46" height="64.74" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_7862488)">
+      <rect x="815.00" y="610.00" width="95.00" height="70.00" fill="#2ea043"/>
+      <rect x="815.00" y="610.00" width="95.00" height="70.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="819.31" y="612.26" width="87.46" height="64.74" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="823.81" y="626.76" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.0" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">facebook</text>
+    <text x="823.81" y="639.76" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#e2e8f0" stroke="#0b0716" stroke-width="2.5" paint-order="stroke">100%</text>
+  </g>
+  <g>
+    <title>dex:amazon: 226/226 (100.0%)</title>
+    <clipPath id="c_9381461"><rect x="908.77" y="612.26" width="46.95" height="64.74" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_9381461)">
+      <rect x="905.00" y="610.00" width="55.00" height="70.00" fill="#2ea043"/>
+      <rect x="905.00" y="610.00" width="55.00" height="70.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="908.77" y="612.26" width="46.95" height="64.74" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+    <text x="913.27" y="625.26" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" stroke="#0b0716" stroke-width="3" paint-order="stroke">amazon</text>
+  </g>
+  <g>
+    <title>dex:misc: 37/37 (100.0%)</title>
+    <clipPath id="c_2150982"><rect x="957.72" y="612.26" width="17.28" height="25.75" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_2150982)">
+      <rect x="955.00" y="610.00" width="25.00" height="30.00" fill="#2ea043"/>
+      <rect x="955.00" y="610.00" width="25.00" height="30.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="957.72" y="612.26" width="17.28" height="25.75" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+  </g>
+  <g>
+    <title>dex:bda: 29/29 (100.0%)</title>
+    <clipPath id="c_643650"><rect x="957.72" y="640.00" width="17.28" height="19.75" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_643650)">
+      <rect x="955.00" y="640.00" width="25.00" height="20.00" fill="#2ea043"/>
+      <rect x="955.00" y="640.00" width="25.00" height="20.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="957.72" y="640.00" width="17.28" height="19.75" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+  </g>
+  <g>
+    <title>dex:loopj: 17/17 (100.0%)</title>
+    <clipPath id="c_6908262"><rect x="957.72" y="661.75" width="12.25" height="15.25" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_6908262)">
+      <rect x="955.00" y="660.00" width="15.00" height="20.00" fill="#2ea043"/>
+      <rect x="955.00" y="660.00" width="15.00" height="20.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="957.72" y="661.75" width="12.25" height="15.25" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+  </g>
+  <g>
+    <title>dex:sec: 6/6 (100.0%)</title>
+    <clipPath id="c_834431"><rect x="971.97" y="661.75" width="3.03" height="15.25" rx="2.5"/></clipPath>
+    <g clip-path="url(#c_834431)">
+      <rect x="970.00" y="660.00" width="10.00" height="20.00" fill="#2ea043"/>
+      <rect x="970.00" y="660.00" width="10.00" height="20.00" fill="url(#waffle)"/>
+    </g>
+    <rect x="971.97" y="661.75" width="3.03" height="15.25" rx="2.5" fill="none" stroke="#0b0716" stroke-width="1.5"/>
+  </g>
+  <text x="24" y="712" fill="#f1f5f9" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700">Remaining Work by Subsystem (78 compile errors · 282 stubs)</text>
+  <text x="24" y="737" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11.5">havok (stubs + sret + 1 TU)</text>
+  <rect x="240" y="726" width="265" height="14" rx="4" fill="#161b2e"/>
+  <rect x="240" y="726" width="254.8" height="14" rx="4" fill="url(#barAmberPink)"/>
+  <text x="556" y="737" text-anchor="end" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700">125</text>
+  <text x="24" y="765" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11.5">glitch (stubs + 4 TUs)</text>
+  <rect x="240" y="754" width="265" height="14" rx="4" fill="#161b2e"/>
+  <rect x="240" y="754" width="199.8" height="14" rx="4" fill="url(#barAmberPink)"/>
+  <text x="556" y="765" text-anchor="end" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700">98</text>
+  <text x="24" y="793" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11.5">glf::Thread &amp; Fs (1 TU)</text>
+  <rect x="240" y="782" width="265" height="14" rx="4" fill="#161b2e"/>
+  <rect x="240" y="782" width="116.2" height="14" rx="4" fill="url(#barAmberPink)"/>
+  <text x="556" y="793" text-anchor="end" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700">57</text>
+  <text x="24" y="821" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11.5">gameswf (runtime + decls)</text>
+  <rect x="240" y="810" width="265" height="14" rx="4" fill="#161b2e"/>
+  <rect x="240" y="810" width="106.0" height="14" rx="4" fill="url(#barAmberPink)"/>
+  <text x="556" y="821" text-anchor="end" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700">52</text>
+  <text x="24" y="849" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11.5">vox + iap + chatv2 (4 TUs)</text>
+  <rect x="240" y="838" width="265" height="14" rx="4" fill="#161b2e"/>
+  <rect x="240" y="838" width="48.9" height="14" rx="4" fill="url(#barAmberPink)"/>
+  <text x="556" y="849" text-anchor="end" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700">24</text>
+  <text x="24" y="877" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11.5">boost + harfbuzz + grapher</text>
+  <rect x="240" y="866" width="265" height="14" rx="4" fill="#161b2e"/>
+  <rect x="240" y="866" width="59.1" height="14" rx="4" fill="url(#barAmberPink)"/>
+  <text x="556" y="877" text-anchor="end" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700">29</text>
+  <text x="24" y="905" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11.5">Game/Menu + JNI_Bridges</text>
+  <rect x="240" y="894" width="265" height="14" rx="4" fill="#161b2e"/>
+  <rect x="240" y="894" width="12.2" height="14" rx="4" fill="url(#barAmberPink)"/>
+  <text x="556" y="905" text-anchor="end" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700">6</text>
+  <text x="584" y="712" fill="#f1f5f9" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="700">Binary Tables &amp; Runtime Milestones</text>
+  <text x="584" y="737" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11.5">Vtable Registry</text>
+  <rect x="752" y="726" width="128" height="14" rx="4" fill="#161b2e"/>
+  <rect x="752" y="726" width="128.0" height="14" rx="4" fill="url(#barCyanGreen)"/>
+  <text x="976" y="737" text-anchor="end" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11">6,654 / 6,654</text>
+  <text x="584" y="765" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11.5">Global Data Symbols</text>
+  <rect x="752" y="754" width="128" height="14" rx="4" fill="#161b2e"/>
+  <rect x="752" y="754" width="128.0" height="14" rx="4" fill="url(#barCyanGreen)"/>
+  <text x="976" y="765" text-anchor="end" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11">59,179 / 59,179</text>
+  <text x="584" y="793" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11.5">XmlData Schemas</text>
+  <rect x="752" y="782" width="128" height="14" rx="4" fill="#161b2e"/>
+  <rect x="752" y="782" width="128.0" height="14" rx="4" fill="url(#barCyanGreen)"/>
+  <text x="976" y="793" text-anchor="end" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11">89 / 89</text>
+  <text x="584" y="821" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11.5">Grapher Actors</text>
+  <rect x="752" y="810" width="128" height="14" rx="4" fill="#161b2e"/>
+  <rect x="752" y="810" width="128.0" height="14" rx="4" fill="url(#barCyanGreen)"/>
+  <text x="976" y="821" text-anchor="end" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11">207 / 207</text>
+  <text x="584" y="849" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11.5">ARM32 TU Compilation</text>
+  <rect x="752" y="838" width="128" height="14" rx="4" fill="#161b2e"/>
+  <rect x="752" y="838" width="126.9" height="14" rx="4" fill="url(#barCyanGreen)"/>
+  <text x="976" y="849" text-anchor="end" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11">1,548 / 1,561</text>
+  <text x="584" y="877" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11.5">16 KB ELF + Reloc Init</text>
+  <rect x="752" y="866" width="128" height="14" rx="4" fill="#161b2e"/>
+  <rect x="752" y="866" width="108.8" height="14" rx="4" fill="url(#barCyanGreen)"/>
+  <text x="976" y="877" text-anchor="end" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11">Ready</text>
+  <text x="584" y="905" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="11.5">Clean GLES2 Device Boot</text>
+  <rect x="752" y="894" width="128" height="14" rx="4" fill="#161b2e"/>
+  <rect x="752" y="894" width="32.0" height="14" rx="4" fill="url(#barAmberPink)"/>
+  <text x="976" y="905" text-anchor="end" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11">Pending Link</text>
+  <text x="24" y="942" fill="#64748b" font-family="ui-monospace, monospace" font-size="10.5">Measured directly from repository source tree &amp; Clang/Ninja ARM32 build output · Click map to open full interactive breakdown</text>
+</svg>
