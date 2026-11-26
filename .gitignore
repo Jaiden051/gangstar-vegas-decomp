@@ -1,0 +1,71 @@
+# Original game packages, OBBs, and extracted binaries (never commit)
+*.apk
+*.obb
+*.xapk
+*.apks
+*.dex
+*.arsc
+*.keystore
+*.jks
+*.idsig
+*OBB*/
+
+# Extracted APK assets, resources, media, and raw binary data blobs
+G4_UP8Shop/androidPort/GameSpecific/assets/
+G4_UP8Shop/androidPort/GameSpecific/res/
+G4_UP8Shop/sources/Core/Data/*.bin
+*.bin
+*.pak
+*.bdae
+*.tga
+*.png
+*.jpg
+*.jpeg
+*.mp3
+*.ogg
+*.wav
+
+# Local analysis & build workspaces
+/build_work/
+/build/
+/build-*/
+/build_*/
+/out/
+/saves/
+CMakeFiles/
+cmake-build-*/
+
+# Compiled binaries, libraries, & logs
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.elf
+*.nro
+*.nacp
+*.pdb
+*.log
+*.map
+!G4_UP8Shop/androidPort/GameSpecific/jni/g4_exports.map
+
+# Disassembler / decompiler databases
+*.idb
+*.i64
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+
+# IDE / OS files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+.DS_Store
+Thumbs.db

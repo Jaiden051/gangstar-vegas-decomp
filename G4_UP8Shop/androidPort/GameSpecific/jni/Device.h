@@ -1,0 +1,82 @@
+#include "../../../sources/Core/Utils/DecompTypes.h"
+// ============================================================================
+// Gangstar Vegas (G4_UP8Shop) - Cross-Platform Bridge: Device.h
+// Reconstructed from lib/x86/libGangstar4.so (66 functions)
+// ============================================================================
+#pragma once
+#include <string>
+
+namespace Device {
+    std::string GetModel();
+    std::string GetLanguage();
+    std::string GetHDIDFV();
+    uint64_t    GetFreeDiskSpace();
+} // namespace Device
+
+// Original Binary Symbol Table in lib/x86/libGangstar4.so:
+//   [0x4c19c0] DeviceUtils_GetDeviceId (73 bytes)
+//   [0x4c1a10] DeviceUtils_GetAndroidId (73 bytes)
+//   [0x4c1a60] DeviceUtils_GetSerial (73 bytes)
+//   [0x4c1ab0] DeviceUtils_GetSerialNo (73 bytes)
+//   [0x4c1b00] DeviceUtils_GetFirmware (73 bytes)
+//   [0x4c1b50] DeviceUtils_GetMacAddress (73 bytes)
+//   [0x4c1ba0] DeviceUtils_GetIMEI (73 bytes)
+//   [0x4c1bf0] DeviceUtils_GetHDIDFVStr (73 bytes)
+//   [0x4c1c40] DeviceUtils_GetHDIDFVVersion (73 bytes)
+//   [0x4c1c90] DeviceUtils_GetGLDID (73 bytes)
+//   [0x4c1ce0] DeviceUtils_GetDeviceName (73 bytes)
+//   [0x4c1d30] DeviceUtils_GetDeviceManufacturer (73 bytes)
+//   [0x4c1d80] DeviceUtils_GetDeviceModel (73 bytes)
+//   [0x4c1dd0] DeviceUtils_GetCPUSerial (73 bytes)
+//   [0x4c1e20] DeviceUtils_GetBuildDevice (73 bytes)
+//   [0x4c1e70] DeviceUtils_GetBuildProduct (73 bytes)
+//   [0x4c3320] GameUtils::IsDeviceJbOrRt(void) (140 bytes)
+//   [0x4c33b0] GameUtils_IsDeviceJbOrRt (27 bytes)
+//   [0x4c5430] DeviceUtils::charToString(char const*) (183 bytes)
+//   [0x4c54f0] DeviceUtils::setJavaVM(_JavaVM *) (24 bytes)
+//   [0x4c5550] DeviceUtils::init(_jclass *) (1166 bytes)
+//   [0x4c59e0] DeviceUtils::DeviceId(void) (302 bytes)
+//   [0x4c5b10] DeviceUtils::AndroidId(void) (302 bytes)
+//   [0x4c5c40] DeviceUtils::Serial(void) (302 bytes)
+//   [0x4c5d70] DeviceUtils::SerialNo(void) (302 bytes)
+//   [0x4c5ea0] DeviceUtils::Firmware(void) (302 bytes)
+//   [0x4c5fd0] DeviceUtils::MacAddress(void) (302 bytes)
+//   [0x4c6100] DeviceUtils::Imei(void) (302 bytes)
+//   [0x4c6230] DeviceUtils::HDIDFV(unsigned char *,int *,int) (272 bytes)
+//   [0x4c6340] DeviceUtils_GetHDIDFV (50 bytes)
+//   [0x4c6380] DeviceUtils::HDIDFVString(void) (302 bytes)
+//   [0x4c64b0] DeviceUtils::HDIDFVVersion(void) (302 bytes)
+//   [0x4c65e0] DeviceUtils::GoogleAdId(void) (302 bytes)
+//   [0x4c6710] DeviceUtils::GoogleAdIdStatus(void) (208 bytes)
+//   [0x4c67e0] DeviceUtils_GetGoogleAdIdStatus (27 bytes)
+//   [0x4c6800] DeviceUtils::retrieveGoogleAdId(void) (208 bytes)
+//   [0x4c68d0] DeviceUtils_GetGoogleAdId (56 bytes)
+//   [0x4c6910] DeviceUtils::GLDID(void) (302 bytes)
+//   [0x4c6a40] DeviceUtils::Name(void) (302 bytes)
+//   [0x4c6b70] DeviceUtils::Manufacturer(void) (302 bytes)
+//   [0x4c6ca0] DeviceUtils::Model(void) (302 bytes)
+//   [0x4c6dd0] DeviceUtils::CarrierName(void) (302 bytes)
+//   [0x4c6f00] DeviceUtils_GetCarrierName (56 bytes)
+//   [0x4c6f40] DeviceUtils::Country(void) (302 bytes)
+//   [0x4c7070] DeviceUtils_GetCountry (56 bytes)
+//   [0x4c70b0] DeviceUtils::Region(void) (302 bytes)
+//   [0x4c71e0] DeviceUtils_GetRegion (56 bytes)
+//   [0x4c7220] DeviceUtils::Language(void) (302 bytes)
+//   [0x4c7350] DeviceUtils_GetLanguage (56 bytes)
+//   [0x4c7390] DeviceUtils::CPUSerial(void) (302 bytes)
+//   [0x4c74c0] DeviceUtils::BuildDevice(void) (302 bytes)
+//   [0x4c75f0] DeviceUtils::BuildProduct(void) (302 bytes)
+//   [0x4c7720] DeviceUtils_Init (1776 bytes)
+//   [0x4c7e10] Java_com_gameloft_android_GAND_GloftGGSS_GLUtils_Device_nativeInit (34 bytes)
+//   [0x4dbe10] SimplifiedPN::GetDeviceToken(SimplifiedPNTransport::TransportType) (228 bytes)
+//   [0x4dbf00] SimplifiedPN_GetDeviceToken (225 bytes)
+//   [0x4df720] GetDeviceLanguage(char *) (9 bytes)
+//   [0x4e1360] GetPhoneDevicePointer (90 bytes)
+//   [0x4e14e0] CGameConfig::CalculateDevicePower(void) (1708 bytes)
+//   [0x4e1c70] CGameConfig::GetDeviceFamily(void) (4286 bytes)
+//   [0x4e4a80] getDeviceUserAgent (22 bytes)
+//   [0x4e4aa0] getDeviceIMEI (22 bytes)
+//   [0x4e4b10] getDeviceRooted (78 bytes)
+//   [0x4e60a0] nativeGetDeviceIdentifier (194 bytes)
+//   [0x4e6170] nativeGetDeviceMAC (194 bytes)
+//   [0x4e6330] nativeGetDeviceID (176 bytes)

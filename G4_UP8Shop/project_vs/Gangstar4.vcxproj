@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4A8E91B2-7C41-4E53-9D22-182F00040001}</ProjectGuid>
+    <RootNamespace>Gangstar4</RootNamespace>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\sources;..\sources\Core;..\sources\Core\XmlData;..\sources\Game;..\lib\glf\inc;..\lib\glitch\inc;..\lib\vox\inc;..\lib\grapher\inc;..\lib\havok\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\sources\Core\Utils\StreamBase.h" />
+    <ClInclude Include="..\sources\Core\Memory\GameAllocator.h" />
+    <ClInclude Include="..\sources\Core\XmlData\DataManager.h" />
+    <ClInclude Include="..\sources\Game\Physics\Havok\PhysicsHavokBuoyancyAction.h" />
+    <ClInclude Include="..\sources\Game\Grapher\RegisterGameActors.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\sources\Core\Memory\GameAllocator.cpp" />
+    <ClCompile Include="..\sources\Core\XmlData\DataManager.cpp" />
+    <ClCompile Include="..\sources\Game\Physics\Havok\Derived\hkpStaticGeometryUtil.cpp" />
+    <ClCompile Include="..\sources\Game\Grapher\RegisterGameActors.cpp" />
+  </ItemGroup>
+</Project>

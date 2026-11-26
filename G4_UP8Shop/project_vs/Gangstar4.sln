@@ -1,0 +1,13 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+# Reconstructed from embedded relative paths: ..\..\project_vs\..\sources\
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gangstar4", "Gangstar4.vcxproj", "{4A8E91B2-7C41-4E53-9D22-182F00040001}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Android|ARM = Android|ARM
+		Android|x86 = Android|x86
+	EndGlobalSection
+EndGlobal

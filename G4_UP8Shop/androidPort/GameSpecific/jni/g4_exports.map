@@ -1,0 +1,5 @@
+{
+  global: *;
+  local: dword_0;
+};
+

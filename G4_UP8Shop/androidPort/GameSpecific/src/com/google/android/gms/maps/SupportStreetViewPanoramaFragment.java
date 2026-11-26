@@ -1,0 +1,158 @@
+// Decompiled from classes.dex (SourceFile: SupportStreetViewPanoramaFragment.java) via IDA Pro 9.5 Dalvik Decompiler
+package com.google.android.gms.maps;
+
+public class SupportStreetViewPanoramaFragment extends android.support.v4.app.Fragment {
+    // Fields
+    private final com.google.android.gms.maps.SupportStreetViewPanoramaFragment$b a;
+    private com.google.android.gms.maps.StreetViewPanorama b;
+
+    // Methods
+    public SupportStreetViewPanoramaFragment()
+    {
+      super();
+      this.a = new com.google.android.gms.maps.SupportStreetViewPanoramaFragment$b(this);
+    }
+
+    private com.google.android.gms.maps.internal.IStreetViewPanoramaFragmentDelegate a()
+    {
+      this.a.i();
+      if ( this.a.a() != null )
+        return ((com.google.android.gms.maps.SupportStreetViewPanoramaFragment$a)this.a.a()).h();
+      else
+        return null;
+    }
+
+    private com.google.android.gms.maps.StreetViewPanorama b()
+    {
+      com.google.android.gms.dynamic.LifecycleDelegate v1; // RETVAL
+      com.google.android.gms.maps.internal.IStreetViewPanoramaFragmentDelegate v2;
+      com.google.android.gms.maps.internal.IStreetViewPanoramaFragmentDelegate v5; // RETVAL
+      com.google.android.gms.maps.internal.IStreetViewPanoramaDelegate v6; // RETVAL
+      com.google.android.gms.maps.internal.IStreetViewPanoramaDelegate v7;
+      this.a.i();
+      v1 = this.a.a();
+      if ( v1 != null )
+      {
+        v5 = ((com.google.android.gms.maps.SupportStreetViewPanoramaFragment$a)this.a.a()).h();
+        v2 = v5;
+      }
+      else
+      {
+        v2 = null;
+      }
+      if ( v2 == null )
+        return null;
+      try
+      {
+        v6 = v2.a();
+      }
+      catch ( android.os.RemoteException v8 )
+      {
+        throw new com.google.android.gms.maps.model.RuntimeRemoteException(v8);
+      }
+      v7 = v6;
+      if ( v6 == null )
+        return null;
+      if ( this.b == null || this.b.a().asBinder() != v6.asBinder() )
+        this.b = new com.google.android.gms.maps.StreetViewPanorama(v7);
+      return this.b;
+    }
+
+    public static com.google.android.gms.maps.SupportStreetViewPanoramaFragment newInstance()
+    {
+      return new com.google.android.gms.maps.SupportStreetViewPanoramaFragment();
+    }
+
+    public static com.google.android.gms.maps.SupportStreetViewPanoramaFragment newInstance(
+            com.google.android.gms.maps.StreetViewPanoramaOptions p0)
+    {
+      com.google.android.gms.maps.SupportStreetViewPanoramaFragment v1;
+      android.os.Bundle v2;
+      v1 = new com.google.android.gms.maps.SupportStreetViewPanoramaFragment();
+      v2 = new android.os.Bundle();
+      v2.putParcelable("StreetViewPanoramaOptions", (android.os.Parcelable)p0);
+      v1.setArguments(v2);
+      return v1;
+    }
+
+    public void onActivityCreated(android.os.Bundle p0)
+    {
+      if ( p0 != null )
+        p0.setClassLoader(com.google.android.gms.maps.SupportStreetViewPanoramaFragment.class.getClassLoader());
+      super.onActivityCreated(p0);
+    }
+
+    public void onAttach(android.app.Activity p0)
+    {
+      super.onAttach(p0);
+      SupportStreetViewPanoramaFragment$b.a(this.a, p0);
+    }
+
+    public void onCreate(android.os.Bundle p0)
+    {
+      super.onCreate(p0);
+      this.a.a(p0);
+    }
+
+    public android.view.View onCreateView(
+            android.view.LayoutInflater p0,
+            android.view.ViewGroup p1,
+            android.os.Bundle p2)
+    {
+      return this.a.a(p0, p1, p2);
+    }
+
+    public void onDestroy()
+    {
+      this.a.g();
+      super.onDestroy();
+    }
+
+    public void onDestroyView()
+    {
+      this.a.f();
+      super.onDestroyView();
+    }
+
+    public void onInflate(
+            android.app.Activity p0,
+            android.util.AttributeSet p1,
+            android.os.Bundle p2)
+    {
+      super.onInflate(p0, p1, p2);
+      SupportStreetViewPanoramaFragment$b.a(this.a, p0);
+      this.a.a(p0, new android.os.Bundle(), p2);
+    }
+
+    public void onLowMemory()
+    {
+      this.a.h();
+      super.onLowMemory();
+    }
+
+    public void onPause()
+    {
+      this.a.d();
+      super.onPause();
+    }
+
+    public void onResume()
+    {
+      super.onResume();
+      this.a.c();
+    }
+
+    public void onSaveInstanceState(android.os.Bundle p0)
+    {
+      if ( p0 != null )
+        p0.setClassLoader(com.google.android.gms.maps.SupportStreetViewPanoramaFragment.class.getClassLoader());
+      super.onSaveInstanceState(p0);
+      this.a.b(p0);
+    }
+
+    public void setArguments(android.os.Bundle p0)
+    {
+      super.setArguments(p0);
+    }
+
+}
