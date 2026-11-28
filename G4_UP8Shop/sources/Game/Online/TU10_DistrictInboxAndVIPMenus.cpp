@@ -85644,7 +85644,7 @@ uint32_t ** sub_7EBF60(int a1)
   if ( (uint8_t)glf::Thread::IsMain(Current) == 0 )
   {
     g4_std::string::construct_from_cstr((int)(uintptr_t)(v6) + 1, "spawn thread", (int)(uintptr_t)(v6));
-    v3 = glf::Thread::GetCurrent(v5);
+    v3 = (int)(uintptr_t)glf::Thread::GetCurrent(v5);
     glf::Thread::SetName(v3, (char *)v6 + 1);
     g4_std::string::Destroy((char *)v6 + 1);
   }

@@ -83435,7 +83435,7 @@ namespace glf {
 }
 namespace gameswf {
   namespace SpriteInstance { int getCanvas(void *self); }
-  namespace DisplayList { int removeDisplayObject(void *self, void *a2); }
+  namespace DisplayList { int removeDisplayObject(gameswf::DisplayList::Self *self, gameswf::Character::Self *a2); template <typename A1, typename A2> inline int removeDisplayObject(A1 a1, A2 a2) { return removeDisplayObject(g4_arg_cast<gameswf::DisplayList::Self *>(a1), g4_arg_cast<gameswf::Character::Self *>(a2)); } }
   namespace Canvas {
     int moveTo(void *self, float a2, float a3);
     int addPath(void *self, void *a2);
@@ -90649,7 +90649,7 @@ namespace gameswf { namespace ASCppFunction {
   int (*opCall(int a1, int a2))(int);
 } }
 namespace gameswf { namespace ASTransform {
-  template <typename... Args> inline int Construct(Args...) { return 0; }
+  gameswf::ASTransform::Self * Construct( gameswf::ASTransform::Self *self, gameswf::Player::Self *a2, gameswf::Character::Self *a3); template <typename... A> inline gameswf::ASTransform::Self * Construct(A&&... a) { return g4_adapt_call(static_cast<gameswf::ASTransform::Self * (*)(gameswf::ASTransform::Self *, gameswf::Player::Self *, gameswf::Character::Self *)>(&Construct), a...); } // was a catch-all stub returning 0; real definition exists
   template <typename A1> inline int init(A1 a1) { return gameswf::ASTransform::init(g4_arg_cast<gameswf::ASTransform::Self *>(a1), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int16_t>(0), g4_arg_cast<double>(0), g4_arg_cast<int16_t>(0), g4_arg_cast<double>(0), g4_arg_cast<int16_t>(0), g4_arg_cast<double>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int>(0), g4_arg_cast<int16_t>(0), g4_arg_cast<int>(0), g4_arg_cast<const gameswf::StringI::Self *>(0), g4_arg_cast<gameswf::Self *>(0), g4_arg_cast<int>(0)); }
 } }
 namespace gameswf { namespace Canvas {
@@ -90665,7 +90665,8 @@ namespace gameswf { namespace File {
   int (*close(gameswf::File::Self *self))(uint32_t);
 } }
 namespace gameswf { namespace SceneNode {
-  template <typename... Args> inline int Construct(Args...) { return 0; }
+} namespace SceneNodeParameters { struct Self; } namespace SceneNode { // fwd for real Construct decls
+  void Construct( gameswf::SceneNode::Self *self, gameswf::Player::Self *a2, glitch::scene::ISceneNode::Self *a3, const gameswf::SceneNodeParameters::Self *a4); void Construct( gameswf::SceneNode::Self *self, int *vtt, gameswf::Player::Self *a3, glitch::scene::ISceneNode::Self *a4, const gameswf::SceneNodeParameters::Self *a5); // was a catch-all stub returning 0; real definition exists
 } }
 namespace gameswf { namespace Stream {
   template <typename A1, typename std::enable_if<!((g4_can_pass<A1, gameswf::Stream::Self *>::value)), int>::type = 0> inline bool readBool(A1 a1) { return gameswf::Stream::readBool(g4_arg_cast<gameswf::Stream::Self *>(a1)); }
@@ -91018,7 +91019,7 @@ namespace vox { namespace StreamCFile {
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, vox::StreamCFile::Self *>::value && g4_can_pass<A2, char *>::value)), int>::type = 0> inline vox::StreamCFile::Self * Construct(A1 a1, A2 a2) { return vox::StreamCFile::Construct(g4_arg_cast<vox::StreamCFile::Self *>(a1), g4_arg_cast<char *>(a2)); }
 } }
 namespace vox { namespace VoxArchive {
-  template <typename... Args> inline int Construct(Args...) { return 0; }
+  vox::VoxArchive::Self * Construct( vox::VoxArchive::Self *self, vox::FileInterface::Self *a2, const vox::FileArchive::FileRange::Self *a3, bool a4, bool a5, bool a6, const char *a7); template <typename... A> inline vox::VoxArchive::Self * Construct(A&&... a) { return g4_adapt_call(static_cast<vox::VoxArchive::Self * (*)(vox::VoxArchive::Self *, vox::FileInterface::Self *, const vox::FileArchive::FileRange::Self *, bool, bool, bool, const char *)>(&Construct), a...); } // was a catch-all stub returning 0; real definition exists
 } }
 namespace vox { namespace VoxEngineInternal {
   template <typename A1, typename A2, typename A3, typename A4, typename std::enable_if<!((g4_can_pass<A1, vox::VoxEngineInternal::Self *>::value && g4_can_pass<A2, vox::DataHandle::Self *>::value && g4_can_pass<A3, const vox::emitter::CreationSettings::Self *>::value && g4_can_pass<A4, vox::emitter::CreationSettings::Self *>::value)), int>::type = 0> inline vox::VoxEngineInternal::Self * CreateEmitter(A1 a1, A2 a2, A3 a3, A4 a4) { return vox::VoxEngineInternal::CreateEmitter(g4_arg_cast<vox::VoxEngineInternal::Self *>(a1), g4_arg_cast<vox::DataHandle::Self *>(a2), g4_arg_cast<const vox::emitter::CreationSettings::Self *>(a3), g4_arg_cast<vox::emitter::CreationSettings::Self *>(a4)); }
@@ -91294,7 +91295,7 @@ namespace gameswf { namespace ASEventDispatcher {
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, gameswf::ASEventDispatcher::Self *>::value && g4_can_pass<A2, const gameswf::String::Self *>::value)), int>::type = 0> inline bool hasCaptureEventListener(A1 a1, A2 a2) { return gameswf::ASEventDispatcher::hasCaptureEventListener(g4_arg_cast<gameswf::ASEventDispatcher::Self *>(a1), g4_arg_cast<const gameswf::String::Self *>(a2)); }
 } }
 namespace gameswf { namespace ASModel3D {
-  template <typename... Args> inline int createScene(Args...) { return 0; }
+  uint32_t * createScene(gameswf::ASModel3D::Self *self); template <typename... A> inline uint32_t * createScene(A&&... a) { return g4_adapt_call(static_cast<uint32_t * (*)(gameswf::ASModel3D::Self *)>(&createScene), a...); } // was a catch-all stub returning 0; real definition exists
 } }
 namespace gameswf { namespace ASTimer {
   template <typename A1, typename A2, typename A3, typename A4, typename std::enable_if<!((g4_can_pass<A1, gameswf::ASTimer::Self *>::value && g4_can_pass<A2, gameswf::Player::Self *>::value && g4_can_pass<A3, double>::value && g4_can_pass<A4, int>::value)), int>::type = 0> inline gameswf::ASTimer::Self * Construct(A1 a1, A2 a2, A3 a3, A4 a4) { return gameswf::ASTimer::Construct(g4_arg_cast<gameswf::ASTimer::Self *>(a1), g4_arg_cast<gameswf::Player::Self *>(a2), g4_arg_cast<double>(a3), g4_arg_cast<int>(a4)); }
@@ -91303,19 +91304,19 @@ namespace gameswf { namespace Canvas {
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, gameswf::Self **>::value && g4_can_pass<A2, gameswf::Self **>::value)), int>::type = 0> inline gameswf::Self ** opAssign(A1 a1, A2 a2) { return gameswf::Canvas::opAssign(g4_arg_cast<gameswf::Self **>(a1), g4_arg_cast<gameswf::Self **>(a2)); }
 } }
 namespace gameswf { namespace Character {
-  template <typename... Args> inline int hitTestObject(Args...) { return 0; }
-  template <typename... Args> inline int getBoundingBox(Args...) { return 0; }
+  bool hitTestObject(gameswf::Character::Self *self, gameswf::Character::Self *a2); template <typename... A> inline bool hitTestObject(A&&... a) { return g4_adapt_call(static_cast<bool (*)(gameswf::Character::Self *, gameswf::Character::Self *)>(&hitTestObject), a...); } // was a catch-all stub returning 0; real definition exists
+  gameswf::Character::Self * getBoundingBox( gameswf::Character::Self *self, const float *a2, float *a3); template <typename... A> inline gameswf::Character::Self * getBoundingBox(A&&... a) { return g4_adapt_call(static_cast<gameswf::Character::Self * (*)(gameswf::Character::Self *, const float *, float *)>(&getBoundingBox), a...); } // was a catch-all stub returning 0; real definition exists
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, gameswf::Character::Self *>::value && g4_can_pass<A2, const gameswf::CxForm::Self *>::value)), int>::type = 0> inline void setCxForm(A1 a1, A2 a2) { gameswf::Character::setCxForm(g4_arg_cast<gameswf::Character::Self *>(a1), g4_arg_cast<const gameswf::CxForm::Self *>(a2)); }
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, gameswf::Character::Self *>::value && g4_can_pass<A2, const gameswf::Effect::Self *>::value)), int>::type = 0> inline gameswf::Character::Self * setEffect(A1 a1, A2 a2) { return gameswf::Character::setEffect(g4_arg_cast<gameswf::Character::Self *>(a1), g4_arg_cast<const gameswf::Effect::Self *>(a2)); }
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, gameswf::Character::Self *>::value && g4_can_pass<A2, const gameswf::Matrix::Self *>::value)), int>::type = 0> inline int setMatrix(A1 a1, A2 a2) { return gameswf::Character::setMatrix(g4_arg_cast<gameswf::Character::Self *>(a1), g4_arg_cast<const gameswf::Matrix::Self *>(a2)); }
   template <typename A1> inline void transformByInverse(A1 a1) { gameswf::Character::transformByInverse(g4_arg_cast<gameswf::Character::Self *>(a1), g4_arg_cast<gameswf::Point::Self *>(0)); }
 } }
 namespace gameswf { namespace DisplayList {
-  template <typename... Args> inline int display(Args...) { return 0; }
-  template <typename... Args> inline int clear(Args...) { return 0; }
-  template <typename... Args> inline int removeDisplayObject(Args...) { return 0; }
-  template <typename... Args> inline int clearAddedByPlayList(Args...) { return 0; }
-  template <typename... Args> inline int clearUnaffected(Args...) { return 0; }
+  int display(gameswf::DisplayList::Self *self, bool a3, bool a4); template <typename... A> inline int display(A&&... a) { return g4_adapt_call(static_cast<int (*)(gameswf::DisplayList::Self *, bool, bool)>(&display), a...); } // was a catch-all stub returning 0; real definition exists
+  int clear(gameswf::DisplayList::Self *self); template <typename... A> inline int clear(A&&... a) { return g4_adapt_call(static_cast<int (*)(gameswf::DisplayList::Self *)>(&clear), a...); } // was a catch-all stub returning 0; real definition exists
+  int removeDisplayObject(gameswf::DisplayList::Self *self, gameswf::Character::Self *a2); void removeDisplayObject(gameswf::DisplayList::Self *self, int depth, int id); // was a catch-all stub returning 0; real definition exists
+  int clearAddedByPlayList(gameswf::DisplayList::Self *self); template <typename... A> inline int clearAddedByPlayList(A&&... a) { return g4_adapt_call(static_cast<int (*)(gameswf::DisplayList::Self *)>(&clearAddedByPlayList), a...); } // was a catch-all stub returning 0; real definition exists
+  int clearUnaffected(gameswf::DisplayList::Self *self, gameswf::array<int> *a2); template <typename... A> inline int clearUnaffected(A&&... a) { return g4_adapt_call(static_cast<int (*)(gameswf::DisplayList::Self *, gameswf::array<int> *)>(&clearUnaffected), a...); } // was a catch-all stub returning 0; real definition exists
 } }
 namespace gameswf { namespace EditTextCharacter {
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, gameswf::EditTextCharacter::Self *>::value && g4_can_pass<A2, const gameswf::array<gameswf::TextGlyphRecord> *>::value)), int>::type = 0> inline long double getRecordWidth(A1 a1, A2 a2) { return gameswf::EditTextCharacter::getRecordWidth(g4_arg_cast<gameswf::EditTextCharacter::Self *>(a1), g4_arg_cast<const gameswf::array<gameswf::TextGlyphRecord> *>(a2)); }
@@ -91324,19 +91325,19 @@ namespace gameswf { namespace FillStyle {
   // [Step 2: gameswf::FillStyle::FillStyle wired at end of header]
 } }
 namespace gameswf { namespace LineStyle {
-  template <typename... Args> inline int read(Args...) { return 0; }
+  int read( gameswf::LineStyle::Self *self, gameswf::Stream::Self *a2, int a3, gameswf::MovieDefinitionSub::Self *a4); template <typename... A> inline int read(A&&... a) { return g4_adapt_call(static_cast<int (*)(gameswf::LineStyle::Self *, gameswf::Stream::Self *, int, gameswf::MovieDefinitionSub::Self *)>(&read), a...); } // was a catch-all stub returning 0; real definition exists
 } }
 namespace gameswf { namespace RenderHandler {
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, gameswf::RenderHandler::Self *>::value && g4_can_pass<A2, gameswf::BatchList::Self *>::value)), int>::type = 0> inline unsigned int flushList(A1 a1, A2 a2) { return gameswf::RenderHandler::flushList(g4_arg_cast<gameswf::RenderHandler::Self *>(a1), g4_arg_cast<gameswf::BatchList::Self *>(a2)); }
 } }
 namespace gameswf { namespace SceneNode {
-  template <typename... Args> inline int updateInverseTransform(Args...) { return 0; }
+  gameswf::Player::Self * updateInverseTransform(gameswf::SceneNode::Self *self); template <typename... A> inline gameswf::Player::Self * updateInverseTransform(A&&... a) { return g4_adapt_call(static_cast<gameswf::Player::Self * (*)(gameswf::SceneNode::Self *)>(&updateInverseTransform), a...); } // was a catch-all stub returning 0; real definition exists
 } }
 namespace gameswf { namespace SpriteInstance {
-  template <typename... Args> inline int add_empty_movieclip(Args...) { return 0; }
-  template <typename... Args> inline int createTextField(Args...) { return 0; }
-  template <typename... Args> inline int attachMovie(Args...) { return 0; }
-  template <typename... Args> inline int getGraphics(Args...) { return 0; }
+  int add_empty_movieclip( gameswf::SpriteInstance::Self *self, const char *s, int depth); template <typename... A> inline int add_empty_movieclip(A&&... a) { return g4_adapt_call(static_cast<int (*)(gameswf::SpriteInstance::Self *, const char *, int)>(&add_empty_movieclip), a...); } // was a catch-all stub returning 0; real definition exists
+  int createTextField( gameswf::SpriteInstance::Self *self, const char *s, int depth, int x, int y, int width, int height); template <typename... A> inline int createTextField(A&&... a) { return g4_adapt_call(static_cast<int (*)(gameswf::SpriteInstance::Self *, const char *, int, int, int, int, int)>(&createTextField), a...); } // was a catch-all stub returning 0; real definition exists
+  gameswf::Character::Self * attachMovie( gameswf::SpriteInstance::Self *self, const gameswf::String::Self *a2, char *a3, int a4); template <typename... A> inline gameswf::Character::Self * attachMovie(A&&... a) { return g4_adapt_call(static_cast<gameswf::Character::Self * (*)(gameswf::SpriteInstance::Self *, const gameswf::String::Self *, char *, int)>(&attachMovie), a...); } // was a catch-all stub returning 0; real definition exists
+  int getGraphics(gameswf::SpriteInstance::Self *self); template <typename... A> inline int getGraphics(A&&... a) { return g4_adapt_call(static_cast<int (*)(gameswf::SpriteInstance::Self *)>(&getGraphics), a...); } // was a catch-all stub returning 0; real definition exists
 } }
 namespace gameswf { namespace Stream {
   template <typename A1, typename std::enable_if<!((g4_can_pass<A1, gameswf::Stream::Self *>::value)), int>::type = 0> inline long double readFloat(A1 a1) { return gameswf::Stream::readFloat(g4_arg_cast<gameswf::Stream::Self *>(a1)); }
@@ -91382,14 +91383,18 @@ namespace glf { namespace EventManager {
   template <typename A1, typename A2, typename A3, typename std::enable_if<!((g4_can_pass<A1, uint32_t *>::value && g4_can_pass<A2, int *>::value && g4_can_pass<A3, int>::value)), int>::type = 0> inline int RegisterEventSerializer(A1 a1, A2 a2, A3 a3) { return glf::EventManager::RegisterEventSerializer(g4_arg_cast<uint32_t *>(a1), g4_arg_cast<int *>(a2), g4_arg_cast<int>(a3)); }
 } }
 namespace glf { namespace Fs {
-  template <typename... Args> inline int CopyFile(Args...) { return 0; }
+  // Real implementations live in lib/glf/decompiled/glf_ThreadMgr.cpp. These used to be
+  // catch-all `template <typename... Args> ... { return 0; }` stubs, which silently made
+  // every caller (e.g. glitch's existFile -> OBB mounting) see "file does not exist".
+  int CopyFile(int a1, int a2, int a3, int a4, int a5); template <typename... A> inline int CopyFile(A&&... a) { return g4_adapt_call(static_cast<int (*)(int, int, int, int, int)>(&CopyFile), a...); }
   extern uintptr_t sFs;
-  template <typename... Args> inline int UnmountDrive(Args...) { return 0; }
-  template <typename... Args> inline int GetMountedDrive(Args...) { return 0; }
-  template <typename... Args> inline int RemoveFile(Args...) { return 0; }
-  template <typename... Args> inline int DoesFileExist(Args...) { return 0; }
-  template <typename... Args> inline int SetTempDir(Args...) { return 0; }
-  template <typename... Args> inline int SetCachesDir(Args...) { return 0; }
+  int UnmountDrive(glf::Fs::Self *self, char *a2);
+  int GetMountedDrive(glf::Fs::Self *self, char *a2);
+  bool RemoveFile(glf::Fs::Self *self, char *name);
+  int DoesFileExist(int a1, char *a2, char *a3);
+  int DoesFileExist(glf::Fs::Self *self, char *a2);
+  int SetTempDir(glf::Fs::Self *self, char *a2);
+  int SetCachesDir(glf::Fs::Self *self, char *a2);
   inline int GetInfo() { return glf::Fs::GetInfo(g4_arg_cast<int>(0), g4_arg_cast<const void *>(0), g4_arg_cast<void *>(0)); }
 } }
 namespace glf { namespace NotificationBase { namespace ConstIterator {
@@ -91402,17 +91407,17 @@ namespace glf { namespace TaskGroupScope {
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, glf::TaskGroupScope::Self *>::value && g4_can_pass<A2, glf::task_detail::Group::Self *>::value)), int>::type = 0> inline bool HasPendingTask(A1 a1, A2 a2) { return glf::TaskGroupScope::HasPendingTask(g4_arg_cast<glf::TaskGroupScope::Self *>(a1), g4_arg_cast<glf::task_detail::Group::Self *>(a2)); }
 } }
 namespace glf { namespace Thread {
-  template <typename... Args> inline int Start(Args...) { return 0; }
-  template <typename... Args> inline int RemoveStartExitHandlers(Args...) { return 0; }
-  template <typename... Args> inline int OnStart(Args...) { return 0; }
-  template <typename... Args> inline int AddStartExitHandlers(Args...) { return 0; }
-  template <typename... Args> inline int GetStatus(Args...) { return 0; }
-  template <typename... Args> inline int GetPriorityNorm(Args...) { return 0; }
-  template <typename... Args> inline int Thread(Args...) { return 0; }
-  template <typename... Args> inline int SetName(Args...) { return 0; }
-  template <typename... Args> inline int GetCurrent(Args...) { return 0; }
-  template <typename... Args> inline int GetPriority(Args...) { return 0; }
-  template <typename... Args> inline int SetPriority(Args...) { return 0; }
+  int Start(glf::Thread::Self *self, glf::Runnable::Self *a2, int a3); int Start(glf::Thread::Self *self, int a2); // was a catch-all stub returning 0; real definition exists
+  int RemoveStartExitHandlers(int a1); template <typename... A> inline int RemoveStartExitHandlers(A&&... a) { return g4_adapt_call(static_cast<int (*)(int)>(&RemoveStartExitHandlers), a...); } // was a catch-all stub returning 0; real definition exists
+  uint32_t * OnStart(); template <typename... A> inline uint32_t * OnStart(A&&... a) { return g4_adapt_call(static_cast<uint32_t * (*)()>(&OnStart), a...); } // was a catch-all stub returning 0; real definition exists
+  int AddStartExitHandlers(void (*a1)(void *), void (*a2)(void *), void *a3); template <typename... A> inline int AddStartExitHandlers(A&&... a) { return g4_adapt_call(static_cast<int (*)(void (*)(void *), void (*)(void *), void *)>(&AddStartExitHandlers), a...); } // was a catch-all stub returning 0; real definition exists
+  int GetStatus(glf::Thread::Self *self); template <typename... A> inline int GetStatus(A&&... a) { return g4_adapt_call(static_cast<int (*)(glf::Thread::Self *)>(&GetStatus), a...); } // was a catch-all stub returning 0; real definition exists
+  int GetPriorityNorm(); template <typename... A> inline int GetPriorityNorm(A&&... a) { return g4_adapt_call(static_cast<int (*)()>(&GetPriorityNorm), a...); } // was a catch-all stub returning 0; real definition exists
+  char Thread(glf::Thread::Self *self, unsigned int a2); char Thread(glf::Thread::Self *self); // was a catch-all stub returning 0; real definition exists
+  int SetName(int a1, const void *a2); template <typename... A> inline int SetName(A&&... a) { return g4_adapt_call(static_cast<int (*)(int, const void *)>(&SetName), a...); } // was a catch-all stub returning 0; real definition exists
+  glf::Thread::Self * GetCurrent(); template <typename... A> inline glf::Thread::Self * GetCurrent(A&&... a) { return g4_adapt_call(static_cast<glf::Thread::Self * (*)()>(&GetCurrent), a...); } // was a catch-all stub returning 0; real definition exists
+  int GetPriority(glf::Thread::Self *self); template <typename... A> inline int GetPriority(A&&... a) { return g4_adapt_call(static_cast<int (*)(glf::Thread::Self *)>(&GetPriority), a...); } // was a catch-all stub returning 0; real definition exists
+  int SetPriority(glf::Thread::Self *self, int a2); template <typename... A> inline int SetPriority(A&&... a) { return g4_adapt_call(static_cast<int (*)(glf::Thread::Self *, int)>(&SetPriority), a...); } // was a catch-all stub returning 0; real definition exists
 } }
 namespace glf { namespace ThreadMgr {
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, glf::ThreadMgr::Self *>::value && g4_can_pass<A2, glf::Thread::Self *>::value)), int>::type = 0> inline uint32_t * Add(A1 a1, A2 a2) { return glf::ThreadMgr::Add(g4_arg_cast<glf::ThreadMgr::Self *>(a1), g4_arg_cast<glf::Thread::Self *>(a2)); }
@@ -91746,7 +91751,7 @@ namespace hkxMeshSection {
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, hkxMeshSection::Self *>::value && g4_can_pass<A2, hkArray<hkVector4f::Self, hkContainerHeapAllocator::Self> *>::value)), int>::type = 0> inline hkxVertexBuffer::Self * collectVertexPositions(A1 a1, A2 a2) { return hkxMeshSection::collectVertexPositions(g4_arg_cast<hkxMeshSection::Self *>(a1), g4_arg_cast<hkArray<hkVector4f::Self, hkContainerHeapAllocator::Self> *>(a2)); }
 }
 namespace iap { namespace Command {
-  template <typename... Args> inline int ExecuteAction(Args...) { return 0; }
+  int ExecuteAction(iap::Command::Self *self, char *a2); template <typename... A> inline int ExecuteAction(A&&... a) { return g4_adapt_call(static_cast<int (*)(iap::Command::Self *, char *)>(&ExecuteAction), a...); } // was a catch-all stub returning 0; real definition exists
 } }
 namespace iap { namespace ItemManager {
   template <typename A1> inline iap::ItemManager::Self * getInstance(A1) { return iap::ItemManager::getInstance(); }
@@ -91793,7 +91798,7 @@ namespace vox { namespace block_allocator {
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, vox::block_allocator::Self *>::value && g4_can_pass<A2, unsigned int>::value)), int>::type = 0> inline size_t malloc(A1 a1, A2 a2) { return vox::block_allocator::malloc(g4_arg_cast<vox::block_allocator::Self *>(a1), g4_arg_cast<unsigned int>(a2)); }
 } }
 namespace vox { namespace vs { namespace VSStream {
-  template <typename... Args> inline int ParseHeader(Args...) { return 0; }
+  int ParseHeader(vox::vs::VSStream::Self *self); template <typename... A> inline int ParseHeader(A&&... a) { return g4_adapt_call(static_cast<int (*)(vox::vs::VSStream::Self *)>(&ParseHeader), a...); } // was a catch-all stub returning 0; real definition exists
 } } }
 
 // Batch 11A: OOL decls, missing stubs, SFINAE & arity adapters from build 12
@@ -91994,7 +91999,7 @@ namespace TiXmlAttributeSet {
   template <typename A1> inline TiXmlAttribute::Self * Remove(A1 a1) { return TiXmlAttributeSet::Remove(g4_arg_cast<TiXmlAttributeSet::Self *>(a1), g4_arg_cast<TiXmlAttribute::Self *>(0)); }
 }
 namespace chatv2 { namespace Connectivity { namespace HTTPClient {
-  template <typename... Args> inline int Construct(Args...) { return 0; }
+  int Construct(uint32_t *a1, int a2, int a3, int a4, uint8_t a5); int Construct(int a1, uint32_t *a2, int a3, uint8_t a4); // was a catch-all stub returning 0; real definition exists
 } } }
 namespace chatv2 { namespace Responses { namespace ReportUserResponse {
   // [Step 2: chatv2::Responses::ReportUserResponse::Construct wired at end of header]
@@ -98299,8 +98304,8 @@ namespace gameswf { namespace Character {
   template <typename A1> inline gameswf::Character::Self * getHandle(A1 a1) { return gameswf::Character::getHandle(g4_arg_cast<gameswf::Character::Self *>(a1), g4_arg_cast<gameswf::Character::Self *>(0)); }
 } }
 namespace gameswf { namespace CharacterHandle {
-  template <typename... Args> inline int getWorldBound(Args...) { return 0; }
-  template <typename... Args> inline int getBound(Args...) { return 0; }
+  gameswf::Rect::Self * getWorldBound( gameswf::CharacterHandle::Self *self, gameswf::Rect::Self *a2); template <typename... A> inline gameswf::Rect::Self * getWorldBound(A&&... a) { return g4_adapt_call(static_cast<gameswf::Rect::Self * (*)(gameswf::CharacterHandle::Self *, gameswf::Rect::Self *)>(&getWorldBound), a...); } // was a catch-all stub returning 0; real definition exists
+  gameswf::Character::Self * getBound( gameswf::CharacterHandle::Self *self, gameswf::Rect::Self *a2); template <typename... A> inline gameswf::Character::Self * getBound(A&&... a) { return g4_adapt_call(static_cast<gameswf::Character::Self * (*)(gameswf::CharacterHandle::Self *, gameswf::Rect::Self *)>(&getBound), a...); } // was a catch-all stub returning 0; real definition exists
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, gameswf::CharacterHandle::Self *>::value && g4_can_pass<A2, gameswf::CharacterHandle::Self *>::value)), int>::type = 0> inline gameswf::ASDisplayObjectContainer::Self * addChild(A1 a1, A2 a2) { return gameswf::CharacterHandle::addChild(g4_arg_cast<gameswf::CharacterHandle::Self *>(a1), g4_arg_cast<gameswf::CharacterHandle::Self *>(a2)); }
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, gameswf::CharacterHandle::Self *>::value && g4_can_pass<A2, gameswf::Self **>::value)), int>::type = 0> inline int getChildren(A1 a1, A2 a2) { return gameswf::CharacterHandle::getChildren(g4_arg_cast<gameswf::CharacterHandle::Self *>(a1), g4_arg_cast<gameswf::Self **>(a2)); }
   template <typename A1, typename A2> inline gameswf::CharacterHandle::Self * getMember(A1 a1, A2 a2) { return gameswf::CharacterHandle::getMember(g4_arg_cast<gameswf::CharacterHandle::Self *>(a1), g4_arg_cast<const gameswf::String::Self *>(a2), g4_arg_cast<gameswf::String::Self *>(0)); }
@@ -98316,7 +98321,7 @@ namespace gameswf { namespace EditTextCharacter {
   template <typename A1, typename A2, typename A3, typename std::enable_if<!((g4_can_pass<A1, long double>::value && g4_can_pass<A2, gameswf::EditTextCharacter::Self *>::value && g4_can_pass<A3, const gameswf::ASKeyboardEvent::Self *>::value)), int>::type = 0> inline void onKeyboardEvent(A1 a1, A2 a2, A3 a3) { gameswf::EditTextCharacter::onKeyboardEvent(g4_arg_cast<long double>(a1), g4_arg_cast<gameswf::EditTextCharacter::Self *>(a2), g4_arg_cast<const gameswf::ASKeyboardEvent::Self *>(a3)); }
 } }
 namespace gameswf { namespace FlashFX {
-  template <typename... Args> inline int onClassInitialized(Args...) { return 0; }
+  void onClassInitialized(gameswf::FlashFX::Self *self, gameswf::ASClass::Self *a2); template <typename... A> inline void onClassInitialized(A&&... a) { return g4_adapt_call(static_cast<void (*)(gameswf::FlashFX::Self *, gameswf::ASClass::Self *)>(&onClassInitialized), a...); } // was a catch-all stub returning 0; real definition exists
 } }
 namespace gameswf { namespace MeshSet {
   template <typename A1, typename std::enable_if<!((g4_can_pass<A1, gameswf::MeshSet::Self *>::value)), int>::type = 0> inline char * new_layer(A1 a1) { return gameswf::MeshSet::new_layer(g4_arg_cast<gameswf::MeshSet::Self *>(a1)); }
@@ -98335,7 +98340,7 @@ namespace gameswf { namespace RenderFX {
   template <typename A1, typename A2, typename std::enable_if<!((g4_can_pass<A1, gameswf::RenderFX::Self *>::value && g4_can_pass<A2, bool>::value)), int>::type = 0> inline int setTextBufferingEnabled(A1 a1, A2 a2) { return gameswf::RenderFX::setTextBufferingEnabled(g4_arg_cast<gameswf::RenderFX::Self *>(a1), g4_arg_cast<bool>(a2)); }
 } }
 namespace gameswf { namespace Root {
-  template <typename... Args> inline int setStageSize(Args...) { return 0; }
+  int setStageSize(gameswf::Root::Self *self, int a2, int a3); template <typename... A> inline int setStageSize(A&&... a) { return g4_adapt_call(static_cast<int (*)(gameswf::Root::Self *, int, int)>(&setStageSize), a...); } // was a catch-all stub returning 0; real definition exists
   template <typename A1, typename A2, typename A3, typename A4, typename A5, typename A6, typename std::enable_if<!((g4_can_pass<A1, gameswf::Root::Self *>::value && g4_can_pass<A2, int>::value && g4_can_pass<A3, int>::value && g4_can_pass<A4, int>::value && g4_can_pass<A5, int>::value && g4_can_pass<A6, int>::value)), int>::type = 0> inline int setDisplayBounds(A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6) { return gameswf::Root::setDisplayBounds(g4_arg_cast<gameswf::Root::Self *>(a1), g4_arg_cast<int>(a2), g4_arg_cast<int>(a3), g4_arg_cast<int>(a4), g4_arg_cast<int>(a5), g4_arg_cast<int>(a6)); }
   template <typename A1, typename A2, typename A3, typename A4, typename A5, typename A6, typename std::enable_if<!((g4_can_pass<A1, gameswf::Root::Self *>::value && g4_can_pass<A2, int>::value && g4_can_pass<A3, unsigned int>::value && g4_can_pass<A4, char *>::value && g4_can_pass<A5, int>::value && g4_can_pass<A6, int>::value)), int>::type = 0> inline int setDisplayViewport(A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6) { return gameswf::Root::setDisplayViewport(g4_arg_cast<gameswf::Root::Self *>(a1), g4_arg_cast<int>(a2), g4_arg_cast<unsigned int>(a3), g4_arg_cast<char *>(a4), g4_arg_cast<int>(a5), g4_arg_cast<int>(a6)); }
 } }
@@ -98399,8 +98404,8 @@ namespace glf { namespace FileStreamImpl {
   template <typename A1, typename A2, typename A3, typename std::enable_if<!((g4_can_pass<A1, glf::FileStreamImpl::Self *>::value && g4_can_pass<A2, const void *>::value && g4_can_pass<A3, unsigned int>::value)), int>::type = 0> inline int Write(A1 a1, A2 a2, A3 a3) { return glf::FileStreamImpl::Write(g4_arg_cast<glf::FileStreamImpl::Self *>(a1), g4_arg_cast<const void *>(a2), g4_arg_cast<unsigned int>(a3)); }
 } }
 namespace glf { namespace Fs {
-  template <typename... Args> inline int GetHomeDir(Args...) { return 0; }
-  template <typename... Args> inline int SetDir(Args...) { return 0; }
+  int GetHomeDir(glf::Fs::Self *self); template <typename... A> inline int GetHomeDir(A&&... a) { return g4_adapt_call(static_cast<int (*)(glf::Fs::Self *)>(&GetHomeDir), a...); } // was a catch-all stub returning 0; real definition exists
+  int SetDir(int a1, int16_t a2, char *s); template <typename... A> inline int SetDir(A&&... a) { return g4_adapt_call(static_cast<int (*)(int, int16_t, char *)>(&SetDir), a...); } // was a catch-all stub returning 0; real definition exists
 } }
 namespace glf { namespace InputManager {
   template <typename A1, typename A2, typename A3, typename A4, typename A5> inline void EmulateGamepadWin32(A1, A2, A3, A4, A5) { glf::InputManager::EmulateGamepadWin32(); }
@@ -98439,8 +98444,8 @@ namespace glf { namespace TaskThreadImpl {
   template <typename A1, typename std::enable_if<!((g4_can_pass<A1, pthread_t *>::value)), int>::type = 0> inline void Destroy(A1 a1) { glf::TaskThreadImpl::Destroy(g4_arg_cast<pthread_t *>(a1)); }
 } }
 namespace glf { namespace Thread {
-  template <typename... Args> inline int SetMinStackSize(Args...) { return 0; }
-  template <typename... Args> inline int SetCoreAffinity(Args...) { return 0; }
+  uint32_t * SetMinStackSize(int a1); template <typename... A> inline uint32_t * SetMinStackSize(A&&... a) { return g4_adapt_call(static_cast<uint32_t * (*)(int)>(&SetMinStackSize), a...); } // was a catch-all stub returning 0; real definition exists
+  int SetCoreAffinity(glf::Thread::Self *self, int a2); template <typename... A> inline int SetCoreAffinity(A&&... a) { return g4_adapt_call(static_cast<int (*)(glf::Thread::Self *, int)>(&SetCoreAffinity), a...); } // was a catch-all stub returning 0; real definition exists
 } }
 namespace glf { namespace TlsNode {
   template <typename A1, typename A2, typename A3, typename A4, typename std::enable_if<!((g4_can_pass<A1, glf::TlsNode::Self *>::value && g4_can_pass<A2, void (*)(void *)>::value && g4_can_pass<A3, void (*)(void *)>::value && g4_can_pass<A4, unsigned int>::value)), int>::type = 0> inline glf::TlsNode::Self * Construct(A1 a1, A2 a2, A3 a3, A4 a4) { return glf::TlsNode::Construct(g4_arg_cast<glf::TlsNode::Self *>(a1), g4_arg_cast<void (*)(void *)>(a2), g4_arg_cast<void (*)(void *)>(a3), g4_arg_cast<unsigned int>(a4)); }
@@ -101467,7 +101472,7 @@ namespace hkpConvexVerticesShape { namespace BuildConfig {
 
 // === Batch 27 helpers ===
 namespace g4_std_compat {
-  template <typename... Args> inline int introsort_loop_cd63dd(Args...) { return 0; }
+  void introsort_loop_cd63dd(unsigned int *a1, unsigned int *a2, int a3); template <typename... A> inline void introsort_loop_cd63dd(A&&... a) { return g4_adapt_call(static_cast<void (*)(unsigned int *, unsigned int *, int)>(&introsort_loop_cd63dd), a...); } // was a catch-all stub returning 0; real definition exists
 }
 // deduped ASN1_d2i_*
 

@@ -79,6 +79,8 @@ struct FT_Bitmap_ {
 #include <stack>
 #include <stdexcept>
 #include <string>
+#include <tuple>
+#include <utility>
 #include <type_traits>
 #include <utility>
 #include <vector>
@@ -866,6 +868,21 @@ struct g4_can_pass {
     static constexpr bool value = std::is_convertible<From, To>::value;
 };
 
+// Call a real prototype with mismatched decompiler arguments, following x86 cdecl
+// semantics: each argument is converted with g4_arg_cast, missing trailing arguments
+// are passed as zero, and extra trailing arguments are dropped.
+template <size_t I, typename T, typename Tup, typename std::enable_if<(I < std::tuple_size<Tup>::value), int>::type = 0>
+inline T g4_adapt_arg(Tup &t) { return g4_arg_cast<T>(std::get<I>(t)); }
+template <size_t I, typename T, typename Tup, typename std::enable_if<!(I < std::tuple_size<Tup>::value), int>::type = 0>
+inline T g4_adapt_arg(Tup &) { return T(); }
+template <typename R, typename... P, typename Tup, size_t... I>
+inline R g4_adapt_call_impl(R (*f)(P...), Tup &t, std::index_sequence<I...>) { return f(g4_adapt_arg<I, P>(t)...); }
+template <typename R, typename... P, typename... A>
+inline R g4_adapt_call(R (*f)(P...), A&... a) {
+    auto t = std::forward_as_tuple(a...);
+    return g4_adapt_call_impl(f, t, std::index_sequence_for<P...>{});
+}
+
 inline void *opNew(size_t size, const std::nothrow_t *) noexcept { return ::operator new(size, std::nothrow); }
 inline void opDelete(void *ptr, const std::nothrow_t *) noexcept { ::operator delete(ptr, std::nothrow); }
 inline void *operator new[](std::size_t size, const std::nothrow_t *) noexcept { return ::operator new[](size, std::nothrow); }
@@ -1023,6 +1040,7 @@ int g4_compat_string_construct_from_cstr(void *dst, const char *s);
 int g4_compat_string_construct_copy(void *dst, void *src);
 int g4_compat_string_rep_destroy(void *rep);
 int g4_compat_string_assign(void *dst, const void *src, size_t n);
+int g4_compat_sa_string_substr(void *dst, const void *src, size_t pos, size_t n);
 int g4_compat_string_assign_str(void *dst, void *src);
 int g4_compat_string_compare_cstr(const void *a1, const char *s);
 int g4_compat_string_compare_str(const void *a1, const void *a2);
@@ -1075,7 +1093,17 @@ template <typename T, typename A2> inline T basic_string_assign(T dst, A2 src) {
     return dst;
 }
 template <typename T, typename... Args> inline T basic_string_assign(T dst, Args...) { return dst; }
-template <typename T, typename... Args> inline T basic_string_substr(T dst, Args...) { return dst; }
+// std::basic_string<char, ..., glitch::core::SAllocator<char,0>>::substr (x86 0xe955d0):
+// GNU COW layout, dst receives a new string. The x86 call passes (dst, src, pos, n);
+// Hex-Rays dropped n at some call sites, in which case npos is used.
+template <typename T, typename S, typename P, typename N>
+inline T basic_string_substr(T dst, S src, P pos, N n) {
+    ::g4_compat_sa_string_substr(g4_arg_cast<void *>(dst), g4_arg_cast<const void *>(src),
+                                 static_cast<size_t>(g4_arg_cast<uintptr_t>(pos)), static_cast<size_t>(g4_arg_cast<uintptr_t>(n)));
+    return dst;
+}
+template <typename T, typename S, typename P>
+inline T basic_string_substr(T dst, S src, P pos) { return basic_string_substr(dst, src, pos, static_cast<size_t>(-1)); }
 template <typename... Args> inline int op_assign(Args...) { return 0; }
 template <typename... Args> inline int list_sort(Args...) { return 0; }
 template <typename... Args> inline void **pair_ctor(Args...) { return nullptr; }

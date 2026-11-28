@@ -737,7 +737,7 @@ char * gameswf::Character::attachSceneNode(int a1, char *a2, int a3)
   {
     v22 = *(uint32_t *)(a1 + 16);
     v3 = opNew(0x248u);
-    gameswf::SceneNode::Construct(v3, v22, a2, a3);
+    gameswf::SceneNode::Construct(g4_arg_cast<gameswf::SceneNode::Self *>(v3), g4_arg_cast<gameswf::Player::Self *>(v22), g4_arg_cast<glitch::scene::ISceneNode::Self *>(a2), g4_arg_cast<const gameswf::SceneNodeParameters::Self *>(a3));
     v19 = *(uint32_t *)a2;
     v25 = (uint32_t *)v3;
     v20 = *(void (**)(char *, uint32_t **))(v19 + 104);

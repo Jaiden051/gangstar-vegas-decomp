@@ -65343,7 +65343,7 @@ int sub_BC2A60(int a1)
   if ( (uint8_t)glf::Thread::IsMain(Current) == 0 )
   {
     g4_std::string::construct_from_cstr((int)(uintptr_t)(&v7) + 1, "physics update", (int)(uintptr_t)(&v7));
-    v4 = glf::Thread::GetCurrent(v6);
+    v4 = (int)(uintptr_t)glf::Thread::GetCurrent(v6);
     glf::Thread::SetName(v4, (char *)&v7 + 1);
     g4_std::string::Destroy((char *)&v7 + 1);
   }

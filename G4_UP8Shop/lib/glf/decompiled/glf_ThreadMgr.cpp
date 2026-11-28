@@ -207,7 +207,7 @@ glf::ThreadMgr::Self * glf::ThreadMgr::Construct(glf::ThreadMgr::Self *self)
   *((uint32_t *)self + 1) = 0;
   *((uint32_t *)self + 2) = 0;
   glf::SpinLock::Construct((glf::ThreadMgr::Self *)((char *)self + 12));
-  glf::Thread::Thread((glf::ThreadMgr::Self *)((char *)self + 24));
+  glf::Thread::Thread((glf::Thread::Self *)((char *)self + 24));
   glf::SpinLock::Construct((glf::ThreadMgr::Self *)((char *)self + 316));
   *((uint32_t *)self + 4) = 0;
   *((uint32_t *)self + 5) = 0;
@@ -959,7 +959,7 @@ int glf::Fs::CopyFile(int a1, int a2, int a3, int a4, int a5)
 int glf::Fs::DoesFileExist(int a1, char *a2, char *a3)
 {
   glf::Self *ephem = (glf::Self *)glf::allocateEphemeralAllocation((glf::Self *)(uintptr_t)0x800u);
-  int16_t v4 = (int16_t)glf::Fs::ResolvePath(a1, a2, (unsigned int)(uintptr_t)a3, ephem, (char *)(uintptr_t)0x800u);
+  int v4 = glf::Fs::ResolvePath(a1, a2, (unsigned int)(uintptr_t)a3, ephem, (char *)(uintptr_t)0x800u);
   glf::ArchiveManager::Self *v5 = (glf::ArchiveManager::Self *)glf::ArchiveManager::s_instance[0];
   if ( v5 == nullptr )
   {

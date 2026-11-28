@@ -222,7 +222,8 @@ int gameswf::SpriteInstance::clearDisplayObjects(gameswf::SpriteInstance::Self *
 // ----------------------------------------------------------------------------
 int gameswf::SpriteInstance::removeDisplayObject(gameswf::SpriteInstance::Self *self, int a2, int a3)
 {
-  return gameswf::DisplayList::removeDisplayObject((gameswf::SpriteInstance::Self *)((char *)self + 212), a2, a3);
+  gameswf::DisplayList::removeDisplayObject((gameswf::DisplayList::Self *)((char *)self + 212), a2, a3);
+  return 0; // callee is void
 }
 
 // ----------------------------------------------------------------------------

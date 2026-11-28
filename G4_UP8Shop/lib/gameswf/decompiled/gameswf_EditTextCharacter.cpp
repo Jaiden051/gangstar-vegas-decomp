@@ -31,7 +31,7 @@ bool gameswf::EditTextCharacter::hitTest(gameswf::EditTextCharacter::Self *self,
 int gameswf::EditTextCharacter::getBoundingBox(gameswf::ASDisplayObjectContainer::Self *a1, int a2, int a3)
 {
   gameswf::ASDisplayObjectContainer::getBoundingBox(a1, a2, a3);
-  return gameswf::Character::getBoundingBox(a1, a2, a3);
+  return (int)(uintptr_t)gameswf::Character::getBoundingBox(a1, a2, a3);
 }
 
 // ----------------------------------------------------------------------------
