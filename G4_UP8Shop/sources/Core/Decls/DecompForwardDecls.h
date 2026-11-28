@@ -105921,7 +105921,7 @@ namespace glitch { namespace collada { namespace CMorphingMesh {
 namespace glitch { namespace collada { namespace CResFileManager {
   glitch::collada::CResFileManager::Self * CResFileManager(glitch::collada::CResFileManager::Self * a1, glitch::IDevice::Self * a2);
   template <typename A1> inline auto Construct(A1 a1) { return ::glitch::collada::CResFileManager::CResFileManager(g4_arg_cast<glitch::collada::CResFileManager::Self *>(a1), 0); }
-  template <typename A1, typename A2, typename... ExtraRest> inline auto Construct(A1 a1, A2 a2, ExtraRest...) { return ::glitch::collada::CResFileManager::CResFileManager(g4_arg_cast<glitch::collada::CResFileManager::Self *>(a1), g4_arg_cast<int>(a2)); }
+  template <typename A1, typename A2, typename... ExtraRest> inline auto Construct(A1 a1, A2 a2, ExtraRest...) { return ::glitch::collada::CResFileManager::CResFileManager(g4_arg_cast<glitch::collada::CResFileManager::Self *>(a1), g4_arg_cast<glitch::IDevice::Self *>(a2)); }
 } } }
 namespace glitch { namespace collada { namespace CResFileManager {
   int unloadAll(glitch::collada::CResFileManager::Self * a1);

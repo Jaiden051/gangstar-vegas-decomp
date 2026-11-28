@@ -25473,6 +25473,7 @@ static inline void g4_glitch_tex_release(uint32_t tex)
   }
 }
 
+namespace gameswf { namespace ASModel3D { uint32_t * createScene(gameswf::ASModel3D::Self *self); } }
 uint32_t * gameswf::ASModel3D::createScene(gameswf::ASModel3D::Self *self)
 {
   uint32_t drv = *(uint32_t *)(uintptr_t)(*(uint32_t *)(uintptr_t)(*((uint32_t *)self + 4) + 12) + 44);
@@ -25579,6 +25580,7 @@ uint32_t * gameswf::ASModel3D::createScene(gameswf::ASModel3D::Self *self)
   return res;
 }
 
+namespace gameswf { namespace ASTransform { gameswf::ASTransform::Self * Construct( gameswf::ASTransform::Self *self, gameswf::Player::Self *a2, gameswf::Character::Self *a3); } }
 gameswf::ASTransform::Self * gameswf::ASTransform::Construct(
     gameswf::ASTransform::Self *self,
     gameswf::Player::Self *a2,
@@ -25605,6 +25607,7 @@ gameswf::ASTransform::Self * gameswf::ASTransform::Construct(
   return self;
 }
 
+namespace gameswf { namespace Character { gameswf::Character::Self * getBoundingBox( gameswf::Character::Self *self, const float *a2, float *a3); } }
 gameswf::Character::Self * gameswf::Character::getBoundingBox(
     gameswf::Character::Self *self,
     const float *a2,
@@ -25637,6 +25640,7 @@ gameswf::Character::Self * gameswf::Character::getBoundingBox(
   return self;
 }
 
+namespace gameswf { namespace Character { bool hitTestObject(gameswf::Character::Self *self, gameswf::Character::Self *a2); } }
 bool gameswf::Character::hitTestObject(gameswf::Character::Self *self, gameswf::Character::Self *a2)
 {
   float r1[4] = {};
@@ -25660,6 +25664,7 @@ bool gameswf::Character::hitTestObject(gameswf::Character::Self *self, gameswf::
   return (r2[2] <= r1[3] && r1[2] <= r2[3] && r2[0] <= r1[1] && r2[1] >= r1[0]);
 }
 
+namespace gameswf { namespace CharacterHandle { gameswf::Character::Self * getBound( gameswf::CharacterHandle::Self *self, gameswf::Rect::Self *a2); } }
 gameswf::Character::Self * gameswf::CharacterHandle::getBound(
     gameswf::CharacterHandle::Self *self,
     gameswf::Rect::Self *a2)
@@ -25674,6 +25679,7 @@ gameswf::Character::Self * gameswf::CharacterHandle::getBound(
   return nullptr;
 }
 
+namespace gameswf { namespace CharacterHandle { gameswf::Rect::Self * getWorldBound( gameswf::CharacterHandle::Self *self, gameswf::Rect::Self *a2); } }
 gameswf::Rect::Self * gameswf::CharacterHandle::getWorldBound(
     gameswf::CharacterHandle::Self *self,
     gameswf::Rect::Self *a2)
@@ -25701,6 +25707,7 @@ gameswf::Rect::Self * gameswf::CharacterHandle::getWorldBound(
   return nullptr;
 }
 
+namespace gameswf { namespace DisplayList { int clear(gameswf::DisplayList::Self *self); } }
 int gameswf::DisplayList::clear(gameswf::DisplayList::Self *self)
 {
   int cnt;
@@ -25709,6 +25716,7 @@ int gameswf::DisplayList::clear(gameswf::DisplayList::Self *self)
   return cnt;
 }
 
+namespace gameswf { namespace DisplayList { int clearAddedByPlayList(gameswf::DisplayList::Self *self); } }
 int gameswf::DisplayList::clearAddedByPlayList(gameswf::DisplayList::Self *self)
 {
   int res = 0;
@@ -25721,6 +25729,7 @@ int gameswf::DisplayList::clearAddedByPlayList(gameswf::DisplayList::Self *self)
   return res;
 }
 
+namespace gameswf { namespace DisplayList { int clearUnaffected(gameswf::DisplayList::Self *self, gameswf::array<int> *a2); } }
 int gameswf::DisplayList::clearUnaffected(gameswf::DisplayList::Self *self, gameswf::array<int> *a2)
 {
   int idx = 0;
@@ -25754,6 +25763,7 @@ int gameswf::DisplayList::clearUnaffected(gameswf::DisplayList::Self *self, game
   return count;
 }
 
+namespace gameswf { namespace DisplayList { int display(gameswf::DisplayList::Self *self, bool a3, bool a4); } }
 int gameswf::DisplayList::display(gameswf::DisplayList::Self *self, bool a3, bool a4)
 {
   if ( *((int *)self + 1) <= 0 )
@@ -25862,6 +25872,7 @@ int gameswf::DisplayList::display(gameswf::DisplayList::Self *self, bool a3, boo
   return (int)(uintptr_t)self;
 }
 
+namespace gameswf { namespace DisplayList { int removeDisplayObject(gameswf::DisplayList::Self *self, gameswf::Character::Self *a2); } }
 int gameswf::DisplayList::removeDisplayObject(gameswf::DisplayList::Self *self, gameswf::Character::Self *a2)
 {
   int idx = gameswf::DisplayList::getIndexOf(self, a2);
@@ -25870,6 +25881,7 @@ int gameswf::DisplayList::removeDisplayObject(gameswf::DisplayList::Self *self, 
   return idx;
 }
 
+namespace gameswf { namespace DisplayList { void removeDisplayObject(gameswf::DisplayList::Self *self, int depth, int id); } }
 void gameswf::DisplayList::removeDisplayObject(gameswf::DisplayList::Self *self, int depth, int id)
 {
   int cnt = *((int *)self + 1);
@@ -25929,6 +25941,7 @@ static void g4_gameswf_override_static(
     gameswf::free_internal(*(gameswf::Self **)(s + 12));
 }
 
+namespace gameswf { namespace FlashFX { void onClassInitialized(gameswf::FlashFX::Self *self, gameswf::ASClass::Self *a2); } }
 void gameswf::FlashFX::onClassInitialized(gameswf::FlashFX::Self *self, gameswf::ASClass::Self *a2)
 {
   (void)self;
@@ -26011,6 +26024,7 @@ void gameswf::FlashFX::onClassInitialized(gameswf::FlashFX::Self *self, gameswf:
   }
 }
 
+namespace gameswf { namespace LineStyle { int read( gameswf::LineStyle::Self *self, gameswf::Stream::Self *a2, int a3, gameswf::MovieDefinitionSub::Self *a4); } }
 int gameswf::LineStyle::read(
     gameswf::LineStyle::Self *self,
     gameswf::Stream::Self *a2,
@@ -26042,6 +26056,7 @@ int gameswf::LineStyle::read(
   return gameswf::Color::read((gameswf::Color::Self *)((char *)self + 8), a2, 83);
 }
 
+namespace gameswf { namespace Root { int setStageSize(gameswf::Root::Self *self, int a2, int a3); } }
 int gameswf::Root::setStageSize(gameswf::Root::Self *self, int a2, int a3)
 {
   *(float *)(uintptr_t)(*((uint32_t *)self + 3) + 164) = (float)a2;
@@ -26052,6 +26067,8 @@ int gameswf::Root::setStageSize(gameswf::Root::Self *self, int a2, int a3)
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0u, 0.0f, 0.0f, 0u, 0.0f, 0.0f, 0, 0, 0u, 0u, 0u, 0u, 0u, 0u);
 }
+
+namespace gameswf { namespace SceneNodeParameters { struct Self; } }
 
 static void g4_gameswf_scenenode_init_body(
     gameswf::SceneNode::Self *self,
@@ -26193,6 +26210,7 @@ static void g4_gameswf_scenenode_init_body(
   g4_glitch_tex_release(newTex);
 }
 
+namespace gameswf { namespace SceneNode { void Construct( gameswf::SceneNode::Self *self, gameswf::Player::Self *a2, glitch::scene::ISceneNode::Self *a3, const gameswf::SceneNodeParameters::Self *a4); } }
 void gameswf::SceneNode::Construct(
     gameswf::SceneNode::Self *self,
     gameswf::Player::Self *a2,
@@ -26213,6 +26231,7 @@ void gameswf::SceneNode::Construct(
   g4_gameswf_scenenode_init_body(self, a2, a3, a4);
 }
 
+namespace gameswf { namespace SceneNode { void Construct( gameswf::SceneNode::Self *self, int *vtt, gameswf::Player::Self *a3, glitch::scene::ISceneNode::Self *a4, const gameswf::SceneNodeParameters::Self *a5); } }
 void gameswf::SceneNode::Construct(
     gameswf::SceneNode::Self *self,
     int *vtt,
@@ -26232,6 +26251,7 @@ void gameswf::SceneNode::Construct(
   g4_gameswf_scenenode_init_body(self, a3, a4, a5);
 }
 
+namespace gameswf { namespace SceneNode { gameswf::Player::Self * updateInverseTransform(gameswf::SceneNode::Self *self); } }
 gameswf::Player::Self * gameswf::SceneNode::updateInverseTransform(gameswf::SceneNode::Self *self)
 {
   int root = gameswf::Player::getRoot(*((gameswf::Player::Self **)self + 130));
@@ -26298,6 +26318,7 @@ gameswf::Player::Self * gameswf::SceneNode::updateInverseTransform(gameswf::Scen
   return (gameswf::Player::Self *)(uintptr_t)mat[15];
 }
 
+namespace gameswf { namespace SpriteInstance { int add_empty_movieclip( gameswf::SpriteInstance::Self *self, const char *s, int depth); } }
 int gameswf::SpriteInstance::add_empty_movieclip(
     gameswf::SpriteInstance::Self *self,
     const char *s,
@@ -26347,6 +26368,7 @@ int gameswf::SpriteInstance::add_empty_movieclip(
   return (int)(uintptr_t)sp;
 }
 
+namespace gameswf { namespace SpriteInstance { gameswf::Character::Self * attachMovie( gameswf::SpriteInstance::Self *self, const gameswf::String::Self *a2, char *a3, int a4); } }
 gameswf::Character::Self * gameswf::SpriteInstance::attachMovie(
     gameswf::SpriteInstance::Self *self,
     const gameswf::String::Self *a2,
@@ -26383,6 +26405,7 @@ gameswf::Character::Self * gameswf::SpriteInstance::attachMovie(
   return (gameswf::Character::Self *)sp;
 }
 
+namespace gameswf { namespace SpriteInstance { int createTextField( gameswf::SpriteInstance::Self *self, const char *s, int depth, int x, int y, int width, int height); } }
 int gameswf::SpriteInstance::createTextField(
     gameswf::SpriteInstance::Self *self,
     const char *s,
@@ -26474,6 +26497,7 @@ int gameswf::SpriteInstance::createTextField(
   return ch;
 }
 
+namespace gameswf { namespace SpriteInstance { int getGraphics(gameswf::SpriteInstance::Self *self); } }
 int gameswf::SpriteInstance::getGraphics(gameswf::SpriteInstance::Self *self)
 {
   int res = *((int *)self + 70);

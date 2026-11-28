@@ -4805,7 +4805,7 @@ int sub_C170B0(int a1)
     v9 = (int *)sub_5B9810((int)(uintptr_t)(v3));
     while ( 1 )
     {
-      result = glitch::scene::ISceneNode::getSceneNodeFromUID((glitch::scene::ISceneNode::Self *)&v10, v2);
+      result = (int)(uintptr_t)glitch::scene::ISceneNode::getSceneNodeFromUID((glitch::scene::ISceneNode::Self *)&v10, v2); // G4_PTR32: pointer narrowed to int (32-bit only)
       v4 = v10;
       if ( v10 == nullptr )
         break;

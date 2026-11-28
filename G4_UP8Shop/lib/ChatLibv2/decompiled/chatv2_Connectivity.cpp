@@ -9158,6 +9158,7 @@ void chatv2::Connectivity::SSLSocket::Destroy_ea12858a0(int a1, int a2, void **s
 // Function: chatv2::Connectivity::HTTPClient::Construct  (binary VA: 0x1274b00)
 // Original: chatv2::Connectivity::HTTPClient::HTTPClient(std::string const&, boost::asio::io_service &, boost::asio::ssl::context &, bool)
 // ----------------------------------------------------------------------------
+namespace chatv2 { namespace Connectivity { namespace HTTPClient { int Construct(uint32_t *a1, int a2, int a3, int a4, uint8_t a5); } } }
 int chatv2::Connectivity::HTTPClient::Construct(uint32_t *a1, int a2, int a3, int a4, uint8_t a5)
 {
   volatile int32_t *t_a5 = nullptr;
@@ -9180,6 +9181,7 @@ int chatv2::Connectivity::HTTPClient::Construct(uint32_t *a1, int a2, int a3, in
 // Function: chatv2::Connectivity::HTTPClient::Construct  (binary VA: 0x1274b80)
 // Original: chatv2::Connectivity::HTTPClient::HTTPClient(std::string const&, boost::asio::io_service &, bool)
 // ----------------------------------------------------------------------------
+namespace chatv2 { namespace Connectivity { namespace HTTPClient { int Construct(int a1, uint32_t *a2, int a3, uint8_t a4); } } }
 int chatv2::Connectivity::HTTPClient::Construct(int a1, uint32_t *a2, int a3, uint8_t a4)
 {
   volatile int32_t *t_a5 = nullptr;

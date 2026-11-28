@@ -26146,7 +26146,7 @@ int glitch::collada::SEffectList::add(glitch::collada::SEffectList *self, char *
   }
   if ( v70 != nullptr )
   {
-    Effect = glitch::collada::CColladaDatabase::getEffect((glitch::collada::CColladaDatabase::Self *)&v73, v70);
+    Effect = (int)(uintptr_t)glitch::collada::CColladaDatabase::getEffect((glitch::collada::CColladaDatabase::Self *)&v73, v70); // G4_PTR32: pointer narrowed to int (32-bit only)
     if ( Effect != 0 )
     {
       v81 = v73;

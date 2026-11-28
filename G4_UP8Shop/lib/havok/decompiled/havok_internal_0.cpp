@@ -6384,7 +6384,7 @@ void nullsub_622()
 // ----------------------------------------------------------------------------
 int sub_15B6F00(hkcdPlanarGeometryPrimitives::Plane::Self *a1, int a2)
 {
-  return hkcdPlanarGeometryPrimitives::Plane::Construct(a1, a2);
+  return (int)(uintptr_t)hkcdPlanarGeometryPrimitives::Plane::Construct(a1, a2); // G4_PTR32: pointer narrowed to int (32-bit only)
 }
 
 // ----------------------------------------------------------------------------

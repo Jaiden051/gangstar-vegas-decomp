@@ -19413,6 +19413,7 @@ static int g4_glf_fs_SetDir_impl(int a1, int16_t a2, char *s)
 
 // Exact FD:83378-83385 wrappers calling recovered glf::Fs implementations
 int glf::Fs::GetDir(int a1, void *a2) { return g4_glf_fs_GetDir_impl(a1, (int16_t)(intptr_t)a2); }
+namespace glf { namespace Fs { int SetDir(int a1, int16_t a2, char *s); } }
 int glf::Fs::SetDir(int a1, int16_t a2, char *s) { return g4_glf_fs_SetDir_impl(a1, a2, s); }
 int glf::Fs::SetDataDir(int a1, const void *a2) { return g4_glf_fs_SetDir_impl(a1, 0, (char *)a2); }
 int glf::Fs::SetHomeDir(int a1, const void *a2) { return g4_glf_fs_SetDir_impl(a1, 4096, (char *)a2); }

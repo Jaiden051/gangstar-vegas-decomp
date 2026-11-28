@@ -1090,6 +1090,7 @@ char * vox::vs::VSStream::GetVersion(vox::vs::VSStream::Self *self)
 // Function: vox::vs::VSStream::ParseHeader  (binary VA: 0xfce3b0)
 // Original: vox::vs::VSStream::ParseHeader
 // ----------------------------------------------------------------------------
+namespace vox { namespace vs { namespace VSStream { int ParseHeader(vox::vs::VSStream::Self *self); } } }
 int vox::vs::VSStream::ParseHeader(vox::vs::VSStream::Self *self)
 {
   pthread_t tid = vox::VoxThread::GetCurThreadId();
