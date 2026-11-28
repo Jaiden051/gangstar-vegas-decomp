@@ -38037,7 +38037,9 @@ LABEL_64:
   v35 = *(uint32_t *)(v53 + 40);
   v86 = v53;
   v85 = v35;
-  glitch::io::CZipReader::openFile((glitch::io::CZipReader::Self *)((char *)&v68 + 4), v75);
+  // x86 0x88d139 calls CZipReader::openFile(const char *) with glf::core::ARCHIVE_FILE_LISTING_NAME;
+  // Hex-Rays bound it to the index overload and dropped the name, so entry 0 (a sound file) was parsed.
+  glitch::io::CZipReader::openFile((glitch::io::CZipReader::Self *)((char *)&v68 + 4), (glitch::io::CZipReader::Self *)v75, (char *)glf::core::ARCHIVE_FILE_LISTING_NAME);
   if ( HIDWORD(v68) != 0 )
   {
     sub_19337B0(v87, 24);

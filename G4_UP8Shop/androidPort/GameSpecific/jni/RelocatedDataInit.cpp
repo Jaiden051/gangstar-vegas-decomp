@@ -467,6 +467,7 @@ extern "C" {
   void g4_relfn_10001(void) __asm__("_ZN10hkDrawUtil17Destroy_ea18e5af0EPNS_4SelfE");
   void g4_relfn_10002(void) __asm__("_ZN10hkDrawUtil7DestroyEPNS_4SelfE");
   void g4_relfn_10003(void) __asm__("_ZN10hkFreeList16_compareElementsE");
+  void g4_relfn_10003_f157fb30(void) __asm__("_ZN10hkFreeList15compareElementsEPbjj"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_10004(void) __asm__("_ZN10hkIArchive17Destroy_ea1a85950EPNS_4SelfE");
   void g4_relfn_10005(void) __asm__("_ZN10hkIArchive7DestroyEPNS_4SelfE");
   void g4_relfn_10006(void) __asm__("_ZN10hkMeshBody14setPickingDataEPNS_4SelfEiPv");
@@ -619,6 +620,9 @@ extern "C" {
   void g4_relfn_10139(void) __asm__("_ZN12TiXmlPrinter17Destroy_ea1063320EPNS_4SelfE");
   void g4_relfn_1014(void) __asm__("_Z10sub_644A60Pj");
   void g4_relfn_10140(void) __asm__("_ZN12TiXmlPrinter5VisitEPNS_4SelfEPKN12TiXmlComment4SelfE");
+  void g4_relfn_10140_x105f990(void) __asm__("_ZN12TiXmlPrinter5VisitEPNS_4SelfEPPj"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_10140_x105f530(void) __asm__("_ZN12TiXmlPrinter5VisitEPNS_4SelfEPKN16TiXmlDeclaration4SelfE"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_10140_x105f390(void) __asm__("_ZN12TiXmlPrinter5VisitEPNS_4SelfEPKN12TiXmlUnknown4SelfE"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_10141(void) __asm__("_ZN12TiXmlPrinter7DestroyEPNS_4SelfE");
   void g4_relfn_10142(void) __asm__("_ZN12TiXmlPrinter9VisitExitEPNS_4SelfEPKN12TiXmlElement4SelfE");
   void g4_relfn_10143(void) __asm__("_ZN12TiXmlUnknown17Destroy_ea10632d0EPNS_4SelfE");
@@ -677,6 +681,7 @@ extern "C" {
   void g4_relfn_10191(void) __asm__("_ZN12hkpBoxMotion29getProjectedPointVelocitySimdEPfS0_S0_S0_S0_");
   void g4_relfn_10192(void) __asm__("_ZN12hkpBoxMotion7DestroyEPNS_4SelfE");
   void g4_relfn_10193(void) __asm__("_ZN12hkpBoxMotion7setMassEPNS_4SelfEj");
+  void g4_relfn_10193_x1768d60(void) __asm__("_ZN12hkpBoxMotion7setMassEiPj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_10194(void) __asm__("_ZN12hkpGskfAgent11removePointEPNS_4SelfEt");
   void g4_relfn_10195(void) __asm__("_ZN12hkpGskfAgent12createZombieEPNS_4SelfEt");
   void g4_relfn_10196(void) __asm__("_ZN12hkpGskfAgent15commitPotentialEPNS_4SelfEt");
@@ -779,6 +784,7 @@ extern "C" {
   void g4_relfn_10283(void) __asm__("_ZN13hkDisplayAABB20getWireframeGeometryEPNS_4SelfEP11hkArrayBaseIN10hkVector4f4SelfEEPN17hkMemoryAllocator4SelfE");
   void g4_relfn_10284(void) __asm__("_ZN13hkDisplayAABB7DestroyEPNS_4SelfE");
   void g4_relfn_10285(void) __asm__("_ZN13hkDisplayAABB9ConstructEPNS_4SelfE");
+  void g4_relfn_10285_x18f0720(void) __asm__("_ZN13hkDisplayAABB9ConstructEPNS_4SelfEPKN10hkVector4f4SelfES5_"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_10286(void) __asm__("_ZN13hkDisplayCone11getPositionEPNS_4SelfEPj");
   void g4_relfn_10287(void) __asm__("_ZN13hkDisplayCone17Destroy_ea18f1f90EPNS_4SelfE");
   void g4_relfn_10288(void) __asm__("_ZN13hkDisplayCone20getWireframeGeometryEPNS_4SelfEP11hkArrayBaseIN10hkVector4f4SelfEEPN17hkMemoryAllocator4SelfE");
@@ -801,6 +807,7 @@ extern "C" {
   void g4_relfn_10302(void) __asm__("_ZN13hkp3AxisSweep11getAllAabbsEPjPi");
   void g4_relfn_10303(void) __asm__("_ZN13hkp3AxisSweep11updateAabbsEiPPjS0_iPN17hkMemoryAllocator4SelfEPi");
   void g4_relfn_10304(void) __asm__("_ZN13hkp3AxisSweep13calcAabbCacheEPNS_4SelfEPKN6hkAabb4SelfEPc");
+  void g4_relfn_10304_x16b2940(void) __asm__("_ZN13hkp3AxisSweep13calcAabbCacheEPjS0_i"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_10305(void) __asm__("_ZN13hkp3AxisSweep13getNumObjectsEPNS_4SelfE");
   void g4_relfn_10306(void) __asm__("_ZN13hkp3AxisSweep14addObjectBatchEiPjS0_PN17hkMemoryAllocator4SelfE");
   void g4_relfn_10307(void) __asm__("_ZN13hkp3AxisSweep15querySingleAabbEiPjPN17hkMemoryAllocator4SelfE");
@@ -825,6 +832,7 @@ extern "C" {
   void g4_relfn_10324(void) __asm__("_ZN13hkp3AxisSweep7getTypeEv");
   void g4_relfn_10325(void) __asm__("_ZN13hkp3AxisSweep8castAabbEiii");
   void g4_relfn_10326(void) __asm__("_ZN13hkp3AxisSweep9addObjectEPfiPjii");
+  void g4_relfn_10326_x16af890(void) __asm__("_ZN13hkp3AxisSweep9addObjectEPiPjS1_PN17hkMemoryAllocator4SelfEc"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_10327(void) __asm__("_ZN13hkpContactMgr17Destroy_ea16ea5a0EPNS_4SelfE");
   void g4_relfn_10328(void) __asm__("_ZN13hkpContactMgr7DestroyEPNS_4SelfE");
   void g4_relfn_10329(void) __asm__("_ZN13hkpContactMgr7cleanupEv");
@@ -1024,6 +1032,7 @@ extern "C" {
   void g4_relfn_10503(void) __asm__("_ZN14hkpGroupFilter11dummyUnusedEv");
   void g4_relfn_10504(void) __asm__("_ZN14hkpGroupFilter17Destroy_ea16b3a50EPNS_4SelfE");
   void g4_relfn_10505(void) __asm__("_ZN14hkpGroupFilter18isCollisionEnabledEPNS_4SelfEPKN13hkpCollidable4SelfES5_i");
+  void g4_relfn_10505_x16b3db0(void) __asm__("_ZN14hkpGroupFilter18isCollisionEnabledEPNS_4SelfEjii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_10506(void) __asm__("_ZN14hkpGroupFilter7DestroyEPNS_4SelfE");
   void g4_relfn_10507(void) __asm__("_ZN14hkpMoppNodeMgr17Destroy_ea1b0e120EPNS_4SelfE");
   void g4_relfn_10508(void) __asm__("_ZN14hkpMoppNodeMgr7DestroyEPNS_4SelfE");
@@ -1176,6 +1185,7 @@ extern "C" {
   void g4_relfn_10640(void) __asm__("_ZN15hkPredGskAgent37destroyEiPhii");
   void g4_relfn_10641(void) __asm__("_ZN15hkPredGskAgent37processEiiPhiPj");
   void g4_relfn_10642(void) __asm__("_ZN15hkPredGskAgent39sepNormalE");
+  void g4_relfn_10642_f16a2dd0(void) __asm__("_ZN15hkPredGskAgent311removePointEiis"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_10643(void) __asm__("_ZN15hkTagfileReader17Destroy_ea187f030EPNS_4SelfE");
   void g4_relfn_10644(void) __asm__("_ZN15hkTagfileReader7DestroyEPNS_4SelfE");
   void g4_relfn_10645(void) __asm__("_ZN15hkTagfileWriter17Destroy_ea187ef70EPNS_4SelfE");
@@ -1225,6 +1235,7 @@ extern "C" {
   void g4_relfn_10685(void) __asm__("_ZN15hkpGskBaseAgent17Destroy_ea16beb10EPNS_4SelfE");
   void g4_relfn_10686(void) __asm__("_ZN15hkpGskBaseAgent21staticGetPenetrationsE");
   void g4_relfn_10687(void) __asm__("_ZN15hkpGskBaseAgent22staticGetClosestPointsE");
+  void g4_relfn_10687_f16bf4e0(void) __asm__("_ZN15hkpGskBaseAgent15getClosestPointEi"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_10688(void) __asm__("_ZN15hkpGskBaseAgent7DestroyEPNS_4SelfE");
   void g4_relfn_10689(void) __asm__("_ZN15hkpGskBaseAgent7cleanupEPNS_4SelfE");
   void g4_relfn_1069(void) __asm__("_Z10sub_653600Ph");
@@ -1304,6 +1315,11 @@ extern "C" {
   void g4_relfn_10756(void) __asm__("_ZN16hkDataObjectDict5isSetEiPj");
   void g4_relfn_10757(void) __asm__("_ZN16hkDataObjectDict6asRealEPji");
   void g4_relfn_10758(void) __asm__("_ZN16hkDataObjectDict6assignEPjPiPN8hkString4SelfE");
+  void g4_relfn_10758_x18af310(void) __asm__("_ZN16hkDataObjectDict6assignEPjPiS1_"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_10758_x18ac800(void) __asm__("_ZN16hkDataObjectDict6assignEPjPiS0_"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_10758_x18ac1e0(void) __asm__("_ZN16hkDataObjectDict6assignEPjPix"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_10758_x18abe60(void) __asm__("_ZN16hkDataObjectDict6assignEPjPis"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_10758_x18abcb0(void) __asm__("_ZN16hkDataObjectDict6assignEPjPii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_10759(void) __asm__("_ZN16hkDataObjectDict7DestroyEPNS_4SelfE");
   void g4_relfn_1076(void) __asm__("_Z10sub_6539A0PN6glitch7collada15CColladaFactory4SelfE");
   void g4_relfn_10760(void) __asm__("_ZN16hkDataObjectDict7asArrayEPji");
@@ -1536,6 +1552,14 @@ extern "C" {
   void g4_relfn_10965(void) __asm__("_ZN17hkDataArrayNative5clearEPNS_4SelfE");
   void g4_relfn_10966(void) __asm__("_ZN17hkDataArrayNative6asRealEPNS_4SelfEi");
   void g4_relfn_10967(void) __asm__("_ZN17hkDataArrayNative6setAllEPNS_4SelfEPhi");
+  void g4_relfn_10967_x18a4c30(void) __asm__("_ZN17hkDataArrayNative6setAllEPPN8hkString4SelfEPfi"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_10967_x18a4b50(void) __asm__("_ZN17hkDataArrayNative6setAllEiPvi"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_10967_x18a4ae0(void) __asm__("_ZN17hkDataArrayNative6setAllEPPN8hkString4SelfEPti"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_10967_x18a4a70(void) __asm__("_ZN17hkDataArrayNative6setAllEPPN8hkString4SelfEPsi"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_10967_x18a4a00(void) __asm__("_ZN17hkDataArrayNative6setAllEPPN8hkString4SelfEPci"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_10967_x18a4920(void) __asm__("_ZN17hkDataArrayNative6setAllEPPN8hkString4SelfEPyi"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_10967_x18a48b0(void) __asm__("_ZN17hkDataArrayNative6setAllEPPN8hkString4SelfEPxi"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_10967_x18a4840(void) __asm__("_ZN17hkDataArrayNative6setAllEPPN8hkString4SelfEPvi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_10968(void) __asm__("_ZN17hkDataArrayNative6setIntEPPcii");
   void g4_relfn_10969(void) __asm__("_ZN17hkDataArrayNative6setVecEPNS_4SelfEiPKf");
   void g4_relfn_1097(void) __asm__("_Z10sub_657FC0v");
@@ -1815,6 +1839,7 @@ extern "C" {
   void g4_relfn_11215(void) __asm__("_ZN17hkpTreeBroadPhase11updateAabbsEPNS_4SelfEPP19hkpBroadPhaseHandlePN6hkAabb4SelfEiii");
   void g4_relfn_11216(void) __asm__("_ZN17hkpTreeBroadPhase12removeObjectEPNS_4SelfEP19hkpBroadPhaseHandlei");
   void g4_relfn_11217(void) __asm__("_ZN17hkpTreeBroadPhase13calcAabbCacheEPNS_4SelfEPKN6hkAabb4SelfEPc");
+  void g4_relfn_11217_x17ce940(void) __asm__("_ZN17hkpTreeBroadPhase13calcAabbCacheEiii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_11218(void) __asm__("_ZN17hkpTreeBroadPhase13getNumObjectsEPNS_4SelfE");
   void g4_relfn_11219(void) __asm__("_ZN17hkpTreeBroadPhase14addObjectBatchEPNS_4SelfEiPPN6hkAabb4SelfEi");
   void g4_relfn_1122(void) __asm__("_Z10sub_6584D0Pj");
@@ -1903,6 +1928,10 @@ extern "C" {
   void g4_relfn_11295(void) __asm__("_ZN18hkDataObjectNative5isSetEiPN13hkClassMember4SelfE");
   void g4_relfn_11296(void) __asm__("_ZN18hkDataObjectNative6asRealEiPN13hkClassMember4SelfE");
   void g4_relfn_11297(void) __asm__("_ZN18hkDataObjectNative6assignEiPN13hkClassMember4SelfEPN8hkString4SelfE");
+  void g4_relfn_11297_x18a37f0(void) __asm__("_ZN18hkDataObjectNative6assignEiPN13hkClassMember4SelfEx"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_11297_x18a3680(void) __asm__("_ZN18hkDataObjectNative6assignEiiPN18hkDataObject_Value4SelfE"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_11297_x18a3590(void) __asm__("_ZN18hkDataObjectNative6assignEiPN13hkClassMember4SelfEs"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_11297_x18a3530(void) __asm__("_ZN18hkDataObjectNative6assignEiPN13hkClassMember4SelfEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_11298(void) __asm__("_ZN18hkDataObjectNative7DestroyEPNS_4SelfE");
   void g4_relfn_11299(void) __asm__("_ZN18hkDataObjectNative7asArrayEiPN13hkClassMember4SelfEiiiii");
   void g4_relfn_113(void) __asm__("_Z10sub_53D1D0iPvi");
@@ -2277,6 +2306,7 @@ extern "C" {
   void g4_relfn_11631(void) __asm__("_ZN19hkpTreeBroadPhase3211updateAabbsEPNS_4SelfEPP19hkpBroadPhaseHandlePN6hkAabb4SelfEiii");
   void g4_relfn_11632(void) __asm__("_ZN19hkpTreeBroadPhase3212removeObjectEPNS_4SelfEP19hkpBroadPhaseHandlei");
   void g4_relfn_11633(void) __asm__("_ZN19hkpTreeBroadPhase3213calcAabbCacheEPNS_4SelfEPKN6hkAabb4SelfEPc");
+  void g4_relfn_11633_x17ffc00(void) __asm__("_ZN19hkpTreeBroadPhase3213calcAabbCacheEiii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_11634(void) __asm__("_ZN19hkpTreeBroadPhase3213getNumObjectsEPNS_4SelfE");
   void g4_relfn_11635(void) __asm__("_ZN19hkpTreeBroadPhase3214addObjectBatchEPNS_4SelfEiPPN6hkAabb4SelfEi");
   void g4_relfn_11636(void) __asm__("_ZN19hkpTreeBroadPhase3215querySingleAabbEiPfi");
@@ -2494,6 +2524,7 @@ extern "C" {
   void g4_relfn_11827(void) __asm__("_ZN21hkDebugDisplayProcess14displayPoint2dEPNS_4SelfEPKN10hkVector4f4SelfEjii");
   void g4_relfn_11828(void) __asm__("_ZN21hkDebugDisplayProcess14removeGeometryEPNS_4SelfEjiji");
   void g4_relfn_11829(void) __asm__("_ZN21hkDebugDisplayProcess14updateGeometryEPNS_4SelfEPKN10hkMatrix4f4SelfEji");
+  void g4_relfn_11829_x18ead10(void) __asm__("_ZN21hkDebugDisplayProcess14updateGeometryEPNS_4SelfEPKN12hkTransformf4SelfEji"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_1183(void) __asm__("_Z10sub_66E710Pj");
   void g4_relfn_11830(void) __asm__("_ZN21hkDebugDisplayProcess15displayGeometryEii");
   void g4_relfn_11831(void) __asm__("_ZN21hkDebugDisplayProcess15displayTriangleEPNS_4SelfEPKN10hkVector4f4SelfES5_S5_jii");
@@ -3302,6 +3333,7 @@ extern "C" {
   void g4_relfn_12554(void) __asm__("_ZN24hkOffsetOnlyStreamWriter17seekTellSupportedEPNS_4SelfE");
   void g4_relfn_12555(void) __asm__("_ZN24hkOffsetOnlyStreamWriter4isOkEPNS_4SelfE");
   void g4_relfn_12556(void) __asm__("_ZN24hkOffsetOnlyStreamWriter4seekE");
+  void g4_relfn_12556_f1a86850(void) __asm__("_ZN24hkOffsetOnlyStreamWriter19seek_edx_eax_89c24aExii"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_12557(void) __asm__("_ZN24hkOffsetOnlyStreamWriter4tellEPNS_4SelfE");
   void g4_relfn_12558(void) __asm__("_ZN24hkOffsetOnlyStreamWriter5writeEPNS_4SelfEPKvi");
   void g4_relfn_12559(void) __asm__("_ZN24hkOffsetOnlyStreamWriter7DestroyEPNS_4SelfE");
@@ -3464,6 +3496,9 @@ extern "C" {
   void g4_relfn_1270(void) __asm__("_Z10sub_681E40v");
   void g4_relfn_12700(void) __asm__("_ZN25StructArrayImplementation6Object6asRealEiPj");
   void g4_relfn_12701(void) __asm__("_ZN25StructArrayImplementation6Object6assignEiPjPN18hkDataObject_Value4SelfE");
+  void g4_relfn_12701_x18aec40(void) __asm__("_ZN25StructArrayImplementation6Object6assignEiPjc"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_12701_x18aeb90(void) __asm__("_ZN25StructArrayImplementation6Object6assignEiPjs"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_12701_x18aea40(void) __asm__("_ZN25StructArrayImplementation6Object6assignEiPji"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_12702(void) __asm__("_ZN25StructArrayImplementation6Object7DestroyEPNS0_4SelfE");
   void g4_relfn_12703(void) __asm__("_ZN25StructArrayImplementation6Object7asArrayEiPj");
   void g4_relfn_12704(void) __asm__("_ZN25StructArrayImplementation6Object7destroyEv");
@@ -3646,6 +3681,7 @@ extern "C" {
   void g4_relfn_12864(void) __asm__("_ZN26hkDynamicClassNameRegistry14getClassByNameEPNS_4SelfEPN8hkString4SelfE");
   void g4_relfn_12865(void) __asm__("_ZN26hkDynamicClassNameRegistry17Destroy_ea1884b90EPNS_4SelfE");
   void g4_relfn_12866(void) __asm__("_ZN26hkDynamicClassNameRegistry5mergeEPNS_4SelfEPKN19hkClassNameRegistry4SelfE");
+  void g4_relfn_12866_x1884800(void) __asm__("_ZN26hkDynamicClassNameRegistry5mergeEiP15hkCachedHashMapI21hkStringMapOperationsN24hkContainerHeapAllocator4SelfEE"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_12867(void) __asm__("_ZN26hkDynamicClassNameRegistry7DestroyEPNS_4SelfE");
   void g4_relfn_12868(void) __asm__("_ZN26hkDynamicClassNameRegistry7getNameEPNS_4SelfE");
   void g4_relfn_12869(void) __asm__("_ZN26hkDynamicClassNameRegistry7setNameEPNS_4SelfEPKc");
@@ -3957,6 +3993,7 @@ extern "C" {
   void g4_relfn_13143(void) __asm__("_ZN29hkpCharacterRigidBodyListener17Destroy_ea182e4d0EPNS_4SelfE");
   void g4_relfn_13144(void) __asm__("_ZN29hkpCharacterRigidBodyListener17characterCallbackEPNS_4SelfEPN8hkpWorld4SelfEPN21hkpCharacterRigidBody4SelfE");
   void g4_relfn_13145(void) __asm__("_ZN29hkpCharacterRigidBodyListener19processActualPointsEPNS_4SelfEPN8hkpWorld4SelfEPN21hkpCharacterRigidBody4SelfE");
+  void g4_relfn_13145_x182e440(void) __asm__("_ZN29hkpCharacterRigidBodyListener19processActualPointsEiiiiii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_13146(void) __asm__("_ZN29hkpCharacterRigidBodyListener19unweldContactPointsEiiiiPj");
   void g4_relfn_13147(void) __asm__("_ZN29hkpCharacterRigidBodyListener30considerCollisionEntryForSlopeEiiiiiPN17hkMemoryAllocator4SelfE");
   void g4_relfn_13148(void) __asm__("_ZN29hkpCharacterRigidBodyListener41considerCollisionEntryForMassModificationE7__m128iiiiiPN19hkpResponseModifier4SelfEPj");
@@ -4119,6 +4156,7 @@ extern "C" {
   void g4_relfn_1329(void) __asm__("_Z10sub_683000ii");
   void g4_relfn_13290(void) __asm__("_ZN2oi18BillingMethodArray17Destroy_ea1541d00EPNS0_4SelfE");
   void g4_relfn_13291(void) __asm__("_ZN2oi18BillingMethodArray4readEPNS0_4SelfEPKN10glwebtools10JsonReader4SelfE");
+  void g4_relfn_13291_x1541ea0(void) __asm__("_ZN2oi18BillingMethodArray4readEii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_13292(void) __asm__("_ZN2oi18BillingMethodArray5writeEPNS0_4SelfEPN10glwebtools10JsonWriter4SelfE");
   void g4_relfn_13293(void) __asm__("_ZN2oi18BillingMethodArray7DestroyEPNS0_4SelfE");
   void g4_relfn_13294(void) __asm__("_ZN2oi21StoreOfflineItemArray12GetItemCountEPNS0_4SelfE");
@@ -4131,7 +4169,9 @@ extern "C" {
   void g4_relfn_1330(void) __asm__("_Z10sub_683010i");
   void g4_relfn_13300(void) __asm__("_ZN2oi21StoreOfflineItemArray7DestroyEPNS0_4SelfE");
   void g4_relfn_13301(void) __asm__("_ZN2oi21StoreOfflineItemArray7GetItemEPNS0_4SelfEj");
+  void g4_relfn_13301_x153e740(void) __asm__("_ZN2oi21StoreOfflineItemArray7GetItemEiPPc"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_13302(void) __asm__("_ZN2oi21StoreOfflineItemArray7opIndexEPNS0_4SelfEj");
+  void g4_relfn_13302_x153e3e0(void) __asm__("_ZN2oi21StoreOfflineItemArray7opIndexEii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_13303(void) __asm__("_ZN2oi9ItemPrice12ToJsonStringEii");
   void g4_relfn_13304(void) __asm__("_ZN2oi9ItemPrice17Destroy_ea153c2e0EPNS0_4SelfE");
   void g4_relfn_13305(void) __asm__("_ZN2oi9ItemPrice4readEePNS0_4SelfEPKN10glwebtools10JsonReader4SelfEiiiii");
@@ -4149,6 +4189,8 @@ extern "C" {
   void g4_relfn_13316(void) __asm__("_ZN30ActorGameCharacterSnapToTarget16Destroy_ea838ec0EPN7grapher9ActorBase4SelfE");
   void g4_relfn_13317(void) __asm__("_ZN30VariableIntArrayImplementation5asIntEPNS_4SelfEi");
   void g4_relfn_13318(void) __asm__("_ZN30VariableIntArrayImplementation6setAllEPNS_4SelfEPKsi");
+  void g4_relfn_13318_x18a96a0(void) __asm__("_ZN30VariableIntArrayImplementation6setAllEPNS_4SelfEPii"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_13318_x18a7c60(void) __asm__("_ZN30VariableIntArrayImplementation6setAllEPNS_4SelfEPKti"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_13319(void) __asm__("_ZN30VariableIntArrayImplementation7DestroyEPNS_4SelfE");
   void g4_relfn_1332(void) __asm__("_Z10sub_683030ii");
   void g4_relfn_13320(void) __asm__("_ZN30VariableIntArrayImplementation7asInt64EPNS_4SelfEi");
@@ -4762,6 +4804,7 @@ extern "C" {
   void g4_relfn_13869(void) __asm__("_ZN3glf3App6UpdateEPNS0_4SelfE");
   void g4_relfn_1387(void) __asm__("_Z10sub_684220Pjii");
   void g4_relfn_13870(void) __asm__("_ZN3glf3App7DestroyEPNS0_4SelfE");
+  void g4_relfn_13870_xc6c810(void) __asm__("_ZN3glf3App7DestroyEPPNS_12EventManager4SelfE"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_13871(void) __asm__("_ZN3glf3App7OnEventEv");
   void g4_relfn_13872(void) __asm__("_ZN3glf3App9QueryInfoEv");
   void g4_relfn_13873(void) __asm__("_ZN3glf3fs210FileSystem10GetStatusVEPNS1_4SelfEPKNS0_4Path4SelfE");
@@ -4770,6 +4813,7 @@ extern "C" {
   void g4_relfn_13876(void) __asm__("_ZN3glf3fs210FileSystem4CopyEPNS1_4SelfE");
   void g4_relfn_13877(void) __asm__("_ZN3glf3fs210FileSystem4MoveEPNS1_4SelfE");
   void g4_relfn_13878(void) __asm__("_ZN3glf3fs210FileSystem5IndexEPNS1_4SelfEPP15pthread_mutex_tPjPNS0_9IndexData4SelfE");
+  void g4_relfn_13878_xca0ca0(void) __asm__("_ZN3glf3fs210FileSystem5IndexEPNS1_4SelfEPP15pthread_mutex_ti"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_13879(void) __asm__("_ZN3glf3fs210FileSystem5MkdirEPNS1_4SelfE");
   void g4_relfn_1388(void) __asm__("_Z10sub_684230iii");
   void g4_relfn_13880(void) __asm__("_ZN3glf3fs210FileSystem5OpenVEPNS1_4SelfE");
@@ -4801,6 +4845,7 @@ extern "C" {
   void g4_relfn_13903(void) __asm__("_ZN3glf3fs215FileSystemPosix5MkdirEPNS1_4SelfEPKNS0_4Path4SelfE");
   void g4_relfn_13904(void) __asm__("_ZN3glf3fs215FileSystemPosix5OpenVEPNS1_4SelfEPNS0_4Path4SelfEiiii");
   void g4_relfn_13905(void) __asm__("_ZN3glf3fs215FileSystemPosix6RemoveEPNS1_4SelfEPKNS0_4Path4SelfE");
+  void g4_relfn_13905_xca3fc0(void) __asm__("_ZN3glf3fs215FileSystemPosix6RemoveEPP15pthread_mutex_tPKNS0_4Path4SelfEb"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_13906(void) __asm__("_ZN3glf3fs215FileSystemPosix7DestroyEPNS1_4SelfE");
   void g4_relfn_13907(void) __asm__("_ZN3glf3fs215FileSystemPosix8OpenDirVEPjPNS0_10FileSystem4SelfEPNS0_4Path4SelfEii");
   void g4_relfn_13908(void) __asm__("_ZN3glf3fs216DirectoryIndexed16Destroy_eaccb100EPNS1_4SelfE");
@@ -5279,6 +5324,7 @@ extern "C" {
   void g4_relfn_14333(void) __asm__("_ZN3vox11RandomGroup7DestroyEPNS0_4SelfE");
   void g4_relfn_14334(void) __asm__("_ZN3vox11RandomGroup8GetStateEPjS1_");
   void g4_relfn_14335(void) __asm__("_ZN3vox11RandomGroup8SetStateEPPvPNS0_4SelfE");
+  void g4_relfn_14335_xff19b0(void) __asm__("_ZN3vox11RandomGroup8SetStateEPjS1_"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_14336(void) __asm__("_ZN3vox11StreamCFile13DestroyCursorEPNS0_4SelfEPNS_21StreamCursorInterface4SelfE");
   void g4_relfn_14337(void) __asm__("_ZN3vox11StreamCFile15CreateNewCursorEPNS0_4SelfE");
   void g4_relfn_14338(void) __asm__("_ZN3vox11StreamCFile17Destroy_ea103c1c0EPNS0_4SelfE");
@@ -5312,6 +5358,7 @@ extern "C" {
   void g4_relfn_14363(void) __asm__("_ZN3vox13DriverAndroid21SetMicrophoneCallbackEv");
   void g4_relfn_14364(void) __asm__("_ZN3vox13DriverAndroid24RemoveMicrophoneCallbackEv");
   void g4_relfn_14365(void) __asm__("_ZN3vox13DriverAndroid4InitEPNS0_4SelfE");
+  void g4_relfn_14365_x10561e0(void) __asm__("_ZN3vox13DriverAndroid4InitEPP15pthread_mutex_t"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_14366(void) __asm__("_ZN3vox13DriverAndroid5ResetEPP15pthread_mutex_t");
   void g4_relfn_14367(void) __asm__("_ZN3vox13DriverAndroid6ResumeEPNS0_4SelfE");
   void g4_relfn_14368(void) __asm__("_ZN3vox13DriverAndroid6UpdateEPNS0_4SelfE");
@@ -5357,6 +5404,7 @@ extern "C" {
   void g4_relfn_14403(void) __asm__("_ZN3vox15SequentialGroup7DestroyEPPv");
   void g4_relfn_14404(void) __asm__("_ZN3vox15SequentialGroup8GetStateEPjS1_");
   void g4_relfn_14405(void) __asm__("_ZN3vox15SequentialGroup8SetStateEPNS0_4SelfES2_");
+  void g4_relfn_14405_xff1360(void) __asm__("_ZN3vox15SequentialGroup8SetStateEPjS1_"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_14406(void) __asm__("_ZN3vox15StreamInterface16Destroy_eafcf6a0EPNS0_4SelfE");
   void g4_relfn_14407(void) __asm__("_ZN3vox15StreamInterface4InitEv");
   void g4_relfn_14408(void) __asm__("_ZN3vox15StreamInterface4SizeEPNS0_4SelfE");
@@ -5443,27 +5491,36 @@ extern "C" {
   void g4_relfn_14481(void) __asm__("_ZN3vox19FileSystemInterface10AddArchiveEPNS0_4SelfEPKcbbb");
   void g4_relfn_14482(void) __asm__("_ZN3vox19FileSystemInterface10SetArchiveEPNS0_4SelfEPKcbbb");
   void g4_relfn_14483(void) __asm__("_ZN3vox19FileSystemInterface10_CloseFileE");
+  void g4_relfn_14483_f10087a0(void) __asm__("_ZN3vox19FileSystemInterface9CloseFileEPNS0_4SelfEPNS_13FileInterface4SelfE"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_14484(void) __asm__("_ZN3vox19FileSystemInterface11IsDirectoryEPNS0_4SelfEPcPb");
   void g4_relfn_14485(void) __asm__("_ZN3vox19FileSystemInterface11_AddArchiveE");
+  void g4_relfn_14485_f10095a0(void) __asm__("_ZN3vox19FileSystemInterface10AddArchiveEiPNS_13FileInterface4SelfEcccciiPc"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_14486(void) __asm__("_ZN3vox19FileSystemInterface12PopDirectoryEPNS0_4SelfE");
   void g4_relfn_14487(void) __asm__("_ZN3vox19FileSystemInterface13PushDirectoryEPNS0_4SelfEPc");
   void g4_relfn_14488(void) __asm__("_ZN3vox19FileSystemInterface13RemoveArchiveEPNS0_4SelfEPKc");
   void g4_relfn_14489(void) __asm__("_ZN3vox19FileSystemInterface14_RemoveArchiveE");
+  void g4_relfn_14489_f10088b0(void) __asm__("_ZN3vox19FileSystemInterface13RemoveArchiveEPNS0_4SelfEPc"); // was a data symbol; definition at 0x10088b0 takes char*
   void g4_relfn_1449(void) __asm__("_Z10sub_685FB0i");
   void g4_relfn_14490(void) __asm__("_ZN3vox19FileSystemInterface15GetArchiveCountEPNS0_4SelfE");
   void g4_relfn_14491(void) __asm__("_ZN3vox19FileSystemInterface16AddFolderArchiveEPNS0_4SelfEPKciPS4_bb");
   void g4_relfn_14492(void) __asm__("_ZN3vox19FileSystemInterface16_OpenArchiveFileE");
+  void g4_relfn_14492_f100b900(void) __asm__("_ZN3vox19FileSystemInterface15OpenArchiveFileEiPcii"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_14493(void) __asm__("_ZN3vox19FileSystemInterface17Destroy_ea1008af0EPNS0_4SelfE");
   void g4_relfn_14494(void) __asm__("_ZN3vox19FileSystemInterface17_AddFolderArchiveE");
+  void g4_relfn_14494_f100a200(void) __asm__("_ZN3vox19FileSystemInterface16AddFolderArchiveEPNS0_4SelfEPciPPKcbbS5_"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_14495(void) __asm__("_ZN3vox19FileSystemInterface17_CloseArchiveFileE");
+  void g4_relfn_14495_f10086a0(void) __asm__("_ZN3vox19FileSystemInterface16CloseArchiveFileEPNS0_4SelfEPNS_13FileInterface4SelfE"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_14496(void) __asm__("_ZN3vox19FileSystemInterface21AddFileSegmentArchiveEPNS0_4SelfEPKciibbbS4_");
   void g4_relfn_14497(void) __asm__("_ZN3vox19FileSystemInterface21GetArchiveVoxpackInfoEPNS0_4SelfEPcPNS_11FileArchive11VoxpackInfoE");
+  void g4_relfn_14497_x1009300(void) __asm__("_ZN3vox19FileSystemInterface21GetArchiveVoxpackInfoEPNS0_4SelfEiPNS_11FileArchive11VoxpackInfoE"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_14498(void) __asm__("_ZN3vox19FileSystemInterface7DestroyEPNS0_4SelfE");
   void g4_relfn_14499(void) __asm__("_ZN3vox19FileSystemInterface8OpenFileEiPci");
+  void g4_relfn_14499_x1009260(void) __asm__("_ZN3vox19FileSystemInterface8OpenFileEiii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_145(void) __asm__("_Z10sub_541BA0Pj");
   void g4_relfn_1450(void) __asm__("_Z10sub_685FC0i");
   void g4_relfn_14500(void) __asm__("_ZN3vox19FileSystemInterface9CloseFileEPNS0_4SelfEPNS_13FileInterface4SelfE");
   void g4_relfn_14501(void) __asm__("_ZN3vox19FileSystemInterface9_OpenFileE");
+  void g4_relfn_14501_f100c960(void) __asm__("_ZN3vox19FileSystemInterface8OpenFileEiPci"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_14502(void) __asm__("_ZN3vox19SourceDataGenerator17Destroy_ea10085c0EPNS0_4SelfE");
   void g4_relfn_14503(void) __asm__("_ZN3vox19SourceDataGenerator7DestroyEPNS0_4SelfE");
   void g4_relfn_14504(void) __asm__("_ZN3vox19SourceDataGenerator7GetDataEPNS0_4SelfEPii");
@@ -6287,6 +6344,7 @@ extern "C" {
   void g4_relfn_15240(void) __asm__("_ZN5boost9function0IvE5dummy7nonnullEv");
   void g4_relfn_15241(void) __asm__("_ZN6chatv212Connectivity10HTTPClient11ReadContentEPjiiPi");
   void g4_relfn_15242(void) __asm__("_ZN6chatv212Connectivity10HTTPClient11ReadHeadersE");
+  void g4_relfn_15242_f1275d30(void) __asm__("_ZN6chatv212Connectivity10HTTPClient14ReadStatusLineEiiiPNS1_4SelfEPKN5boost6system10error_code4SelfE"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_15243(void) __asm__("_ZN6chatv212Connectivity10HTTPClient14ReadStatusLineEiiiPNS1_4SelfEPKN5boost6system10error_code4SelfE");
   void g4_relfn_15244(void) __asm__("_ZN6chatv212Connectivity10HTTPClient17Destroy_ea1273e30EPNS1_4SelfE");
   void g4_relfn_15245(void) __asm__("_ZN6chatv212Connectivity10HTTPClient18DirectWriteRequestEPNS0_7IClient4SelfEPi");
@@ -6332,7 +6390,9 @@ extern "C" {
   void g4_relfn_15281(void) __asm__("_ZN6chatv212Connectivity9TCPClient7DoWriteEPNS0_7IClient4SelfEPPc");
   void g4_relfn_15282(void) __asm__("_ZN6chatv212Connectivity9TCPClient7OnWriteEPNS1_4SelfEPKN5boost6system10error_code4SelfE");
   void g4_relfn_15283(void) __asm__("_ZN6chatv212Connectivity9TCPClient9OnConnectE");
+  void g4_relfn_15283_f1261230(void) __asm__("_ZN6chatv212Connectivity9TCPClient9ConstructEiiPN5boost4asio10io_serviceEPjPViiiiS8_iiPhS8_"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_15284(void) __asm__("_ZN6chatv212Connectivity9TCPClient9OnResolveE");
+  void g4_relfn_15284_f12603c0(void) __asm__("_ZN6chatv212Connectivity9TCPClient18OnVerifyConnectionEPjS2_S2_"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_15285(void) __asm__("_ZN6chatv24Core13ArionExecutor17Destroy_ea1238f00EPNS1_4SelfE");
   void g4_relfn_15286(void) __asm__("_ZN6chatv24Core13ArionExecutor22OnHTTPResponseReceivedEiii");
   void g4_relfn_15287(void) __asm__("_ZN6chatv24Core13ArionExecutor5StartEPNS1_4SelfE");
@@ -6370,8 +6430,10 @@ extern "C" {
   void g4_relfn_15315(void) __asm__("_ZN6chatv28Requests19ArionRequestFactory18GetChatServiceNameEPNS1_4SelfE");
   void g4_relfn_15316(void) __asm__("_ZN6chatv28Requests19ArionRequestFactory20OnInviteClientFailedE");
   void g4_relfn_15317(void) __asm__("_ZN6chatv28Requests19ArionRequestFactory20OnReportClientFailedE");
+  void g4_relfn_15317_f123bce0(void) __asm__("_ZN6chatv28Requests19ArionRequestFactory7DestroyEPNS1_4SelfE"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_15318(void) __asm__("_ZN6chatv28Requests19ArionRequestFactory23CreateSendInviteRequestEiiPPKvii");
   void g4_relfn_15319(void) __asm__("_ZN6chatv28Requests19ArionRequestFactory23OnSubscribeClientFailedE");
+  void g4_relfn_15319_f123d1e0(void) __asm__("_ZN6chatv28Requests19ArionRequestFactory20ChannelClientRestartEPjPPNS_4Core12ArionChannel4SelfE"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_1532(void) __asm__("_Z10sub_68D8A0Pj");
   void g4_relfn_15320(void) __asm__("_ZN6chatv28Requests19ArionRequestFactory25CreateLeaveChannelRequestEPiiiiPViiiiS4_");
   void g4_relfn_15321(void) __asm__("_ZN6chatv28Requests19ArionRequestFactory27CreateChangeNicknameRequestEPPNS0_8IRequest4SelfEiiiPViiiiS7_");
@@ -6540,6 +6602,7 @@ extern "C" {
   void g4_relfn_15469(void) __asm__("_ZN6glitch2io10CZipReader7DestroyEPNS1_4SelfE");
   void g4_relfn_1547(void) __asm__("_Z10sub_68E190Pj");
   void g4_relfn_15470(void) __asm__("_ZN6glitch2io10CZipReader8openFileEPNS1_4SelfEPji");
+  void g4_relfn_15470_xe912c0(void) __asm__("_ZN6glitch2io10CZipReader8openFileEPNS1_4SelfES3_Pc"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15471(void) __asm__("_ZN6glitch2io10CZipWriter16Destroy_eae8bd00EPNS1_4SelfE");
   void g4_relfn_15472(void) __asm__("_ZN6glitch2io10CZipWriter7DestroyEPNS1_4SelfE");
   void g4_relfn_15473(void) __asm__("_ZN6glitch2io10IAttribute10getLine2diEPNS1_4SelfE");
@@ -6621,37 +6684,81 @@ extern "C" {
   void g4_relfn_15541(void) __asm__("_ZN6glitch2io11CAttributes10addPlane3dEiPcPfc");
   void g4_relfn_15542(void) __asm__("_ZN6glitch2io11CAttributes10addTextureEiPcPic");
   void g4_relfn_15543(void) __asm__("_ZN6glitch2io11CAttributes10getMatrix2EPNS1_4SelfES3_Pc");
+  void g4_relfn_15543_xea0500(void) __asm__("_ZN6glitch2io11CAttributes10getMatrix2EPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15544(void) __asm__("_ZN6glitch2io11CAttributes10getMatrix3EPNS1_4SelfES3_Pc");
+  void g4_relfn_15544_xea0580(void) __asm__("_ZN6glitch2io11CAttributes10getMatrix3EPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15545(void) __asm__("_ZN6glitch2io11CAttributes10getPlane3dEPNS1_4SelfES3_Pc");
   void g4_relfn_15546(void) __asm__("_ZN6glitch2io11CAttributes10getStringWEPNS1_4SelfEPcPw");
+  void g4_relfn_15546_xeb3c70(void) __asm__("_ZN6glitch2io11CAttributes10getStringWEPNS1_4SelfES3_Pc"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15546_xe9de20(void) __asm__("_ZN6glitch2io11CAttributes10getStringWEPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15547(void) __asm__("_ZN6glitch2io11CAttributes10getTextureEPNS1_4SelfES3_Pc");
+  void g4_relfn_15547_xea4ec0(void) __asm__("_ZN6glitch2io11CAttributes10getTextureEPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15548(void) __asm__("_ZN6glitch2io11CAttributes11addVector2dEiPcPfc");
   void g4_relfn_15549(void) __asm__("_ZN6glitch2io11CAttributes11addVector3dEiPcPfc");
   void g4_relfn_1555(void) __asm__("_Z10sub_68EBB0i");
   void g4_relfn_15550(void) __asm__("_ZN6glitch2io11CAttributes11addVector4dEiPcPfc");
   void g4_relfn_15551(void) __asm__("_ZN6glitch2io11CAttributes11getVector2dEPNS1_4SelfES3_Pc");
+  void g4_relfn_15551_xe9df40(void) __asm__("_ZN6glitch2io11CAttributes11getVector2dEPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15552(void) __asm__("_ZN6glitch2io11CAttributes11getVector3dEPNS1_4SelfES3_Pc");
+  void g4_relfn_15552_xe9dfc0(void) __asm__("_ZN6glitch2io11CAttributes11getVector3dEPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15553(void) __asm__("_ZN6glitch2io11CAttributes11getVector4dEPNS1_4SelfES3_Pc");
+  void g4_relfn_15553_xea02b0(void) __asm__("_ZN6glitch2io11CAttributes11getVector4dEPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15554(void) __asm__("_ZN6glitch2io11CAttributes12addVector2diEiPcPjc");
   void g4_relfn_15555(void) __asm__("_ZN6glitch2io11CAttributes12addVector3diEiPcPjc");
   void g4_relfn_15556(void) __asm__("_ZN6glitch2io11CAttributes12addVector4diEiPcPic");
   void g4_relfn_15557(void) __asm__("_ZN6glitch2io11CAttributes12getGroupNameEPNS1_4SelfE");
   void g4_relfn_15558(void) __asm__("_ZN6glitch2io11CAttributes12getVector2diEPNS1_4SelfES3_Pc");
+  void g4_relfn_15558_xe9e040(void) __asm__("_ZN6glitch2io11CAttributes12getVector2diEPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15559(void) __asm__("_ZN6glitch2io11CAttributes12getVector3diEPNS1_4SelfES3_Pc");
+  void g4_relfn_15559_xe9e0a0(void) __asm__("_ZN6glitch2io11CAttributes12getVector3diEPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_1556(void) __asm__("_Z10sub_68ED40Pji");
   void g4_relfn_15560(void) __asm__("_ZN6glitch2io11CAttributes12getVector4diEPNS1_4SelfES3_Pc");
+  void g4_relfn_15560_xea0620(void) __asm__("_ZN6glitch2io11CAttributes12getVector4diEPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15561(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPcPKNS_4core10quaternion4SelfE");
+  void g4_relfn_15561_xef3dd0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPPPiPKcPw"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xeeebc0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPcPKNS_4core10triangle3dIfEE"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xeed760(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPcPKNS_4core8CMatrix4IfEE"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xeeaae0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPcS4_"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xee83b0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPcb"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xee82c0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPci"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xee81d0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPcf"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xee80b0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPcPKcPKS6_"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xee7860(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPcPv"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xee7220(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPcj"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xee6db0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPcPf"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xee5750(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPcPj"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xee4fe0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPcPvi"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xee4ec0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPcPi"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xee4d10(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEPcPPVi"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xeb9d30(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEijPPVi"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xea03a0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEiPKNS_4core10triangle3dIfEE"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xea0330(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEiiPj"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xe9ff80(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEjPKc"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xe9ff40(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEjPKw"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xe9fef0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEjb"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xe9feb0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEji"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xe9fe70(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEjf"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xe9fe10(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEijPj"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xe9fcd0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEjPvi"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xe9fc90(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEjPKcPKS5_"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xe9fb90(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEjPKNS_4core8CMatrix4IfEE"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xe9fb30(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEiPKNS_4core10quaternion4SelfE"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xe9faf0(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEPNS1_4SelfEiPv"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15561_xe9e240(void) __asm__("_ZN6glitch2io11CAttributes12setAttributeEiji"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15562(void) __asm__("_ZN6glitch2io11CAttributes13addQuaternionEPNS1_4SelfEPKcPKNS_4core10quaternion4SelfEb");
   void g4_relfn_15563(void) __asm__("_ZN6glitch2io11CAttributes13addTriangle3dEPNS1_4SelfEPKcPKNS_4core10triangle3dIfEEb");
   void g4_relfn_15564(void) __asm__("_ZN6glitch2io11CAttributes13findAttributeEPNS1_4SelfEPc");
   void g4_relfn_15565(void) __asm__("_ZN6glitch2io11CAttributes13getBinaryDataEPNS1_4SelfEPcPvi");
+  void g4_relfn_15565_xe9ffc0(void) __asm__("_ZN6glitch2io11CAttributes13getBinaryDataEPNS1_4SelfEjPvi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15566(void) __asm__("_ZN6glitch2io11CAttributes13getQuaternionEPNS1_4SelfES3_Pc");
   void g4_relfn_15567(void) __asm__("_ZN6glitch2io11CAttributes13getTriangle3dEPNS1_4SelfES3_Pc");
+  void g4_relfn_15567_xe9e470(void) __asm__("_ZN6glitch2io11CAttributes13getTriangle3dEPNS1_4SelfEii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15568(void) __asm__("_ZN6glitch2io11CAttributes14addStringAsIntEPNS1_4SelfEPKcPKwb");
   void g4_relfn_15569(void) __asm__("_ZN6glitch2io11CAttributes14addUserPointerEPNS1_4SelfEPKcPvb");
   void g4_relfn_1557(void) __asm__("_Z10sub_68ED50Pji");
   void g4_relfn_15570(void) __asm__("_ZN6glitch2io11CAttributes14getGroupsCountEPNS1_4SelfE");
   void g4_relfn_15571(void) __asm__("_ZN6glitch2io11CAttributes14getUserPointerEPNS1_4SelfEPc");
+  void g4_relfn_15571_xe9e670(void) __asm__("_ZN6glitch2io11CAttributes14getUserPointerEPNS1_4SelfEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15572(void) __asm__("_ZN6glitch2io11CAttributes15addStringAsBoolEPNS1_4SelfEPKcPKwb");
   void g4_relfn_15573(void) __asm__("_ZN6glitch2io11CAttributes15addStringAsRectEPNS1_4SelfEPKcPKwb");
   void g4_relfn_15574(void) __asm__("_ZN6glitch2io11CAttributes15existsAttributeEPNS1_4SelfEPc");
@@ -6663,6 +6770,7 @@ extern "C" {
   void g4_relfn_1558(void) __asm__("_Z10sub_68EF50Pji");
   void g4_relfn_15580(void) __asm__("_ZN6glitch2io11CAttributes16getAttributeNameEPNS1_4SelfEj");
   void g4_relfn_15581(void) __asm__("_ZN6glitch2io11CAttributes16getAttributeTypeEPNS1_4SelfEPc");
+  void g4_relfn_15581_xea01b0(void) __asm__("_ZN6glitch2io11CAttributes16getAttributeTypeEPNS1_4SelfEj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15582(void) __asm__("_ZN6glitch2io11CAttributes17addStringAsBinaryEPNS1_4SelfEPKcPKwb");
   void g4_relfn_15583(void) __asm__("_ZN6glitch2io11CAttributes17addStringAsColorfEPNS1_4SelfEPKcPKwb");
   void g4_relfn_15584(void) __asm__("_ZN6glitch2io11CAttributes17addStringAsLine2dEPNS1_4SelfEPKcPKwb");
@@ -6686,20 +6794,30 @@ extern "C" {
   void g4_relfn_1560(void) __asm__("_Z10sub_68F160Pjiiiiiiiiiiiiiiiiiiiiiiiiic");
   void g4_relfn_15600(void) __asm__("_ZN6glitch2io11CAttributes22addStringAsUserPointerEPNS1_4SelfEPKcPKwb");
   void g4_relfn_15601(void) __asm__("_ZN6glitch2io11CAttributes22getAttributeTypeStringEPNS1_4SelfEPc");
+  void g4_relfn_15601_xea0150(void) __asm__("_ZN6glitch2io11CAttributes22getAttributeTypeStringEPNS1_4SelfEj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15602(void) __asm__("_ZN6glitch2io11CAttributes3popEPNS1_4SelfE");
   void g4_relfn_15603(void) __asm__("_ZN6glitch2io11CAttributes44getAttributeEnumerationLiteralsOfEnumerationEPNS1_4SelfEPcPNSt6__ndk16vectorINS5_12basic_stringIcNS5_11char_traitsIcEENS_4core10SAllocatorIcLy0EEEEENSB_ISD_Ly0EEEEE");
   void g4_relfn_15604(void) __asm__("_ZN6glitch2io11CAttributes4pushEPNS1_4SelfEPKci");
+  void g4_relfn_15604_xeb5380(void) __asm__("_ZN6glitch2io11CAttributes4pushEPPNS1_8CContext4SelfEPKc"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15604_xeb5140(void) __asm__("_ZN6glitch2io11CAttributes4pushEPNS1_4SelfEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15605(void) __asm__("_ZN6glitch2io11CAttributes5clearEPNS1_4SelfE");
   void g4_relfn_15606(void) __asm__("_ZN6glitch2io11CAttributes6addIntEPNS1_4SelfEPKcib");
   void g4_relfn_15607(void) __asm__("_ZN6glitch2io11CAttributes6getIntEPNS1_4SelfEPc");
+  void g4_relfn_15607_xea00d0(void) __asm__("_ZN6glitch2io11CAttributes6getIntEPNS1_4SelfEj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15608(void) __asm__("_ZN6glitch2io11CAttributes7DestroyEPNS1_4SelfE");
   void g4_relfn_15609(void) __asm__("_ZN6glitch2io11CAttributes7addBoolEPNS1_4SelfEPKcbb");
   void g4_relfn_1561(void) __asm__("_Z10sub_68F170iiiiiiiiiiiiiiiiiiiiiiiiiicciiifffiiiiiiiiiiiiiii");
   void g4_relfn_15610(void) __asm__("_ZN6glitch2io11CAttributes7addEnumEPNS1_4SelfEPKcS5_PKS5_b");
+  void g4_relfn_15610_xe9e1c0(void) __asm__("_ZN6glitch2io11CAttributes7addEnumEPNS1_4SelfEPKciPKS5_b"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15611(void) __asm__("_ZN6glitch2io11CAttributes7addRectEiPcPic");
   void g4_relfn_15612(void) __asm__("_ZN6glitch2io11CAttributes7getBoolEPNS1_4SelfEPc");
+  void g4_relfn_15612_xea0110(void) __asm__("_ZN6glitch2io11CAttributes7getBoolEPNS1_4SelfEj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15613(void) __asm__("_ZN6glitch2io11CAttributes7getEnumEPNS1_4SelfEPc");
+  void g4_relfn_15613_xeb3710(void) __asm__("_ZN6glitch2io11CAttributes7getEnumEPNS1_4SelfEPcPPKc"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15613_xe9ed60(void) __asm__("_ZN6glitch2io11CAttributes7getEnumEPNS1_4SelfEjPPKc"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15613_xe9e180(void) __asm__("_ZN6glitch2io11CAttributes7getEnumEPNS1_4SelfEj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15614(void) __asm__("_ZN6glitch2io11CAttributes7getRectEPNS1_4SelfES3_Pc");
+  void g4_relfn_15614_xe9e110(void) __asm__("_ZN6glitch2io11CAttributes7getRectEPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15615(void) __asm__("_ZN6glitch2io11CAttributes8CContext16Destroy_eaeb5080EPNS2_4SelfE");
   void g4_relfn_15616(void) __asm__("_ZN6glitch2io11CAttributes8CContext7DestroyEPNS2_4SelfE");
   void g4_relfn_15617(void) __asm__("_ZN6glitch2io11CAttributes8addArrayEPNS1_4SelfEPKcPKNSt6__ndk16vectorINS6_12basic_stringIwNS6_11char_traitsIwEENS_4core10SAllocatorIwLy0EEEEENSC_ISE_Ly0EEEEEb");
@@ -6709,10 +6827,15 @@ extern "C" {
   void g4_relfn_15620(void) __asm__("_ZN6glitch2io11CAttributes8addFloatEPNS1_4SelfEPKcfb");
   void g4_relfn_15621(void) __asm__("_ZN6glitch2io11CAttributes8addLightEiPcPPVic");
   void g4_relfn_15622(void) __asm__("_ZN6glitch2io11CAttributes8getArrayEPNS1_4SelfES3_Pc");
+  void g4_relfn_15622_xec6e20(void) __asm__("_ZN6glitch2io11CAttributes8getArrayEPNS1_4SelfEii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15623(void) __asm__("_ZN6glitch2io11CAttributes8getBox3dEPNS1_4SelfES3_Pc");
+  void g4_relfn_15623_xe9e320(void) __asm__("_ZN6glitch2io11CAttributes8getBox3dEPNS1_4SelfEii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15624(void) __asm__("_ZN6glitch2io11CAttributes8getColorEPNS1_4SelfES3_Pc");
+  void g4_relfn_15624_xe9dee0(void) __asm__("_ZN6glitch2io11CAttributes8getColorEPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15625(void) __asm__("_ZN6glitch2io11CAttributes8getFloatEPNS1_4SelfEPc");
+  void g4_relfn_15625_xea0090(void) __asm__("_ZN6glitch2io11CAttributes8getFloatEPNS1_4SelfEj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15626(void) __asm__("_ZN6glitch2io11CAttributes8getLightEPNS1_4SelfES3_Pc");
+  void g4_relfn_15626_xea4de0(void) __asm__("_ZN6glitch2io11CAttributes8getLightEPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15627(void) __asm__("_ZN6glitch2io11CAttributes8setGroupEPNS1_4SelfEj");
   void g4_relfn_15628(void) __asm__("_ZN6glitch2io11CAttributes9addBinaryEPNS1_4SelfEPKcPvib");
   void g4_relfn_15629(void) __asm__("_ZN6glitch2io11CAttributes9addColorfEiPcPfc");
@@ -6721,11 +6844,17 @@ extern "C" {
   void g4_relfn_15631(void) __asm__("_ZN6glitch2io11CAttributes9addLine3dEiPcPfc");
   void g4_relfn_15632(void) __asm__("_ZN6glitch2io11CAttributes9addMatrixEPNS1_4SelfEPKcPKNS_4core8CMatrix4IfEEb");
   void g4_relfn_15633(void) __asm__("_ZN6glitch2io11CAttributes9addStringEPNS1_4SelfEPKcPKwb");
+  void g4_relfn_15633_xeea9b0(void) __asm__("_ZN6glitch2io11CAttributes9addStringEPNS1_4SelfEPKcPcb"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15634(void) __asm__("_ZN6glitch2io11CAttributes9getColorfEPNS1_4SelfES3_Pc");
+  void g4_relfn_15634_xea0000(void) __asm__("_ZN6glitch2io11CAttributes9getColorfEPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15635(void) __asm__("_ZN6glitch2io11CAttributes9getLine2dEPNS1_4SelfES3_Pc");
   void g4_relfn_15636(void) __asm__("_ZN6glitch2io11CAttributes9getLine3dEPNS1_4SelfES3_Pc");
+  void g4_relfn_15636_xe9e5c0(void) __asm__("_ZN6glitch2io11CAttributes9getLine3dEPNS1_4SelfEii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15637(void) __asm__("_ZN6glitch2io11CAttributes9getMatrixEPNS1_4SelfES3_Pc");
+  void g4_relfn_15637_xeb6a70(void) __asm__("_ZN6glitch2io11CAttributes9getMatrixEPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15638(void) __asm__("_ZN6glitch2io11CAttributes9getStringEPNS1_4SelfEPcS4_");
+  void g4_relfn_15638_xeb3ce0(void) __asm__("_ZN6glitch2io11CAttributes9getStringEPNS1_4SelfES3_Pc"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_15638_xe9dda0(void) __asm__("_ZN6glitch2io11CAttributes9getStringEPNS1_4SelfEij"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15639(void) __asm__("_ZN6glitch2io11IAttributes16Destroy_eaefafe0EPNS1_4SelfE");
   void g4_relfn_1564(void) __asm__("_Z10sub_693660ePji");
   void g4_relfn_15640(void) __asm__("_ZN6glitch2io11IAttributes7DestroyEPNS1_4SelfE");
@@ -6835,6 +6964,7 @@ extern "C" {
   void g4_relfn_15734(void) __asm__("_ZN6glitch2io14CGlfFileSystem5clearEPNS1_4SelfE");
   void g4_relfn_15735(void) __asm__("_ZN6glitch2io14CGlfFileSystem7DestroyEPPPVi");
   void g4_relfn_15736(void) __asm__("_ZN6glitch2io14CGlfFileSystem9existFileEPNS1_4SelfEPKNSt6__ndk112basic_stringIcNS4_11char_traitsIcEENS_4core10SAllocatorIcLy0EEEEE");
+  void g4_relfn_15736_xee52e0(void) __asm__("_ZN6glitch2io14CGlfFileSystem9existFileEPNS1_4SelfEPc"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15737(void) __asm__("_ZN6glitch2io14CLimitReadFile11getFileNameEPNS1_4SelfE");
   void g4_relfn_15738(void) __asm__("_ZN6glitch2io14CLimitReadFile11getFullPathEPNS1_4SelfE");
   void g4_relfn_15739(void) __asm__("_ZN6glitch2io14CLimitReadFile11setFileNameEPNS1_4SelfEPKc");
@@ -6887,6 +7017,7 @@ extern "C" {
   void g4_relfn_15781(void) __asm__("_ZN6glitch2io15CLightAttribute7getTypeEv");
   void g4_relfn_15782(void) __asm__("_ZN6glitch2io15CLightAttribute8getLightEPNS1_4SelfEi");
   void g4_relfn_15783(void) __asm__("_ZN6glitch2io15CLightAttribute8setLightEPNS1_4SelfEPPVi");
+  void g4_relfn_15783_xf05e20(void) __asm__("_ZN6glitch2io15CLightAttribute8setLightEiPPVi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15784(void) __asm__("_ZN6glitch2io15CLightAttribute9getStringEPNS1_4SelfEPc");
   void g4_relfn_15785(void) __asm__("_ZN6glitch2io15CLightAttribute9setStringEv");
   void g4_relfn_15786(void) __asm__("_ZN6glitch2io15CMemoryReadFile11getFileNameEPNS1_4SelfE");
@@ -6964,6 +7095,7 @@ extern "C" {
   void g4_relfn_15850(void) __asm__("_ZN6glitch2io16CStringAttribute9getStringEPNS1_4SelfEi");
   void g4_relfn_15851(void) __asm__("_ZN6glitch2io16CStringAttribute9setBinaryEPPKvPhi");
   void g4_relfn_15852(void) __asm__("_ZN6glitch2io16CStringAttribute9setStringEPNS1_4SelfEPw");
+  void g4_relfn_15852_xf14400(void) __asm__("_ZN6glitch2io16CStringAttribute9setStringEPPKvPc"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15853(void) __asm__("_ZN6glitch2io16CZipPoolReadFile16Destroy_eae94a00EPNS1_4SelfE");
   void g4_relfn_15854(void) __asm__("_ZN6glitch2io16CZipPoolReadFile7DestroyEPNS1_4SelfE");
   void g4_relfn_15855(void) __asm__("_ZN6glitch2io17CFileReadCallBack16Destroy_eae948f0EPNS1_4SelfE");
@@ -6992,6 +7124,7 @@ extern "C" {
   void g4_relfn_15876(void) __asm__("_ZN6glitch2io17CNumbersAttribute11getVector4dEPNS1_4SelfEi");
   void g4_relfn_15877(void) __asm__("_ZN6glitch2io17CNumbersAttribute11setIntArrayEPNS1_4SelfEPNSt6__ndk16vectorIiNS_4core10SAllocatorIiLy0EEEEE");
   void g4_relfn_15878(void) __asm__("_ZN6glitch2io17CNumbersAttribute11setVector2dEiPf");
+  void g4_relfn_15878_xefcad0(void) __asm__("_ZN6glitch2io17CNumbersAttribute11setVector2dEiPj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15879(void) __asm__("_ZN6glitch2io17CNumbersAttribute11setVector3dEiPf");
   void g4_relfn_1588(void) __asm__("_Z10sub_6A76C0PiiPf");
   void g4_relfn_15880(void) __asm__("_ZN6glitch2io17CNumbersAttribute11setVector4dEiPf");
@@ -7031,6 +7164,7 @@ extern "C" {
   void g4_relfn_15910(void) __asm__("_ZN6glitch2io17CNumbersAttribute9getMatrixEPNS1_4SelfEi");
   void g4_relfn_15911(void) __asm__("_ZN6glitch2io17CNumbersAttribute9getStringEPPVii");
   void g4_relfn_15912(void) __asm__("_ZN6glitch2io17CNumbersAttribute9setLine2dEiPf");
+  void g4_relfn_15912_xefc9e0(void) __asm__("_ZN6glitch2io17CNumbersAttribute9setLine2dEiPj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15913(void) __asm__("_ZN6glitch2io17CNumbersAttribute9setMatrixEPNS1_4SelfEPKNS_4core8CMatrix4IfEE");
   void g4_relfn_15914(void) __asm__("_ZN6glitch2io17CNumbersAttribute9setStringE6__m128PNS1_4SelfEPKc");
   void g4_relfn_15915(void) __asm__("_ZN6glitch2io17CTextureAttribute10getStringWEPNS1_4SelfEPj");
@@ -7043,6 +7177,7 @@ extern "C" {
   void g4_relfn_15921(void) __asm__("_ZN6glitch2io17CTextureAttribute7getBoolEPNS1_4SelfE");
   void g4_relfn_15922(void) __asm__("_ZN6glitch2io17CTextureAttribute7getTypeEv");
   void g4_relfn_15923(void) __asm__("_ZN6glitch2io17CTextureAttribute9getStringEPNS1_4SelfEPc");
+  void g4_relfn_15923_xefb410(void) __asm__("_ZN6glitch2io17CTextureAttribute9getStringEPNS1_4SelfEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15924(void) __asm__("_ZN6glitch2io17CTextureAttribute9setStringEPPPcPKc");
   void g4_relfn_15925(void) __asm__("_ZN6glitch2io17IAttributesReader16Destroy_eaefb230EPNS1_4SelfE");
   void g4_relfn_15926(void) __asm__("_ZN6glitch2io17IAttributesReader7DestroyEPNS1_4SelfE");
@@ -7123,6 +7258,7 @@ extern "C" {
   void g4_relfn_15994(void) __asm__("_ZN6glitch2io21CUserPointerAttribute7getBoolEPNS1_4SelfE");
   void g4_relfn_15995(void) __asm__("_ZN6glitch2io21CUserPointerAttribute7getTypeEv");
   void g4_relfn_15996(void) __asm__("_ZN6glitch2io21CUserPointerAttribute9getStringEPNS1_4SelfEPc");
+  void g4_relfn_15996_xefb910(void) __asm__("_ZN6glitch2io21CUserPointerAttribute9getStringEPPci"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_15997(void) __asm__("_ZN6glitch2io21CUserPointerAttribute9setStringEPNS1_4SelfEPc");
   void g4_relfn_15998(void) __asm__("_ZN6glitch2io22CStringWArrayAttribute13getTypeStringEv");
   void g4_relfn_15999(void) __asm__("_ZN6glitch2io22CStringWArrayAttribute16Destroy_eaf03050EPNS1_4SelfE");
@@ -7156,10 +7292,13 @@ extern "C" {
   void g4_relfn_16022(void) __asm__("_ZN6glitch2io38CXMLReaderImpl_char_io_IXMLBase_c7aab116getAttributeNameEPNS0_14CXMLReaderImplIcNS0_8IXMLBaseEEEj");
   void g4_relfn_16023(void) __asm__("_ZN6glitch2io38CXMLReaderImpl_char_io_IXMLBase_c7aab117getAttributeCountEPNS0_14CXMLReaderImplIcNS0_8IXMLBaseEEE");
   void g4_relfn_16024(void) __asm__("_ZN6glitch2io38CXMLReaderImpl_char_io_IXMLBase_c7aab117getAttributeValueEPNS0_14CXMLReaderImplIcNS0_8IXMLBaseEEEPc");
+  void g4_relfn_16024_xe94730(void) __asm__("_ZN6glitch2io38CXMLReaderImpl_char_io_IXMLBase_c7aab117getAttributeValueEPNS0_14CXMLReaderImplIcNS0_8IXMLBaseEEEj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16025(void) __asm__("_ZN6glitch2io38CXMLReaderImpl_char_io_IXMLBase_c7aab117readToNextElementEPNS0_14CXMLReaderImplIcNS0_8IXMLBaseEEE");
   void g4_relfn_16026(void) __asm__("_ZN6glitch2io38CXMLReaderImpl_char_io_IXMLBase_c7aab121getAttributeValueSafeEPNS0_14CXMLReaderImplIcNS0_8IXMLBaseEEEPc");
   void g4_relfn_16027(void) __asm__("_ZN6glitch2io38CXMLReaderImpl_char_io_IXMLBase_c7aab122getAttributeValueAsIntEPNS0_14CXMLReaderImplIcNS0_8IXMLBaseEEEPKc");
+  void g4_relfn_16027_xe94780(void) __asm__("_ZN6glitch2io38CXMLReaderImpl_char_io_IXMLBase_c7aab122getAttributeValueAsIntEPNS0_14CXMLReaderImplIcNS0_8IXMLBaseEEEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16028(void) __asm__("_ZN6glitch2io38CXMLReaderImpl_char_io_IXMLBase_c7aab124getAttributeValueAsFloatEPNS0_14CXMLReaderImplIcNS0_8IXMLBaseEEEPc");
+  void g4_relfn_16028_xe94d40(void) __asm__("_ZN6glitch2io38CXMLReaderImpl_char_io_IXMLBase_c7aab124getAttributeValueAsFloatEPNS0_14CXMLReaderImplIcNS0_8IXMLBaseEEEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16029(void) __asm__("_ZN6glitch2io38CXMLReaderImpl_char_io_IXMLBase_c7aab14readEPNS0_14CXMLReaderImplIcNS0_8IXMLBaseEEE");
   void g4_relfn_1603(void) __asm__("_Z10sub_6AC440Pj");
   void g4_relfn_16030(void) __asm__("_ZN6glitch2io38CXMLReaderImpl_char_io_IXMLBase_c7aab17DestroyEPPv");
@@ -7176,10 +7315,13 @@ extern "C" {
   void g4_relfn_16040(void) __asm__("_ZN6glitch2io44CXMLReaderImpl_char_IReferenceCounted_10ae1016getAttributeNameEPNS0_14CXMLReaderImplIcNS_17IReferenceCountedEEEj");
   void g4_relfn_16041(void) __asm__("_ZN6glitch2io44CXMLReaderImpl_char_IReferenceCounted_10ae1017getAttributeCountEPNS0_14CXMLReaderImplIcNS_17IReferenceCountedEEE");
   void g4_relfn_16042(void) __asm__("_ZN6glitch2io44CXMLReaderImpl_char_IReferenceCounted_10ae1017getAttributeValueEPNS0_14CXMLReaderImplIcNS_17IReferenceCountedEEEPKc");
+  void g4_relfn_16042_xefab50(void) __asm__("_ZN6glitch2io44CXMLReaderImpl_char_IReferenceCounted_10ae1017getAttributeValueEPNS0_14CXMLReaderImplIcNS_17IReferenceCountedEEEj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16043(void) __asm__("_ZN6glitch2io44CXMLReaderImpl_char_IReferenceCounted_10ae1017readToNextElementEPNS0_14CXMLReaderImplIcNS_17IReferenceCountedEEE");
   void g4_relfn_16044(void) __asm__("_ZN6glitch2io44CXMLReaderImpl_char_IReferenceCounted_10ae1021getAttributeValueSafeEPNS0_14CXMLReaderImplIcNS_17IReferenceCountedEEEPKc");
   void g4_relfn_16045(void) __asm__("_ZN6glitch2io44CXMLReaderImpl_char_IReferenceCounted_10ae1022getAttributeValueAsIntEPNS0_14CXMLReaderImplIcNS_17IReferenceCountedEEEPKc");
+  void g4_relfn_16045_xefaba0(void) __asm__("_ZN6glitch2io44CXMLReaderImpl_char_IReferenceCounted_10ae1022getAttributeValueAsIntEPNS0_14CXMLReaderImplIcNS_17IReferenceCountedEEEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16046(void) __asm__("_ZN6glitch2io44CXMLReaderImpl_char_IReferenceCounted_10ae1024getAttributeValueAsFloatEPNS0_14CXMLReaderImplIcNS_17IReferenceCountedEEEPKc");
+  void g4_relfn_16046_xf02070(void) __asm__("_ZN6glitch2io44CXMLReaderImpl_char_IReferenceCounted_10ae1024getAttributeValueAsFloatEPNS0_14CXMLReaderImplIcNS_17IReferenceCountedEEEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16047(void) __asm__("_ZN6glitch2io44CXMLReaderImpl_char_IReferenceCounted_10ae104readEPNS0_14CXMLReaderImplIcNS_17IReferenceCountedEEE");
   void g4_relfn_16048(void) __asm__("_ZN6glitch2io44CXMLReaderImpl_char_IReferenceCounted_10ae107DestroyEPPv");
   void g4_relfn_16049(void) __asm__("_ZN6glitch2io45IIrrXMLReader_unsigned_long_io_IXMLBas_46452f16Destroy_eae94800EPNS0_13IIrrXMLReaderImNS0_8IXMLBaseEEE");
@@ -7200,9 +7342,11 @@ extern "C" {
   void g4_relfn_16062(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_long_io_IXMLBas_c15f3d16getAttributeNameEPNS0_14CXMLReaderImplImNS0_8IXMLBaseEEEj");
   void g4_relfn_16063(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_long_io_IXMLBas_c15f3d17getAttributeCountEPNS0_14CXMLReaderImplImNS0_8IXMLBaseEEE");
   void g4_relfn_16064(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_long_io_IXMLBas_c15f3d17getAttributeValueEPNS0_14CXMLReaderImplImNS0_8IXMLBaseEEEPj");
+  void g4_relfn_16064_xe94490(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_long_io_IXMLBas_c15f3d17getAttributeValueEPNS0_14CXMLReaderImplImNS0_8IXMLBaseEEEj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16065(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_long_io_IXMLBas_c15f3d17readToNextElementEPNS0_14CXMLReaderImplImNS0_8IXMLBaseEEE");
   void g4_relfn_16066(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_long_io_IXMLBas_c15f3d21getAttributeValueSafeEPNS0_14CXMLReaderImplImNS0_8IXMLBaseEEEPj");
   void g4_relfn_16067(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_long_io_IXMLBas_c15f3d22getAttributeValueAsIntEPNS0_14CXMLReaderImplImNS0_8IXMLBaseEEEPKj");
+  void g4_relfn_16067_xe944e0(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_long_io_IXMLBas_c15f3d22getAttributeValueAsIntEPNS0_14CXMLReaderImplImNS0_8IXMLBaseEEEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16068(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_long_io_IXMLBas_c15f3d24getAttributeValueAsFloatEPNS0_14CXMLReaderImplImNS0_8IXMLBaseEEEPj");
   void g4_relfn_16069(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_long_io_IXMLBas_c15f3d4readEPNS0_14CXMLReaderImplImNS0_8IXMLBaseEEE");
   void g4_relfn_1607(void) __asm__("_Z10sub_6AC520i");
@@ -7218,9 +7362,11 @@ extern "C" {
   void g4_relfn_16079(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_short_io_IXMLBa_8d8a8e17getAttributeCountEPNS0_14CXMLReaderImplItNS0_8IXMLBaseEEE");
   void g4_relfn_1608(void) __asm__("_Z10sub_6AC540Pv");
   void g4_relfn_16080(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_short_io_IXMLBa_8d8a8e17getAttributeValueEPNS0_14CXMLReaderImplItNS0_8IXMLBaseEEEPt");
+  void g4_relfn_16080_xe945e0(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_short_io_IXMLBa_8d8a8e17getAttributeValueEPNS0_14CXMLReaderImplItNS0_8IXMLBaseEEEj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16081(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_short_io_IXMLBa_8d8a8e17readToNextElementEPNS0_14CXMLReaderImplItNS0_8IXMLBaseEEE");
   void g4_relfn_16082(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_short_io_IXMLBa_8d8a8e21getAttributeValueSafeEPNS0_14CXMLReaderImplItNS0_8IXMLBaseEEEPt");
   void g4_relfn_16083(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_short_io_IXMLBa_8d8a8e22getAttributeValueAsIntEPNS0_14CXMLReaderImplItNS0_8IXMLBaseEEEPKt");
+  void g4_relfn_16083_xe94630(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_short_io_IXMLBa_8d8a8e22getAttributeValueAsIntEPNS0_14CXMLReaderImplItNS0_8IXMLBaseEEEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16084(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_short_io_IXMLBa_8d8a8e24getAttributeValueAsFloatEPNS0_14CXMLReaderImplItNS0_8IXMLBaseEEEPt");
   void g4_relfn_16085(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_short_io_IXMLBa_8d8a8e4readEPNS0_14CXMLReaderImplItNS0_8IXMLBaseEEE");
   void g4_relfn_16086(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_unsigned_short_io_IXMLBa_8d8a8e7DestroyEPPv");
@@ -7235,9 +7381,11 @@ extern "C" {
   void g4_relfn_16094(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_wchar_t_IReferenceCounte_135d5e16getAttributeNameEPNS0_14CXMLReaderImplIwNS_17IReferenceCountedEEEj");
   void g4_relfn_16095(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_wchar_t_IReferenceCounte_135d5e17getAttributeCountEPNS0_14CXMLReaderImplIwNS_17IReferenceCountedEEE");
   void g4_relfn_16096(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_wchar_t_IReferenceCounte_135d5e17getAttributeValueEPNS0_14CXMLReaderImplIwNS_17IReferenceCountedEEEPKw");
+  void g4_relfn_16096_xefaca0(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_wchar_t_IReferenceCounte_135d5e17getAttributeValueEPNS0_14CXMLReaderImplIwNS_17IReferenceCountedEEEj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16097(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_wchar_t_IReferenceCounte_135d5e17readToNextElementEPNS0_14CXMLReaderImplIwNS_17IReferenceCountedEEE");
   void g4_relfn_16098(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_wchar_t_IReferenceCounte_135d5e21getAttributeValueSafeEPNS0_14CXMLReaderImplIwNS_17IReferenceCountedEEEPKw");
   void g4_relfn_16099(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_wchar_t_IReferenceCounte_135d5e22getAttributeValueAsIntEPNS0_14CXMLReaderImplIwNS_17IReferenceCountedEEEPKw");
+  void g4_relfn_16099_xefacf0(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_wchar_t_IReferenceCounte_135d5e22getAttributeValueAsIntEPNS0_14CXMLReaderImplIwNS_17IReferenceCountedEEEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_161(void) __asm__("_Z10sub_541F10Pj");
   void g4_relfn_1610(void) __asm__("_Z10sub_6AC590Pi");
   void g4_relfn_16100(void) __asm__("_ZN6glitch2io46CXMLReaderImpl_wchar_t_IReferenceCounte_135d5e24getAttributeValueAsFloatEPNS0_14CXMLReaderImplIwNS_17IReferenceCountedEEEPKw");
@@ -7529,6 +7677,7 @@ extern "C" {
   void g4_relfn_16359(void) __asm__("_ZN6glitch5scene24CDefaultSceneNodeFactory30getCreatableSceneNodeTypeCountEPNS1_4SelfE");
   void g4_relfn_1636(void) __asm__("_Z10sub_6ACC10Pj");
   void g4_relfn_16360(void) __asm__("_ZN6glitch5scene24CDefaultSceneNodeFactory30getCreateableSceneNodeTypeNameEPNS1_4SelfEj");
+  void g4_relfn_16360_xf1a9c0(void) __asm__("_ZN6glitch5scene24CDefaultSceneNodeFactory30getCreateableSceneNodeTypeNameEii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16361(void) __asm__("_ZN6glitch5scene24CNodeRegistrationCounter12registerNodeEiiiiij");
   void g4_relfn_16362(void) __asm__("_ZN6glitch5scene24CTerrainTriangleSelector12getTrianglesEPNS1_4SelfEPNS_4core10triangle3dIfEEiPiPKNS4_8CMatrix4IfEE");
   void g4_relfn_16363(void) __asm__("_ZN6glitch5scene24CTerrainTriangleSelector16getTriangleCountEPNS1_4SelfE");
@@ -7685,6 +7834,7 @@ extern "C" {
   void g4_relfn_165(void) __asm__("_Z10sub_542030PSt9exception");
   void g4_relfn_1650(void) __asm__("_Z10sub_6ACFF0Pi");
   void g4_relfn_16500(void) __asm__("_ZN6glitch5video12pixel_format24computeMipmapSizeInBytesEijjcc");
+  void g4_relfn_16500_xe2c810(void) __asm__("_ZN6glitch5video12pixel_format24computeMipmapSizeInBytesEijjjcc"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16501(void) __asm__("_ZN6glitch5video13CGenericBaker12isCompatibleEPhPPNS0_9CMaterial4SelfEhS6_h");
   void g4_relfn_16502(void) __asm__("_ZN6glitch5video13CGenericBaker16Destroy_ead90d60EPPNS0_4SelfE");
   void g4_relfn_16503(void) __asm__("_ZN6glitch5video13CGenericBaker16getBatchMaterialEPPViiPih");
@@ -7911,6 +8061,7 @@ extern "C" {
   void g4_relfn_16702(void) __asm__("_ZN6glitch5video6CImage16Destroy_eadfd490EPNS1_4SelfE");
   void g4_relfn_16703(void) __asm__("_ZN6glitch5video6CImage7DestroyEPNS1_4SelfE");
   void g4_relfn_16704(void) __asm__("_ZN6glitch5video6CImage9ConstructEPNS1_4SelfEiPi");
+  void g4_relfn_16704_xe35490(void) __asm__("_ZN6glitch5video6CImage9ConstructEiiPjc"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16705(void) __asm__("_ZN6glitch5video6IQuery16Destroy_eadfd390EPNS1_4SelfE");
   void g4_relfn_16706(void) __asm__("_ZN6glitch5video6IQuery7DestroyEPNS1_4SelfE");
   void g4_relfn_16707(void) __asm__("_ZN6glitch5video7IBuffer16Destroy_eadfd530EPNS1_4SelfE");
@@ -7963,6 +8114,9 @@ extern "C" {
   void g4_relfn_1675(void) __asm__("_Z10sub_6B0D90Pj");
   void g4_relfn_16750(void) __asm__("_ZN6glitch7CLogger16Destroy_eacef2a0EPNS0_4SelfE");
   void g4_relfn_16751(void) __asm__("_ZN6glitch7CLogger3logEPjPwi");
+  void g4_relfn_16751_xcd6690(void) __asm__("_ZN6glitch7CLogger3logEiPN3glf7Console4SelfEi"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_16751_xcd4930(void) __asm__("_ZN6glitch7CLogger3logEiPKwPwi"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_16751_xcd48e0(void) __asm__("_ZN6glitch7CLogger3logEiiii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_16752(void) __asm__("_ZN6glitch7CLogger5vlogfEiiPN3glf7Console4SelfEPv");
   void g4_relfn_16753(void) __asm__("_ZN6glitch7CLogger7DestroyEPNS0_4SelfE");
   void g4_relfn_16754(void) __asm__("_ZN6glitch7IDevice12isFullscreenEv");
@@ -9438,6 +9592,7 @@ extern "C" {
   void g4_relfn_18077(void) __asm__("_ZN6glitch7collada26CColladaFactoryWrapperBase13createCoronasEii");
   void g4_relfn_18078(void) __asm__("_ZN6glitch7collada26CColladaFactoryWrapperBase13getEffectNameEPNS1_4SelfEPKNS0_16CColladaDatabase4SelfEPKcS9_");
   void g4_relfn_18079(void) __asm__("_ZN6glitch7collada26CColladaFactoryWrapperBase14createAnimatorEPNS1_4SelfEPKNS0_16CColladaDatabase4SelfE");
+  void g4_relfn_18079_xcfc4c0(void) __asm__("_ZN6glitch7collada26CColladaFactoryWrapperBase14createAnimatorEii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_1808(void) __asm__("_Z10sub_6B1F00PN16hkpTriggerVolume4SelfE");
   void g4_relfn_18080(void) __asm__("_ZN6glitch7collada26CColladaFactoryWrapperBase14createGeometryEii");
   void g4_relfn_18081(void) __asm__("_ZN6glitch7collada26CColladaFactoryWrapperBase14createIKSolverEii");
@@ -9675,6 +9830,7 @@ extern "C" {
   void g4_relfn_18290(void) __asm__("_ZN6glitch9streaming15CCommandEmitter20getGlobalBoundingBoxEPNS1_4SelfEPj");
   void g4_relfn_18291(void) __asm__("_ZN6glitch9streaming15CCommandEmitter7emitAllEPjiii");
   void g4_relfn_18292(void) __asm__("_ZN6glitch9streaming15CLoadBDAEModule13removeObjectsEPNS1_4SelfEPKNS0_21SCommandAndRegisterer4SelfES7_");
+  void g4_relfn_18292_xcdcba0(void) __asm__("_ZN6glitch9streaming15CLoadBDAEModule13removeObjectsEPjiS2_"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_18293(void) __asm__("_ZN6glitch9streaming15CLoadBDAEModule15activateObjectsEv");
   void g4_relfn_18294(void) __asm__("_ZN6glitch9streaming15CLoadBDAEModule17deactivateObjectsEv");
   void g4_relfn_18295(void) __asm__("_ZN6glitch9streaming16IStreamingModule10preProcessEv");
@@ -9805,6 +9961,7 @@ extern "C" {
   void g4_relfn_18407(void) __asm__("_ZN7gameswf10ASFunction2isEPNS0_4SelfEi");
   void g4_relfn_18408(void) __asm__("_ZN7gameswf10ASFunction7DestroyEPNS0_4SelfE");
   void g4_relfn_18409(void) __asm__("_ZN7gameswf10ASFunction7_typeofE");
+  void g4_relfn_18409_f1079810(void) __asm__("_ZN7gameswf10ASFunction6typeofEv"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_1841(void) __asm__("_Z10sub_6B2AA0i");
   void g4_relfn_18410(void) __asm__("_ZN7gameswf10ASFunction8toStringEPNS0_4SelfE");
   void g4_relfn_18411(void) __asm__("_ZN7gameswf10ASGraphics15beginBitmapFillEi");
@@ -9886,18 +10043,24 @@ extern "C" {
   void g4_relfn_18480(void) __asm__("_ZN7gameswf11ASMovieClip9prevFrameEi");
   void g4_relfn_18481(void) __asm__("_ZN7gameswf11ASMovieClip9startDragEi");
   void g4_relfn_18482(void) __asm__("_ZN7gameswf11ASNetStream12setLoopCountEPNS0_4SelfEi");
+  void g4_relfn_18482_x113ab90(void) __asm__("_ZN7gameswf11ASNetStream12setLoopCountEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_18483(void) __asm__("_ZN7gameswf11ASNetStream13setBufferTimeEv");
   void g4_relfn_18484(void) __asm__("_ZN7gameswf11ASNetStream17Destroy_ea1137bb0EPNS0_4SelfE");
   void g4_relfn_18485(void) __asm__("_ZN7gameswf11ASNetStream2isEPNS0_4SelfEi");
   void g4_relfn_18486(void) __asm__("_ZN7gameswf11ASNetStream4ctorEi");
   void g4_relfn_18487(void) __asm__("_ZN7gameswf11ASNetStream4initEi");
   void g4_relfn_18488(void) __asm__("_ZN7gameswf11ASNetStream4playEPPNS_6Player4SelfEPc");
+  void g4_relfn_18488_x11382e0(void) __asm__("_ZN7gameswf11ASNetStream4playEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_18489(void) __asm__("_ZN7gameswf11ASNetStream4seekEPNS0_4SelfEd");
+  void g4_relfn_18489_x113aac0(void) __asm__("_ZN7gameswf11ASNetStream4seekEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_1849(void) __asm__("_Z10sub_6B2F70i");
   void g4_relfn_18490(void) __asm__("_ZN7gameswf11ASNetStream4timeEPNS0_4SelfE");
+  void g4_relfn_18490_x113ac20(void) __asm__("_ZN7gameswf11ASNetStream4timeEPPNS_7ASValue4SelfE"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_18491(void) __asm__("_ZN7gameswf11ASNetStream5closeEPNS0_4SelfE");
+  void g4_relfn_18491_x1138420(void) __asm__("_ZN7gameswf11ASNetStream5closeEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_18492(void) __asm__("_ZN7gameswf11ASNetStream5newOpEPNS0_4SelfE");
   void g4_relfn_18493(void) __asm__("_ZN7gameswf11ASNetStream5pauseEPNS0_4SelfEi");
+  void g4_relfn_18493_x1138a60(void) __asm__("_ZN7gameswf11ASNetStream5pauseEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_18494(void) __asm__("_ZN7gameswf11ASNetStream6resumeEi");
   void g4_relfn_18495(void) __asm__("_ZN7gameswf11ASNetStream7DestroyEPNS0_4SelfE");
   void g4_relfn_18496(void) __asm__("_ZN7gameswf11ASRectangle10intersectsEi");
@@ -9929,6 +10092,7 @@ extern "C" {
   void g4_relfn_18519(void) __asm__("_ZN7gameswf11ASTransform4ctorEi");
   void g4_relfn_1852(void) __asm__("_Z10sub_6B3840ii");
   void g4_relfn_18520(void) __asm__("_ZN7gameswf11ASTransform4initEPNS0_4SelfEiiiiiiiiiiiiiiiiisdsdsdiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiisiPKNS_7StringI4SelfEPNS_4SelfEi");
+  void g4_relfn_18520_x114c5d0(void) __asm__("_ZN7gameswf11ASTransform4initEv"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_18521(void) __asm__("_ZN7gameswf11ASTransform5newOpEv");
   void g4_relfn_18522(void) __asm__("_ZN7gameswf11ASTransform7DestroyEPNS0_4SelfE");
   void g4_relfn_18523(void) __asm__("_ZN7gameswf11ScriptScope17Destroy_ea1079a50EPNS0_4SelfE");
@@ -9947,6 +10111,7 @@ extern "C" {
   void g4_relfn_18535(void) __asm__("_ZN7gameswf12ASBitmapData2isEPNS0_4SelfEi");
   void g4_relfn_18536(void) __asm__("_ZN7gameswf12ASBitmapData4drawEi");
   void g4_relfn_18537(void) __asm__("_ZN7gameswf12ASBitmapData4initEPNS0_4SelfEiibiiiiiiiiz");
+  void g4_relfn_18537_x115e2c0(void) __asm__("_ZN7gameswf12ASBitmapData4initEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_18538(void) __asm__("_ZN7gameswf12ASBitmapData5newOpEPNS0_4SelfE");
   void g4_relfn_18539(void) __asm__("_ZN7gameswf12ASBitmapData7DestroyEPNS0_4SelfE");
   void g4_relfn_1854(void) __asm__("_Z10sub_6B3B30eici");
@@ -10222,6 +10387,7 @@ extern "C" {
   void g4_relfn_18783(void) __asm__("_ZN7gameswf14SpriteInstance19canHandleMouseEventEPNS0_4SelfE");
   void g4_relfn_18784(void) __asm__("_ZN7gameswf14SpriteInstance19clearDisplayObjectsEPNS0_4SelfE");
   void g4_relfn_18785(void) __asm__("_ZN7gameswf14SpriteInstance19removeDisplayObjectEPNS0_4SelfEPKNS_6String4SelfE");
+  void g4_relfn_18785_x10e2140(void) __asm__("_ZN7gameswf14SpriteInstance19removeDisplayObjectEPNS0_4SelfEPNS_9Character4SelfE"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_18786(void) __asm__("_ZN7gameswf14SpriteInstance20findExportedResourceEPNS0_4SelfEPKNS_6String4SelfE");
   void g4_relfn_18787(void) __asm__("_ZN7gameswf14SpriteInstance20replaceDisplayObjectEPNS0_4SelfEPPNS_9Character4SelfEPcjPKNS_6CxForm4SelfEPKNS_6Matrix4SelfEPKNS_6Effect4SelfEft");
   void g4_relfn_18788(void) __asm__("_ZN7gameswf14SpriteInstance21attachDisplayCallbackEiPNS_4SelfEii");
@@ -10231,18 +10397,22 @@ extern "C" {
   void g4_relfn_18791(void) __asm__("_ZN7gameswf14SpriteInstance4dumpEPNS0_4SelfEPNS_6String4SelfE");
   void g4_relfn_18792(void) __asm__("_ZN7gameswf14SpriteInstance7DestroyEPNS0_4SelfE");
   void g4_relfn_18793(void) __asm__("_ZN7gameswf14SpriteInstance7_typeofE");
+  void g4_relfn_18793_f10e9990(void) __asm__("_ZN7gameswf14SpriteInstance6typeofEv"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_18794(void) __asm__("_ZN7gameswf14SpriteInstance7advanceEPNS0_4SelfEi");
   void g4_relfn_18795(void) __asm__("_ZN7gameswf14SpriteInstance7displayEPNS0_4SelfE");
   void g4_relfn_18796(void) __asm__("_ZN7gameswf14SpriteInstance8stopDragEPPNS_6Player4SelfE");
   void g4_relfn_18797(void) __asm__("_ZN7gameswf14SpriteInstance9clearRefsEPPNS_10RefCounted4SelfEi");
   void g4_relfn_18798(void) __asm__("_ZN7gameswf14SpriteInstance9constructEPNS0_4SelfE");
   void g4_relfn_18799(void) __asm__("_ZN7gameswf14SpriteInstance9doActionsEPNS0_4SelfE");
+  void g4_relfn_18799_x10e2300(void) __asm__("_ZN7gameswf14SpriteInstance9doActionsEii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_188(void) __asm__("_Z10sub_542810PN6glitch7collada15CColladaFactory4SelfE");
   void g4_relfn_1880(void) __asm__("_Z10sub_6B5320PN18hkpVehicleInstance4SelfEi");
   void g4_relfn_18800(void) __asm__("_ZN7gameswf14SpriteInstance9enumerateEPNS0_4SelfEPNS_13ASEnvironment4SelfE");
   void g4_relfn_18801(void) __asm__("_ZN7gameswf14SpriteInstance9gotoFrameEPNS0_4SelfEPKNS_6String4SelfE");
+  void g4_relfn_18801_x10e51f0(void) __asm__("_ZN7gameswf14SpriteInstance9gotoFrameEPNS0_4SelfEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_18802(void) __asm__("_ZN7gameswf14SpriteInstance9isEnabledEPNS0_4SelfE");
   void g4_relfn_18803(void) __asm__("_ZN7gameswf14SpriteInstance9replaceMeEPNS0_4SelfEPNS_12CharacterDef4SelfE");
+  void g4_relfn_18803_x10e6060(void) __asm__("_ZN7gameswf14SpriteInstance9replaceMeEPNS0_4SelfEPNS_15MovieDefinition4SelfE"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_18804(void) __asm__("_ZN7gameswf14SpriteInstance9thisAliveEPNS0_4SelfE");
   void g4_relfn_18805(void) __asm__("_ZN7gameswf14buffered_closeEPNS_4SelfE");
   void g4_relfn_18806(void) __asm__("_ZN7gameswf14buffered_writeEv");
@@ -10392,10 +10562,13 @@ extern "C" {
   void g4_relfn_18936(void) __asm__("_ZN7gameswf17ASCppFunctionCallEPj");
   void g4_relfn_18937(void) __asm__("_ZN7gameswf17ASEventDispatcher13dispatchEventEPPNS_4SelfEPNS_7ASEvent4SelfE");
   void g4_relfn_18938(void) __asm__("_ZN7gameswf17ASEventDispatcher16addEventListenerEPNS0_4SelfEPKNS_6String4SelfEPNS_10ASFunction4SelfEbiPPNS_4SelfESC_");
+  void g4_relfn_18938_x116a780(void) __asm__("_ZN7gameswf17ASEventDispatcher16addEventListenerEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_18939(void) __asm__("_ZN7gameswf17ASEventDispatcher16hasEventListenerEPNS0_4SelfEPKNS_6String4SelfE");
+  void g4_relfn_18939_x1165de0(void) __asm__("_ZN7gameswf17ASEventDispatcher16hasEventListenerEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_1894(void) __asm__("_Z10sub_6BA240ii");
   void g4_relfn_18940(void) __asm__("_ZN7gameswf17ASEventDispatcher17Destroy_ea116b180EPNS0_4SelfE");
   void g4_relfn_18941(void) __asm__("_ZN7gameswf17ASEventDispatcher19removeEventListenerEPNS0_4SelfEPKNS_6String4SelfEPNS_10ASFunction4SelfEb");
+  void g4_relfn_18941_x11687b0(void) __asm__("_ZN7gameswf17ASEventDispatcher19removeEventListenerEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_18942(void) __asm__("_ZN7gameswf17ASEventDispatcher2isEPNS0_4SelfEi");
   void g4_relfn_18943(void) __asm__("_ZN7gameswf17ASEventDispatcher4initEv");
   void g4_relfn_18944(void) __asm__("_ZN7gameswf17ASEventDispatcher5newOpEPNS0_4SelfE");
@@ -10608,9 +10781,11 @@ extern "C" {
   void g4_relfn_1913(void) __asm__("_Z10sub_6BA7E0Pf");
   void g4_relfn_19130(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer11createClassEPNS0_4SelfE");
   void g4_relfn_19131(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer11removeChildEPNS0_4SelfEPNS_9Character4SelfE");
+  void g4_relfn_19131_x114e3d0(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer11removeChildEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_19132(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer12swapChildrenEi");
   void g4_relfn_19133(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer13getChildIndexEi");
   void g4_relfn_19134(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer13removeChildAtE");
+  void g4_relfn_19134_f114e5d0(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer18notifyStageChangedEPNS0_4SelfEb"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_19135(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer14getBoundingBoxEPPKNS_6Matrix4SelfEPji");
   void g4_relfn_19136(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer14getChildByNameEi");
   void g4_relfn_19137(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer14swapChildrenAtEi");
@@ -10630,6 +10805,7 @@ extern "C" {
   void g4_relfn_1915(void) __asm__("_Z10sub_6BA840Pj");
   void g4_relfn_19150(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer7displayEPPNS_4SelfE");
   void g4_relfn_19151(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer8addChildEPNS0_4SelfEPNS_9Character4SelfE");
+  void g4_relfn_19151_x1156200(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer8addChildEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_19152(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer8containsEi");
   void g4_relfn_19153(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer9clearRefsEPNS0_4SelfEi");
   void g4_relfn_19154(void) __asm__("_ZN7gameswf24ASDisplayObjectContainer9thisAliveEPNS0_4SelfE");
@@ -10705,6 +10881,7 @@ extern "C" {
   void g4_relfn_19217(void) __asm__("_ZN7gameswf6ASDate7DestroyEPNS0_4SelfE");
   void g4_relfn_19218(void) __asm__("_ZN7gameswf6ASDate7getDateEPPNS_7ASValue4SelfE");
   void g4_relfn_19219(void) __asm__("_ZN7gameswf6ASDate7getTimeEPNS0_4SelfE");
+  void g4_relfn_19219_x1129f80(void) __asm__("_ZN7gameswf6ASDate7getTimeEPPNS_7ASValue4SelfE"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_1922(void) __asm__("_Z10sub_6BA9A0Pj");
   void g4_relfn_19220(void) __asm__("_ZN7gameswf6ASDate7getYearEPPNS_7ASValue4SelfE");
   void g4_relfn_19221(void) __asm__("_ZN7gameswf6ASDate8getHoursEPPNS_7ASValue4SelfE");
@@ -10732,10 +10909,12 @@ extern "C" {
   void g4_relfn_19241(void) __asm__("_ZN7gameswf7ASArray17getStandardMemberEiiPNS_7ASValue4SelfE");
   void g4_relfn_19242(void) __asm__("_ZN7gameswf7ASArray2isEPNS0_4SelfEi");
   void g4_relfn_19243(void) __asm__("_ZN7gameswf7ASArray3popEPNS0_4SelfEPNS_7ASValue4SelfE");
+  void g4_relfn_19243_x111fcc0(void) __asm__("_ZN7gameswf7ASArray3popEPPNS_7ASValue4SelfE"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_19244(void) __asm__("_ZN7gameswf7ASArray4ctorEPPNS_7ASValue4SelfE");
   void g4_relfn_19245(void) __asm__("_ZN7gameswf7ASArray4initEPj");
   void g4_relfn_19246(void) __asm__("_ZN7gameswf7ASArray4joinEi");
   void g4_relfn_19247(void) __asm__("_ZN7gameswf7ASArray4pushEPNS0_4SelfEPKNS_7ASValue4SelfE");
+  void g4_relfn_19247_x111f710(void) __asm__("_ZN7gameswf7ASArray4pushEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_19248(void) __asm__("_ZN7gameswf7ASArray4sortEi");
   void g4_relfn_19249(void) __asm__("_ZN7gameswf7ASArray5newOpEPNS0_4SelfE");
   void g4_relfn_1925(void) __asm__("_Z10sub_6BAA10Pj");
@@ -10749,6 +10928,7 @@ extern "C" {
   void g4_relfn_19257(void) __asm__("_ZN7gameswf7ASArray7reverseEi");
   void g4_relfn_19258(void) __asm__("_ZN7gameswf7ASArray7unshiftEi");
   void g4_relfn_19259(void) __asm__("_ZN7gameswf7ASArray8toStringEPNS0_4SelfE");
+  void g4_relfn_19259_x111c6c0(void) __asm__("_ZN7gameswf7ASArray8toStringEi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_1926(void) __asm__("_Z10sub_6BAA20i");
   void g4_relfn_19260(void) __asm__("_ZN7gameswf7ASArray9enumerateEPNS0_4SelfEPNS_13ASEnvironment4SelfE");
   void g4_relfn_19261(void) __asm__("_ZN7gameswf7ASArray9thisAliveEPNS0_4SelfE");
@@ -10925,6 +11105,7 @@ extern "C" {
   void g4_relfn_19415(void) __asm__("_ZN7gameswf8ASObject6toBoolEv");
   void g4_relfn_19416(void) __asm__("_ZN7gameswf8ASObject7DestroyEPNS0_4SelfE");
   void g4_relfn_19417(void) __asm__("_ZN7gameswf8ASObject7_typeofE");
+  void g4_relfn_19417_f1079770(void) __asm__("_ZN7gameswf8ASObject6typeofEv"); // was a data symbol; fixed by audit_fnmap_overloads.py
   void g4_relfn_19418(void) __asm__("_ZN7gameswf8ASObject7advanceEv");
   void g4_relfn_19419(void) __asm__("_ZN7gameswf8ASObject7onEventEPNS0_4SelfEPKNS_7EventId4SelfE");
   void g4_relfn_1942(void) __asm__("_Z10sub_6BAE20Pj");
@@ -11313,7 +11494,12 @@ extern "C" {
   void g4_relfn_19765(void) __asm__("_ZN7grapher20GraphDebugController7DestroyEPNS0_4SelfE");
   void g4_relfn_19766(void) __asm__("_ZN7grapher20GraphDebugController7OnBreakEv");
   void g4_relfn_19767(void) __asm__("_ZN7grapher21HolderT_int_id_fe4c744FromEPNS_7HolderTIiEEPKb");
+  void g4_relfn_19767_x13cfcc0(void) __asm__("_ZN7grapher21HolderT_int_id_fe4c744FromEiPPKc"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_19767_x13cfca0(void) __asm__("_ZN7grapher21HolderT_int_id_fe4c744FromEPNS_7HolderTIiEEPKd"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_19767_x13cfc90(void) __asm__("_ZN7grapher21HolderT_int_id_fe4c744FromEPNS_7HolderTIiEEPKf"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_19767_x13cfc80(void) __asm__("_ZN7grapher21HolderT_int_id_fe4c744FromEPNS_7HolderTIiEEPKi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_19768(void) __asm__("_ZN7grapher21HolderT_string_e830be4FromEPNS_7HolderTINSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEEEPKb");
+  void g4_relfn_19768_x13d0160(void) __asm__("_ZN7grapher21HolderT_string_e830be4FromEii"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_19769(void) __asm__("_ZN7grapher22ActorConvertorFloatInt17Destroy_ea13a1a60EPNS0_4SelfE");
   void g4_relfn_1977(void) __asm__("_Z10sub_6BC040Pjiii");
   void g4_relfn_19770(void) __asm__("_ZN7grapher22ActorConvertorFloatInt4InitEPNS0_4SelfE");
@@ -11324,13 +11510,25 @@ extern "C" {
   void g4_relfn_19775(void) __asm__("_ZN7grapher22ActorConvertorIntFloat5EventEPNS0_4SelfEiPNS_12ActorContext4SelfE");
   void g4_relfn_19776(void) __asm__("_ZN7grapher22ActorConvertorIntFloat7DestroyEPNS0_4SelfE");
   void g4_relfn_19777(void) __asm__("_ZN7grapher22HolderT_bool_id_87484c4FromEPNS_7HolderTIbEEPKb");
+  void g4_relfn_19777_x13cfee0(void) __asm__("_ZN7grapher22HolderT_bool_id_87484c4FromEiPj"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_19777_x13cfeb0(void) __asm__("_ZN7grapher22HolderT_bool_id_87484c4FromEPNS_7HolderTIbEEPKd"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_19777_x13cfe90(void) __asm__("_ZN7grapher22HolderT_bool_id_87484c4FromEPNS_7HolderTIbEEPKf"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_19777_x13cfe70(void) __asm__("_ZN7grapher22HolderT_bool_id_87484c4FromEPNS_7HolderTIbEEPKi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_19778(void) __asm__("_ZN7grapher23ActorConvertorDoubleInt17Destroy_ea13a19f0EPNS0_4SelfE");
   void g4_relfn_19779(void) __asm__("_ZN7grapher23ActorConvertorDoubleInt4InitEPNS0_4SelfE");
   void g4_relfn_1978(void) __asm__("_Z10sub_6BC0D0Pjiii");
   void g4_relfn_19780(void) __asm__("_ZN7grapher23ActorConvertorDoubleInt5EventEPNS0_4SelfEiPNS_12ActorContext4SelfE");
   void g4_relfn_19781(void) __asm__("_ZN7grapher23ActorConvertorDoubleInt7DestroyEPNS0_4SelfE");
   void g4_relfn_19782(void) __asm__("_ZN7grapher23HolderT_float_id_458ea94FromEPNS_7HolderTIfEEPKb");
+  void g4_relfn_19782_x13cfd60(void) __asm__("_ZN7grapher23HolderT_float_id_458ea94FromEiPPKc"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_19782_x13cfd20(void) __asm__("_ZN7grapher23HolderT_float_id_458ea94FromEPNS_7HolderTIfEEPKd"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_19782_x13cfd10(void) __asm__("_ZN7grapher23HolderT_float_id_458ea94FromEPNS_7HolderTIfEEPKf"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_19782_x13cfcf0(void) __asm__("_ZN7grapher23HolderT_float_id_458ea94FromEPNS_7HolderTIfEEPKi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_19783(void) __asm__("_ZN7grapher24HolderT_double_id_90764b4FromEPNS_7HolderTIdEEPKb");
+  void g4_relfn_19783_x13cfe30(void) __asm__("_ZN7grapher24HolderT_double_id_90764b4FromEiPPKc"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_19783_x13cfde0(void) __asm__("_ZN7grapher24HolderT_double_id_90764b4FromEPNS_7HolderTIdEEPKd"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_19783_x13cfdc0(void) __asm__("_ZN7grapher24HolderT_double_id_90764b4FromEPNS_7HolderTIdEEPKf"); // overload fixed by audit_fnmap_overloads.py
+  void g4_relfn_19783_x13cfda0(void) __asm__("_ZN7grapher24HolderT_double_id_90764b4FromEPNS_7HolderTIdEEPKi"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_19784(void) __asm__("_ZN7grapher25ActorConvertorFloatDouble17Destroy_ea13a1ad0EPNS0_4SelfE");
   void g4_relfn_19785(void) __asm__("_ZN7grapher25ActorConvertorFloatDouble4InitEPNS0_4SelfE");
   void g4_relfn_19786(void) __asm__("_ZN7grapher25ActorConvertorFloatDouble5EventEPNS0_4SelfEiPNS_12ActorContext4SelfE");
@@ -11446,6 +11644,7 @@ extern "C" {
   void g4_relfn_19885(void) __asm__("_ZN9hkpEntity24deallocateInternalArraysEPNS_4SelfE");
   void g4_relfn_19886(void) __asm__("_ZN9hkpEntity7DestroyEPNS_4SelfE");
   void g4_relfn_19887(void) __asm__("_ZN9hkpMotion10setMassInvEPNS_4SelfEf");
+  void g4_relfn_19887_x173fca0(void) __asm__("_ZN9hkpMotion10setMassInvEiPj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_19888(void) __asm__("_ZN9hkpMotion11setPositionEPNS_4SelfEPKN10hkVector4f4SelfE");
   void g4_relfn_19889(void) __asm__("_ZN9hkpMotion11setRotationEPNS_4SelfEPKN13hkQuaternionf4SelfE");
   void g4_relfn_1989(void) __asm__("_Z10sub_6BCF20Pj");
@@ -11459,6 +11658,7 @@ extern "C" {
   void g4_relfn_19897(void) __asm__("_ZN9hkpMotion46getMotionStateAndVelocitiesAndDeactivationTypeEPNS_4SelfES1_");
   void g4_relfn_19898(void) __asm__("_ZN9hkpMotion7DestroyEPNS_4SelfE");
   void g4_relfn_19899(void) __asm__("_ZN9hkpMotion7setMassEPNS_4SelfEf");
+  void g4_relfn_19899_x173ffa0(void) __asm__("_ZN9hkpMotion7setMassEPiPj"); // overload fixed by audit_fnmap_overloads.py
   void g4_relfn_199(void) __asm__("_Z10sub_542A90PN6glitch7collada15CColladaFactory4SelfE");
   void g4_relfn_1990(void) __asm__("_Z10sub_6BCFA0Pj");
   void g4_relfn_19900(void) __asm__("_ZN9hkxCamera17Destroy_ea18762d0EPNS_4SelfE");
@@ -37858,7 +38058,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xc6c790u, reinterpret_cast<const void *>(&g4_relfn_13870) },
   { 0xc6c7b0u, reinterpret_cast<const void *>(&g4_relfn_13872) },
   { 0xc6c7c0u, reinterpret_cast<const void *>(&g4_relfn_13868) },
-  { 0xc6c810u, reinterpret_cast<const void *>(&g4_relfn_13870) },
+  { 0xc6c810u, reinterpret_cast<const void *>(&g4_relfn_13870_xc6c810) },
   { 0xc6c8a0u, reinterpret_cast<const void *>(&g4_relfn_13856) },
   { 0xc6c8e0u, reinterpret_cast<const void *>(&g4_relfn_13804) },
   { 0xc6c910u, reinterpret_cast<const void *>(&g4_relfn_13811) },
@@ -38050,7 +38250,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xc99cd0u, reinterpret_cast<const void *>(&g4_relfn_13885) },
   { 0xc9b130u, reinterpret_cast<const void *>(&g4_relfn_13874) },
   { 0xca08d0u, reinterpret_cast<const void *>(&g4_relfn_13884) },
-  { 0xca0ca0u, reinterpret_cast<const void *>(&g4_relfn_13878) },
+  { 0xca0ca0u, reinterpret_cast<const void *>(&g4_relfn_13878_xca0ca0) },
   { 0xca12c0u, reinterpret_cast<const void *>(&g4_relfn_13827) },
   { 0xca12d0u, reinterpret_cast<const void *>(&g4_relfn_13840) },
   { 0xca1380u, reinterpret_cast<const void *>(&g4_relfn_13828) },
@@ -38063,7 +38263,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xca3720u, reinterpret_cast<const void *>(&g4_relfn_13907) },
   { 0xca3890u, reinterpret_cast<const void *>(&g4_relfn_13904) },
   { 0xca3b40u, reinterpret_cast<const void *>(&g4_relfn_13901) },
-  { 0xca3fc0u, reinterpret_cast<const void *>(&g4_relfn_13905) },
+  { 0xca3fc0u, reinterpret_cast<const void *>(&g4_relfn_13905_xca3fc0) },
   { 0xca4310u, reinterpret_cast<const void *>(&g4_relfn_13899) },
   { 0xca4a30u, reinterpret_cast<const void *>(&g4_relfn_13724) },
   { 0xca4a50u, reinterpret_cast<const void *>(&g4_relfn_13722) },
@@ -38384,9 +38584,9 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xcd4780u, reinterpret_cast<const void *>(&g4_relfn_18326) },
   { 0xcd4820u, reinterpret_cast<const void *>(&g4_relfn_18322) },
   { 0xcd4860u, reinterpret_cast<const void *>(&g4_relfn_18335) },
-  { 0xcd48e0u, reinterpret_cast<const void *>(&g4_relfn_16751) },
-  { 0xcd4930u, reinterpret_cast<const void *>(&g4_relfn_16751) },
-  { 0xcd6690u, reinterpret_cast<const void *>(&g4_relfn_16751) },
+  { 0xcd48e0u, reinterpret_cast<const void *>(&g4_relfn_16751_xcd48e0) },
+  { 0xcd4930u, reinterpret_cast<const void *>(&g4_relfn_16751_xcd4930) },
+  { 0xcd6690u, reinterpret_cast<const void *>(&g4_relfn_16751_xcd6690) },
   { 0xcd6790u, reinterpret_cast<const void *>(&g4_relfn_15442) },
   { 0xcd67f0u, reinterpret_cast<const void *>(&g4_relfn_15440) },
   { 0xcd68b0u, reinterpret_cast<const void *>(&g4_relfn_15437) },
@@ -38415,7 +38615,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xcdb390u, reinterpret_cast<const void *>(&g4_relfn_18317) },
   { 0xcdb780u, reinterpret_cast<const void *>(&g4_relfn_18311) },
   { 0xcdba30u, reinterpret_cast<const void *>(&g4_relfn_18309) },
-  { 0xcdcba0u, reinterpret_cast<const void *>(&g4_relfn_18292) },
+  { 0xcdcba0u, reinterpret_cast<const void *>(&g4_relfn_18292_xcdcba0) },
   { 0xcdcd20u, reinterpret_cast<const void *>(&g4_relfn_18292) },
   { 0xcdce20u, reinterpret_cast<const void *>(&g4_relfn_18284) },
   { 0xcef090u, reinterpret_cast<const void *>(&g4_relfn_16743) },
@@ -38519,7 +38719,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xcfc3e0u, reinterpret_cast<const void *>(&g4_relfn_18090) },
   { 0xcfc430u, reinterpret_cast<const void *>(&g4_relfn_18077) },
   { 0xcfc480u, reinterpret_cast<const void *>(&g4_relfn_18099) },
-  { 0xcfc4c0u, reinterpret_cast<const void *>(&g4_relfn_18079) },
+  { 0xcfc4c0u, reinterpret_cast<const void *>(&g4_relfn_18079_xcfc4c0) },
   { 0xcfc510u, reinterpret_cast<const void *>(&g4_relfn_18092) },
   { 0xcfc550u, reinterpret_cast<const void *>(&g4_relfn_18081) },
   { 0xcfc590u, reinterpret_cast<const void *>(&g4_relfn_18108) },
@@ -40869,7 +41069,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xe2bca0u, reinterpret_cast<const void *>(&g4_relfn_16530) },
   { 0xe2c230u, reinterpret_cast<const void *>(&g4_relfn_16730) },
   { 0xe2c270u, reinterpret_cast<const void *>(&g4_relfn_20805) },
-  { 0xe2c810u, reinterpret_cast<const void *>(&g4_relfn_16500) },
+  { 0xe2c810u, reinterpret_cast<const void *>(&g4_relfn_16500_xe2c810) },
   { 0xe2cd40u, reinterpret_cast<const void *>(&g4_relfn_16468) },
   { 0xe2cea0u, reinterpret_cast<const void *>(&g4_relfn_16593) },
   { 0xe2d960u, reinterpret_cast<const void *>(&g4_relfn_16464) },
@@ -40908,7 +41108,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xe33d80u, reinterpret_cast<const void *>(&g4_relfn_7621) },
   { 0xe33eb0u, reinterpret_cast<const void *>(&g4_relfn_16729) },
   { 0xe34cc0u, reinterpret_cast<const void *>(&g4_relfn_16472) },
-  { 0xe35490u, reinterpret_cast<const void *>(&g4_relfn_16704) },
+  { 0xe35490u, reinterpret_cast<const void *>(&g4_relfn_16704_xe35490) },
   { 0xe35930u, reinterpret_cast<const void *>(&g4_relfn_20807) },
   { 0xe36480u, reinterpret_cast<const void *>(&g4_relfn_16704) },
   { 0xe397f0u, reinterpret_cast<const void *>(&g4_relfn_16553) },
@@ -41026,7 +41226,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xe8bd00u, reinterpret_cast<const void *>(&g4_relfn_15471) },
   { 0xe8bd40u, reinterpret_cast<const void *>(&g4_relfn_15469) },
   { 0xe8be00u, reinterpret_cast<const void *>(&g4_relfn_15468) },
-  { 0xe912c0u, reinterpret_cast<const void *>(&g4_relfn_15470) },
+  { 0xe912c0u, reinterpret_cast<const void *>(&g4_relfn_15470_xe912c0) },
   { 0xe91330u, reinterpret_cast<const void *>(&g4_relfn_15663) },
   { 0xe942a0u, reinterpret_cast<const void *>(&g4_relfn_15930) },
   { 0xe942c0u, reinterpret_cast<const void *>(&g4_relfn_15538) },
@@ -41041,9 +41241,9 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xe94450u, reinterpret_cast<const void *>(&g4_relfn_16057) },
   { 0xe94460u, reinterpret_cast<const void *>(&g4_relfn_16063) },
   { 0xe94470u, reinterpret_cast<const void *>(&g4_relfn_16062) },
-  { 0xe94490u, reinterpret_cast<const void *>(&g4_relfn_16064) },
+  { 0xe94490u, reinterpret_cast<const void *>(&g4_relfn_16064_xe94490) },
   { 0xe944b0u, reinterpret_cast<const void *>(&g4_relfn_16067) },
-  { 0xe944e0u, reinterpret_cast<const void *>(&g4_relfn_16067) },
+  { 0xe944e0u, reinterpret_cast<const void *>(&g4_relfn_16067_xe944e0) },
   { 0xe94510u, reinterpret_cast<const void *>(&g4_relfn_16056) },
   { 0xe94520u, reinterpret_cast<const void *>(&g4_relfn_16055) },
   { 0xe94530u, reinterpret_cast<const void *>(&g4_relfn_16058) },
@@ -41053,9 +41253,9 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xe945a0u, reinterpret_cast<const void *>(&g4_relfn_16073) },
   { 0xe945b0u, reinterpret_cast<const void *>(&g4_relfn_16079) },
   { 0xe945c0u, reinterpret_cast<const void *>(&g4_relfn_16078) },
-  { 0xe945e0u, reinterpret_cast<const void *>(&g4_relfn_16080) },
+  { 0xe945e0u, reinterpret_cast<const void *>(&g4_relfn_16080_xe945e0) },
   { 0xe94600u, reinterpret_cast<const void *>(&g4_relfn_16083) },
-  { 0xe94630u, reinterpret_cast<const void *>(&g4_relfn_16083) },
+  { 0xe94630u, reinterpret_cast<const void *>(&g4_relfn_16083_xe94630) },
   { 0xe94660u, reinterpret_cast<const void *>(&g4_relfn_16072) },
   { 0xe94670u, reinterpret_cast<const void *>(&g4_relfn_16071) },
   { 0xe94680u, reinterpret_cast<const void *>(&g4_relfn_16074) },
@@ -41065,9 +41265,9 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xe946f0u, reinterpret_cast<const void *>(&g4_relfn_16017) },
   { 0xe94700u, reinterpret_cast<const void *>(&g4_relfn_16023) },
   { 0xe94710u, reinterpret_cast<const void *>(&g4_relfn_16022) },
-  { 0xe94730u, reinterpret_cast<const void *>(&g4_relfn_16024) },
+  { 0xe94730u, reinterpret_cast<const void *>(&g4_relfn_16024_xe94730) },
   { 0xe94750u, reinterpret_cast<const void *>(&g4_relfn_16027) },
-  { 0xe94780u, reinterpret_cast<const void *>(&g4_relfn_16027) },
+  { 0xe94780u, reinterpret_cast<const void *>(&g4_relfn_16027_xe94780) },
   { 0xe947b0u, reinterpret_cast<const void *>(&g4_relfn_16016) },
   { 0xe947c0u, reinterpret_cast<const void *>(&g4_relfn_16015) },
   { 0xe947d0u, reinterpret_cast<const void *>(&g4_relfn_16018) },
@@ -41082,7 +41282,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xe94960u, reinterpret_cast<const void *>(&g4_relfn_15854) },
   { 0xe94a00u, reinterpret_cast<const void *>(&g4_relfn_15853) },
   { 0xe94cf0u, reinterpret_cast<const void *>(&g4_relfn_15754) },
-  { 0xe94d40u, reinterpret_cast<const void *>(&g4_relfn_16028) },
+  { 0xe94d40u, reinterpret_cast<const void *>(&g4_relfn_16028_xe94d40) },
   { 0xe94db0u, reinterpret_cast<const void *>(&g4_relfn_20810) },
   { 0xe95040u, reinterpret_cast<const void *>(&g4_relfn_20811) },
   { 0xe95290u, reinterpret_cast<const void *>(&g4_relfn_15753) },
@@ -41108,26 +41308,26 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xe9d0c0u, reinterpret_cast<const void *>(&g4_relfn_16029) },
   { 0xe9d160u, reinterpret_cast<const void *>(&g4_relfn_7628) },
   { 0xe9d9a0u, reinterpret_cast<const void *>(&g4_relfn_7629) },
-  { 0xe9dda0u, reinterpret_cast<const void *>(&g4_relfn_15638) },
-  { 0xe9de20u, reinterpret_cast<const void *>(&g4_relfn_15546) },
+  { 0xe9dda0u, reinterpret_cast<const void *>(&g4_relfn_15638_xe9dda0) },
+  { 0xe9de20u, reinterpret_cast<const void *>(&g4_relfn_15546_xe9de20) },
   { 0xe9dea0u, reinterpret_cast<const void *>(&g4_relfn_15587) },
   { 0xe9deb0u, reinterpret_cast<const void *>(&g4_relfn_15580) },
-  { 0xe9dee0u, reinterpret_cast<const void *>(&g4_relfn_15624) },
-  { 0xe9df40u, reinterpret_cast<const void *>(&g4_relfn_15551) },
-  { 0xe9dfc0u, reinterpret_cast<const void *>(&g4_relfn_15552) },
-  { 0xe9e040u, reinterpret_cast<const void *>(&g4_relfn_15558) },
-  { 0xe9e0a0u, reinterpret_cast<const void *>(&g4_relfn_15559) },
-  { 0xe9e110u, reinterpret_cast<const void *>(&g4_relfn_15614) },
-  { 0xe9e180u, reinterpret_cast<const void *>(&g4_relfn_15613) },
-  { 0xe9e1c0u, reinterpret_cast<const void *>(&g4_relfn_15610) },
-  { 0xe9e240u, reinterpret_cast<const void *>(&g4_relfn_15561) },
+  { 0xe9dee0u, reinterpret_cast<const void *>(&g4_relfn_15624_xe9dee0) },
+  { 0xe9df40u, reinterpret_cast<const void *>(&g4_relfn_15551_xe9df40) },
+  { 0xe9dfc0u, reinterpret_cast<const void *>(&g4_relfn_15552_xe9dfc0) },
+  { 0xe9e040u, reinterpret_cast<const void *>(&g4_relfn_15558_xe9e040) },
+  { 0xe9e0a0u, reinterpret_cast<const void *>(&g4_relfn_15559_xe9e0a0) },
+  { 0xe9e110u, reinterpret_cast<const void *>(&g4_relfn_15614_xe9e110) },
+  { 0xe9e180u, reinterpret_cast<const void *>(&g4_relfn_15613_xe9e180) },
+  { 0xe9e1c0u, reinterpret_cast<const void *>(&g4_relfn_15610_xe9e1c0) },
+  { 0xe9e240u, reinterpret_cast<const void *>(&g4_relfn_15561_xe9e240) },
   { 0xe9e280u, reinterpret_cast<const void *>(&g4_relfn_20812) },
-  { 0xe9e320u, reinterpret_cast<const void *>(&g4_relfn_15623) },
+  { 0xe9e320u, reinterpret_cast<const void *>(&g4_relfn_15623_xe9e320) },
   { 0xe9e3d0u, reinterpret_cast<const void *>(&g4_relfn_20813) },
-  { 0xe9e470u, reinterpret_cast<const void *>(&g4_relfn_15567) },
+  { 0xe9e470u, reinterpret_cast<const void *>(&g4_relfn_15567_xe9e470) },
   { 0xe9e540u, reinterpret_cast<const void *>(&g4_relfn_20814) },
-  { 0xe9e5c0u, reinterpret_cast<const void *>(&g4_relfn_15636) },
-  { 0xe9e670u, reinterpret_cast<const void *>(&g4_relfn_15571) },
+  { 0xe9e5c0u, reinterpret_cast<const void *>(&g4_relfn_15636_xe9e5c0) },
+  { 0xe9e670u, reinterpret_cast<const void *>(&g4_relfn_15571_xe9e670) },
   { 0xe9e6b0u, reinterpret_cast<const void *>(&g4_relfn_15602) },
   { 0xe9e6d0u, reinterpret_cast<const void *>(&g4_relfn_15570) },
   { 0xe9e6f0u, reinterpret_cast<const void *>(&g4_relfn_15627) },
@@ -41167,7 +41367,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xe9ecb0u, reinterpret_cast<const void *>(&g4_relfn_15831) },
   { 0xe9ecd0u, reinterpret_cast<const void *>(&g4_relfn_15832) },
   { 0xe9ecf0u, reinterpret_cast<const void *>(&g4_relfn_7630) },
-  { 0xe9ed60u, reinterpret_cast<const void *>(&g4_relfn_15613) },
+  { 0xe9ed60u, reinterpret_cast<const void *>(&g4_relfn_15613_xe9ed60) },
   { 0xe9ee00u, reinterpret_cast<const void *>(&g4_relfn_15791) },
   { 0xe9ee70u, reinterpret_cast<const void *>(&g4_relfn_15665) },
   { 0xe9eea0u, reinterpret_cast<const void *>(&g4_relfn_15670) },
@@ -41178,39 +41378,39 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xe9f9e0u, reinterpret_cast<const void *>(&g4_relfn_15667) },
   { 0xe9fa30u, reinterpret_cast<const void *>(&g4_relfn_15669) },
   { 0xe9fa70u, reinterpret_cast<const void *>(&g4_relfn_15816) },
-  { 0xe9faf0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xe9fb30u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xe9fb90u, reinterpret_cast<const void *>(&g4_relfn_15561) },
+  { 0xe9faf0u, reinterpret_cast<const void *>(&g4_relfn_15561_xe9faf0) },
+  { 0xe9fb30u, reinterpret_cast<const void *>(&g4_relfn_15561_xe9fb30) },
+  { 0xe9fb90u, reinterpret_cast<const void *>(&g4_relfn_15561_xe9fb90) },
   { 0xe9fbd0u, reinterpret_cast<const void *>(&g4_relfn_20818) },
   { 0xe9fc10u, reinterpret_cast<const void *>(&g4_relfn_20819) },
   { 0xe9fc50u, reinterpret_cast<const void *>(&g4_relfn_20820) },
-  { 0xe9fc90u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xe9fcd0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
+  { 0xe9fc90u, reinterpret_cast<const void *>(&g4_relfn_15561_xe9fc90) },
+  { 0xe9fcd0u, reinterpret_cast<const void *>(&g4_relfn_15561_xe9fcd0) },
   { 0xe9fd10u, reinterpret_cast<const void *>(&g4_relfn_20821) },
   { 0xe9fd50u, reinterpret_cast<const void *>(&g4_relfn_20822) },
   { 0xe9fd90u, reinterpret_cast<const void *>(&g4_relfn_20823) },
   { 0xe9fdd0u, reinterpret_cast<const void *>(&g4_relfn_20824) },
-  { 0xe9fe10u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xe9fe70u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xe9feb0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xe9fef0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xe9ff40u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xe9ff80u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xe9ffc0u, reinterpret_cast<const void *>(&g4_relfn_15565) },
-  { 0xea0000u, reinterpret_cast<const void *>(&g4_relfn_15634) },
-  { 0xea0090u, reinterpret_cast<const void *>(&g4_relfn_15625) },
-  { 0xea00d0u, reinterpret_cast<const void *>(&g4_relfn_15607) },
-  { 0xea0110u, reinterpret_cast<const void *>(&g4_relfn_15612) },
-  { 0xea0150u, reinterpret_cast<const void *>(&g4_relfn_15601) },
-  { 0xea01b0u, reinterpret_cast<const void *>(&g4_relfn_15581) },
-  { 0xea02b0u, reinterpret_cast<const void *>(&g4_relfn_15553) },
-  { 0xea0330u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xea03a0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
+  { 0xe9fe10u, reinterpret_cast<const void *>(&g4_relfn_15561_xe9fe10) },
+  { 0xe9fe70u, reinterpret_cast<const void *>(&g4_relfn_15561_xe9fe70) },
+  { 0xe9feb0u, reinterpret_cast<const void *>(&g4_relfn_15561_xe9feb0) },
+  { 0xe9fef0u, reinterpret_cast<const void *>(&g4_relfn_15561_xe9fef0) },
+  { 0xe9ff40u, reinterpret_cast<const void *>(&g4_relfn_15561_xe9ff40) },
+  { 0xe9ff80u, reinterpret_cast<const void *>(&g4_relfn_15561_xe9ff80) },
+  { 0xe9ffc0u, reinterpret_cast<const void *>(&g4_relfn_15565_xe9ffc0) },
+  { 0xea0000u, reinterpret_cast<const void *>(&g4_relfn_15634_xea0000) },
+  { 0xea0090u, reinterpret_cast<const void *>(&g4_relfn_15625_xea0090) },
+  { 0xea00d0u, reinterpret_cast<const void *>(&g4_relfn_15607_xea00d0) },
+  { 0xea0110u, reinterpret_cast<const void *>(&g4_relfn_15612_xea0110) },
+  { 0xea0150u, reinterpret_cast<const void *>(&g4_relfn_15601_xea0150) },
+  { 0xea01b0u, reinterpret_cast<const void *>(&g4_relfn_15581_xea01b0) },
+  { 0xea02b0u, reinterpret_cast<const void *>(&g4_relfn_15553_xea02b0) },
+  { 0xea0330u, reinterpret_cast<const void *>(&g4_relfn_15561_xea0330) },
+  { 0xea03a0u, reinterpret_cast<const void *>(&g4_relfn_15561_xea03a0) },
   { 0xea0430u, reinterpret_cast<const void *>(&g4_relfn_20825) },
   { 0xea0490u, reinterpret_cast<const void *>(&g4_relfn_20826) },
-  { 0xea0500u, reinterpret_cast<const void *>(&g4_relfn_15543) },
-  { 0xea0580u, reinterpret_cast<const void *>(&g4_relfn_15544) },
-  { 0xea0620u, reinterpret_cast<const void *>(&g4_relfn_15560) },
+  { 0xea0500u, reinterpret_cast<const void *>(&g4_relfn_15543_xea0500) },
+  { 0xea0580u, reinterpret_cast<const void *>(&g4_relfn_15544_xea0580) },
+  { 0xea0620u, reinterpret_cast<const void *>(&g4_relfn_15560_xea0620) },
   { 0xea0690u, reinterpret_cast<const void *>(&g4_relfn_20827) },
   { 0xea06f0u, reinterpret_cast<const void *>(&g4_relfn_20828) },
   { 0xea0740u, reinterpret_cast<const void *>(&g4_relfn_20829) },
@@ -41221,8 +41421,8 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xea3910u, reinterpret_cast<const void *>(&g4_relfn_15713) },
   { 0xea4cd0u, reinterpret_cast<const void *>(&g4_relfn_15731) },
   { 0xea4ce0u, reinterpret_cast<const void *>(&g4_relfn_20831) },
-  { 0xea4de0u, reinterpret_cast<const void *>(&g4_relfn_15626) },
-  { 0xea4ec0u, reinterpret_cast<const void *>(&g4_relfn_15547) },
+  { 0xea4de0u, reinterpret_cast<const void *>(&g4_relfn_15626_xea4de0) },
+  { 0xea4ec0u, reinterpret_cast<const void *>(&g4_relfn_15547_xea4ec0) },
   { 0xea5a70u, reinterpret_cast<const void *>(&g4_relfn_15716) },
   { 0xea5b00u, reinterpret_cast<const void *>(&g4_relfn_15985) },
   { 0xea5b50u, reinterpret_cast<const void *>(&g4_relfn_15983) },
@@ -41252,7 +41452,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xeb3610u, reinterpret_cast<const void *>(&g4_relfn_15581) },
   { 0xeb3650u, reinterpret_cast<const void *>(&g4_relfn_15626) },
   { 0xeb36b0u, reinterpret_cast<const void *>(&g4_relfn_15547) },
-  { 0xeb3710u, reinterpret_cast<const void *>(&g4_relfn_15613) },
+  { 0xeb3710u, reinterpret_cast<const void *>(&g4_relfn_15613_xeb3710) },
   { 0xeb37a0u, reinterpret_cast<const void *>(&g4_relfn_15613) },
   { 0xeb37e0u, reinterpret_cast<const void *>(&g4_relfn_15565) },
   { 0xeb3830u, reinterpret_cast<const void *>(&g4_relfn_15560) },
@@ -41266,8 +41466,8 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xeb3bb0u, reinterpret_cast<const void *>(&g4_relfn_15625) },
   { 0xeb3bf0u, reinterpret_cast<const void *>(&g4_relfn_15607) },
   { 0xeb3c30u, reinterpret_cast<const void *>(&g4_relfn_15612) },
-  { 0xeb3c70u, reinterpret_cast<const void *>(&g4_relfn_15546) },
-  { 0xeb3ce0u, reinterpret_cast<const void *>(&g4_relfn_15638) },
+  { 0xeb3c70u, reinterpret_cast<const void *>(&g4_relfn_15546_xeb3c70) },
+  { 0xeb3ce0u, reinterpret_cast<const void *>(&g4_relfn_15638_xeb3ce0) },
   { 0xeb3d50u, reinterpret_cast<const void *>(&g4_relfn_15635) },
   { 0xeb3de0u, reinterpret_cast<const void *>(&g4_relfn_15551) },
   { 0xeb3e50u, reinterpret_cast<const void *>(&g4_relfn_15622) },
@@ -41288,9 +41488,9 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xeb4fd0u, reinterpret_cast<const void *>(&g4_relfn_15616) },
   { 0xeb5080u, reinterpret_cast<const void *>(&g4_relfn_15615) },
   { 0xeb50c0u, reinterpret_cast<const void *>(&g4_relfn_15638) },
-  { 0xeb5140u, reinterpret_cast<const void *>(&g4_relfn_15604) },
+  { 0xeb5140u, reinterpret_cast<const void *>(&g4_relfn_15604_xeb5140) },
   { 0xeb5260u, reinterpret_cast<const void *>(&g4_relfn_15604) },
-  { 0xeb5380u, reinterpret_cast<const void *>(&g4_relfn_15604) },
+  { 0xeb5380u, reinterpret_cast<const void *>(&g4_relfn_15604_xeb5380) },
   { 0xeb53f0u, reinterpret_cast<const void *>(&g4_relfn_15458) },
   { 0xeb5480u, reinterpret_cast<const void *>(&g4_relfn_15457) },
   { 0xeb54c0u, reinterpret_cast<const void *>(&g4_relfn_15608) },
@@ -41298,10 +41498,10 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xeb5fc0u, reinterpret_cast<const void *>(&g4_relfn_15718) },
   { 0xeb6790u, reinterpret_cast<const void *>(&g4_relfn_15793) },
   { 0xeb68b0u, reinterpret_cast<const void *>(&g4_relfn_15646) },
-  { 0xeb6a70u, reinterpret_cast<const void *>(&g4_relfn_15637) },
+  { 0xeb6a70u, reinterpret_cast<const void *>(&g4_relfn_15637_xeb6a70) },
   { 0xeb6fe0u, reinterpret_cast<const void *>(&g4_relfn_15637) },
-  { 0xeb9d30u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xec6e20u, reinterpret_cast<const void *>(&g4_relfn_15622) },
+  { 0xeb9d30u, reinterpret_cast<const void *>(&g4_relfn_15561_xeb9d30) },
+  { 0xec6e20u, reinterpret_cast<const void *>(&g4_relfn_15622_xec6e20) },
   { 0xec6ee0u, reinterpret_cast<const void *>(&g4_relfn_15603) },
   { 0xec6f60u, reinterpret_cast<const void *>(&g4_relfn_15603) },
   { 0xed22d0u, reinterpret_cast<const void *>(&g4_relfn_16007) },
@@ -41312,13 +41512,13 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xee48d0u, reinterpret_cast<const void *>(&g4_relfn_15651) },
   { 0xee4ad0u, reinterpret_cast<const void *>(&g4_relfn_15722) },
   { 0xee4c50u, reinterpret_cast<const void *>(&g4_relfn_15656) },
-  { 0xee4d10u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xee4ec0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xee4fe0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xee52e0u, reinterpret_cast<const void *>(&g4_relfn_15736) },
+  { 0xee4d10u, reinterpret_cast<const void *>(&g4_relfn_15561_xee4d10) },
+  { 0xee4ec0u, reinterpret_cast<const void *>(&g4_relfn_15561_xee4ec0) },
+  { 0xee4fe0u, reinterpret_cast<const void *>(&g4_relfn_15561_xee4fe0) },
+  { 0xee52e0u, reinterpret_cast<const void *>(&g4_relfn_15736_xee52e0) },
   { 0xee53f0u, reinterpret_cast<const void *>(&g4_relfn_15459) },
   { 0xee5460u, reinterpret_cast<const void *>(&g4_relfn_15717) },
-  { 0xee5750u, reinterpret_cast<const void *>(&g4_relfn_15561) },
+  { 0xee5750u, reinterpret_cast<const void *>(&g4_relfn_15561_xee5750) },
   { 0xee59a0u, reinterpret_cast<const void *>(&g4_relfn_20834) },
   { 0xee5bc0u, reinterpret_cast<const void *>(&g4_relfn_20835) },
   { 0xee5d90u, reinterpret_cast<const void *>(&g4_relfn_20836) },
@@ -41331,11 +41531,11 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xee68a0u, reinterpret_cast<const void *>(&g4_relfn_15586) },
   { 0xee6b10u, reinterpret_cast<const void *>(&g4_relfn_15540) },
   { 0xee6c80u, reinterpret_cast<const void *>(&g4_relfn_15539) },
-  { 0xee6db0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
+  { 0xee6db0u, reinterpret_cast<const void *>(&g4_relfn_15561_xee6db0) },
   { 0xee6f50u, reinterpret_cast<const void *>(&g4_relfn_20837) },
   { 0xee70b0u, reinterpret_cast<const void *>(&g4_relfn_20838) },
-  { 0xee7220u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xee7860u, reinterpret_cast<const void *>(&g4_relfn_15561) },
+  { 0xee7220u, reinterpret_cast<const void *>(&g4_relfn_15561_xee7220) },
+  { 0xee7860u, reinterpret_cast<const void *>(&g4_relfn_15561_xee7860) },
   { 0xee7950u, reinterpret_cast<const void *>(&g4_relfn_15600) },
   { 0xee7a30u, reinterpret_cast<const void *>(&g4_relfn_15569) },
   { 0xee7af0u, reinterpret_cast<const void *>(&g4_relfn_15610) },
@@ -41345,10 +41545,10 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xee7e50u, reinterpret_cast<const void *>(&g4_relfn_15620) },
   { 0xee7f10u, reinterpret_cast<const void *>(&g4_relfn_15568) },
   { 0xee7ff0u, reinterpret_cast<const void *>(&g4_relfn_15606) },
-  { 0xee80b0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xee81d0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xee82c0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
-  { 0xee83b0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
+  { 0xee80b0u, reinterpret_cast<const void *>(&g4_relfn_15561_xee80b0) },
+  { 0xee81d0u, reinterpret_cast<const void *>(&g4_relfn_15561_xee81d0) },
+  { 0xee82c0u, reinterpret_cast<const void *>(&g4_relfn_15561_xee82c0) },
+  { 0xee83b0u, reinterpret_cast<const void *>(&g4_relfn_15561_xee83b0) },
   { 0xee84b0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
   { 0xee8870u, reinterpret_cast<const void *>(&g4_relfn_15617) },
   { 0xee9310u, reinterpret_cast<const void *>(&g4_relfn_15714) },
@@ -41357,8 +41557,8 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xeea6c0u, reinterpret_cast<const void *>(&g4_relfn_15628) },
   { 0xeea7a0u, reinterpret_cast<const void *>(&g4_relfn_15591) },
   { 0xeea8c0u, reinterpret_cast<const void *>(&g4_relfn_15542) },
-  { 0xeea9b0u, reinterpret_cast<const void *>(&g4_relfn_15633) },
-  { 0xeeaae0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
+  { 0xeea9b0u, reinterpret_cast<const void *>(&g4_relfn_15633_xeea9b0) },
+  { 0xeeaae0u, reinterpret_cast<const void *>(&g4_relfn_15561_xeeaae0) },
   { 0xeeacc0u, reinterpret_cast<const void *>(&g4_relfn_15579) },
   { 0xeeadc0u, reinterpret_cast<const void *>(&g4_relfn_15621) },
   { 0xeeaeb0u, reinterpret_cast<const void *>(&g4_relfn_15592) },
@@ -41386,7 +41586,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xeed160u, reinterpret_cast<const void *>(&g4_relfn_15611) },
   { 0xeed370u, reinterpret_cast<const void *>(&g4_relfn_15573) },
   { 0xeed580u, reinterpret_cast<const void *>(&g4_relfn_15632) },
-  { 0xeed760u, reinterpret_cast<const void *>(&g4_relfn_15561) },
+  { 0xeed760u, reinterpret_cast<const void *>(&g4_relfn_15561_xeed760) },
   { 0xeed9c0u, reinterpret_cast<const void *>(&g4_relfn_15583) },
   { 0xeedb30u, reinterpret_cast<const void *>(&g4_relfn_15629) },
   { 0xeedca0u, reinterpret_cast<const void *>(&g4_relfn_15577) },
@@ -41397,14 +41597,14 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xeee5a0u, reinterpret_cast<const void *>(&g4_relfn_20845) },
   { 0xeee7f0u, reinterpret_cast<const void *>(&g4_relfn_15585) },
   { 0xeee990u, reinterpret_cast<const void *>(&g4_relfn_15563) },
-  { 0xeeebc0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
+  { 0xeeebc0u, reinterpret_cast<const void *>(&g4_relfn_15561_xeeebc0) },
   { 0xeeeec0u, reinterpret_cast<const void *>(&g4_relfn_15836) },
   { 0xeeefd0u, reinterpret_cast<const void *>(&g4_relfn_15834) },
   { 0xeef330u, reinterpret_cast<const void *>(&g4_relfn_15720) },
   { 0xeef9c0u, reinterpret_cast<const void *>(&g4_relfn_15715) },
   { 0xeefdf0u, reinterpret_cast<const void *>(&g4_relfn_15725) },
   { 0xeefe40u, reinterpret_cast<const void *>(&g4_relfn_20846) },
-  { 0xef3dd0u, reinterpret_cast<const void *>(&g4_relfn_15561) },
+  { 0xef3dd0u, reinterpret_cast<const void *>(&g4_relfn_15561_xef3dd0) },
   { 0xef4160u, reinterpret_cast<const void *>(&g4_relfn_15633) },
   { 0xef5850u, reinterpret_cast<const void *>(&g4_relfn_15984) },
   { 0xef66d0u, reinterpret_cast<const void *>(&g4_relfn_15984) },
@@ -41614,9 +41814,9 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xefab10u, reinterpret_cast<const void *>(&g4_relfn_16035) },
   { 0xefab20u, reinterpret_cast<const void *>(&g4_relfn_16041) },
   { 0xefab30u, reinterpret_cast<const void *>(&g4_relfn_16040) },
-  { 0xefab50u, reinterpret_cast<const void *>(&g4_relfn_16042) },
+  { 0xefab50u, reinterpret_cast<const void *>(&g4_relfn_16042_xefab50) },
   { 0xefab70u, reinterpret_cast<const void *>(&g4_relfn_16045) },
-  { 0xefaba0u, reinterpret_cast<const void *>(&g4_relfn_16045) },
+  { 0xefaba0u, reinterpret_cast<const void *>(&g4_relfn_16045_xefaba0) },
   { 0xefabd0u, reinterpret_cast<const void *>(&g4_relfn_16034) },
   { 0xefabe0u, reinterpret_cast<const void *>(&g4_relfn_16033) },
   { 0xefabf0u, reinterpret_cast<const void *>(&g4_relfn_16036) },
@@ -41626,9 +41826,9 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xefac60u, reinterpret_cast<const void *>(&g4_relfn_16089) },
   { 0xefac70u, reinterpret_cast<const void *>(&g4_relfn_16095) },
   { 0xefac80u, reinterpret_cast<const void *>(&g4_relfn_16094) },
-  { 0xefaca0u, reinterpret_cast<const void *>(&g4_relfn_16096) },
+  { 0xefaca0u, reinterpret_cast<const void *>(&g4_relfn_16096_xefaca0) },
   { 0xefacc0u, reinterpret_cast<const void *>(&g4_relfn_16099) },
-  { 0xefacf0u, reinterpret_cast<const void *>(&g4_relfn_16099) },
+  { 0xefacf0u, reinterpret_cast<const void *>(&g4_relfn_16099_xefacf0) },
   { 0xefad20u, reinterpret_cast<const void *>(&g4_relfn_16088) },
   { 0xefad30u, reinterpret_cast<const void *>(&g4_relfn_16087) },
   { 0xefad40u, reinterpret_cast<const void *>(&g4_relfn_16090) },
@@ -41650,7 +41850,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xefb310u, reinterpret_cast<const void *>(&g4_relfn_15698) },
   { 0xefb360u, reinterpret_cast<const void *>(&g4_relfn_15672) },
   { 0xefb3b0u, reinterpret_cast<const void *>(&g4_relfn_15702) },
-  { 0xefb410u, reinterpret_cast<const void *>(&g4_relfn_15923) },
+  { 0xefb410u, reinterpret_cast<const void *>(&g4_relfn_15923_xefb410) },
   { 0xefb460u, reinterpret_cast<const void *>(&g4_relfn_15997) },
   { 0xefb4a0u, reinterpret_cast<const void *>(&g4_relfn_15764) },
   { 0xefb540u, reinterpret_cast<const void *>(&g4_relfn_15996) },
@@ -41660,7 +41860,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xefb630u, reinterpret_cast<const void *>(&g4_relfn_15784) },
   { 0xefb660u, reinterpret_cast<const void *>(&g4_relfn_15871) },
   { 0xefb8b0u, reinterpret_cast<const void *>(&g4_relfn_15833) },
-  { 0xefb910u, reinterpret_cast<const void *>(&g4_relfn_15996) },
+  { 0xefb910u, reinterpret_cast<const void *>(&g4_relfn_15996_xefb910) },
   { 0xefb970u, reinterpret_cast<const void *>(&g4_relfn_20851) },
   { 0xefb9b0u, reinterpret_cast<const void *>(&g4_relfn_15826) },
   { 0xefba00u, reinterpret_cast<const void *>(&g4_relfn_15885) },
@@ -41677,8 +41877,8 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xefc770u, reinterpret_cast<const void *>(&g4_relfn_15877) },
   { 0xefc840u, reinterpret_cast<const void *>(&g4_relfn_15912) },
   { 0xefc930u, reinterpret_cast<const void *>(&g4_relfn_15878) },
-  { 0xefc9e0u, reinterpret_cast<const void *>(&g4_relfn_15912) },
-  { 0xefcad0u, reinterpret_cast<const void *>(&g4_relfn_15878) },
+  { 0xefc9e0u, reinterpret_cast<const void *>(&g4_relfn_15912_xefc9e0) },
+  { 0xefcad0u, reinterpret_cast<const void *>(&g4_relfn_15878_xefcad0) },
   { 0xefcb90u, reinterpret_cast<const void *>(&g4_relfn_15900) },
   { 0xefcc80u, reinterpret_cast<const void *>(&g4_relfn_15870) },
   { 0xefcd70u, reinterpret_cast<const void *>(&g4_relfn_15872) },
@@ -41711,7 +41911,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xf01ad0u, reinterpret_cast<const void *>(&g4_relfn_15845) },
   { 0xf01cc0u, reinterpret_cast<const void *>(&g4_relfn_15847) },
   { 0xf01ea0u, reinterpret_cast<const void *>(&g4_relfn_15842) },
-  { 0xf02070u, reinterpret_cast<const void *>(&g4_relfn_16046) },
+  { 0xf02070u, reinterpret_cast<const void *>(&g4_relfn_16046_xf02070) },
   { 0xf020e0u, reinterpret_cast<const void *>(&g4_relfn_15924) },
   { 0xf021c0u, reinterpret_cast<const void *>(&g4_relfn_15911) },
   { 0xf02c20u, reinterpret_cast<const void *>(&g4_relfn_15915) },
@@ -41795,7 +41995,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xf05c40u, reinterpret_cast<const void *>(&g4_relfn_15528) },
   { 0xf05c80u, reinterpret_cast<const void *>(&g4_relfn_15935) },
   { 0xf05d80u, reinterpret_cast<const void *>(&g4_relfn_15783) },
-  { 0xf05e20u, reinterpret_cast<const void *>(&g4_relfn_15783) },
+  { 0xf05e20u, reinterpret_cast<const void *>(&g4_relfn_15783_xf05e20) },
   { 0xf05ec0u, reinterpret_cast<const void *>(&g4_relfn_15779) },
   { 0xf06080u, reinterpret_cast<const void *>(&g4_relfn_15778) },
   { 0xf07180u, reinterpret_cast<const void *>(&g4_relfn_15882) },
@@ -41811,7 +42011,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xf14320u, reinterpret_cast<const void *>(&g4_relfn_15703) },
   { 0xf143a0u, reinterpret_cast<const void *>(&g4_relfn_16352) },
   { 0xf143d0u, reinterpret_cast<const void *>(&g4_relfn_16370) },
-  { 0xf14400u, reinterpret_cast<const void *>(&g4_relfn_15852) },
+  { 0xf14400u, reinterpret_cast<const void *>(&g4_relfn_15852_xf14400) },
   { 0xf15740u, reinterpret_cast<const void *>(&g4_relfn_15074) },
   { 0xf17a60u, reinterpret_cast<const void *>(&g4_relfn_15159) },
   { 0xf18130u, reinterpret_cast<const void *>(&g4_relfn_15852) },
@@ -41822,7 +42022,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xf1a960u, reinterpret_cast<const void *>(&g4_relfn_16359) },
   { 0xf1a970u, reinterpret_cast<const void *>(&g4_relfn_16358) },
   { 0xf1a9a0u, reinterpret_cast<const void *>(&g4_relfn_16360) },
-  { 0xf1a9c0u, reinterpret_cast<const void *>(&g4_relfn_16360) },
+  { 0xf1a9c0u, reinterpret_cast<const void *>(&g4_relfn_16360_xf1a9c0) },
   { 0xf1aa00u, reinterpret_cast<const void *>(&g4_relfn_16361) },
   { 0xf1aa40u, reinterpret_cast<const void *>(&g4_relfn_20466) },
   { 0xf1aa50u, reinterpret_cast<const void *>(&g4_relfn_16201) },
@@ -42404,7 +42604,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xff12b0u, reinterpret_cast<const void *>(&g4_relfn_14404) },
   { 0xff12e0u, reinterpret_cast<const void *>(&g4_relfn_14400) },
   { 0xff1310u, reinterpret_cast<const void *>(&g4_relfn_14405) },
-  { 0xff1360u, reinterpret_cast<const void *>(&g4_relfn_14405) },
+  { 0xff1360u, reinterpret_cast<const void *>(&g4_relfn_14405_xff1360) },
   { 0xff1390u, reinterpret_cast<const void *>(&g4_relfn_14399) },
   { 0xff13b0u, reinterpret_cast<const void *>(&g4_relfn_14403) },
   { 0xff1400u, reinterpret_cast<const void *>(&g4_relfn_14351) },
@@ -42414,7 +42614,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0xff1580u, reinterpret_cast<const void *>(&g4_relfn_14333) },
   { 0xff1650u, reinterpret_cast<const void *>(&g4_relfn_14328) },
   { 0xff1690u, reinterpret_cast<const void *>(&g4_relfn_14335) },
-  { 0xff19b0u, reinterpret_cast<const void *>(&g4_relfn_14335) },
+  { 0xff19b0u, reinterpret_cast<const void *>(&g4_relfn_14335_xff19b0) },
   { 0xff1ca0u, reinterpret_cast<const void *>(&g4_relfn_14329) },
   { 0xff2500u, reinterpret_cast<const void *>(&g4_relfn_14332) },
   { 0xff2c20u, reinterpret_cast<const void *>(&g4_relfn_14331) },
@@ -42543,17 +42743,17 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x10085f0u, reinterpret_cast<const void *>(&g4_relfn_14387) },
   { 0x1008620u, reinterpret_cast<const void *>(&g4_relfn_14516) },
   { 0x1008650u, reinterpret_cast<const void *>(&g4_relfn_7654) },
-  { 0x10086a0u, reinterpret_cast<const void *>(&g4_relfn_14495) },
+  { 0x10086a0u, reinterpret_cast<const void *>(&g4_relfn_14495_f10086a0) },
   { 0x10086c0u, reinterpret_cast<const void *>(&g4_relfn_14490) },
   { 0x10086e0u, reinterpret_cast<const void *>(&g4_relfn_14375) },
   { 0x1008700u, reinterpret_cast<const void *>(&g4_relfn_14374) },
   { 0x1008720u, reinterpret_cast<const void *>(&g4_relfn_14325) },
   { 0x1008730u, reinterpret_cast<const void *>(&g4_relfn_14317) },
   { 0x1008780u, reinterpret_cast<const void *>(&g4_relfn_14319) },
-  { 0x10087a0u, reinterpret_cast<const void *>(&g4_relfn_14483) },
+  { 0x10087a0u, reinterpret_cast<const void *>(&g4_relfn_14483_f10087a0) },
   { 0x1008800u, reinterpret_cast<const void *>(&g4_relfn_14381) },
   { 0x1008870u, reinterpret_cast<const void *>(&g4_relfn_14376) },
-  { 0x10088b0u, reinterpret_cast<const void *>(&g4_relfn_14489) },
+  { 0x10088b0u, reinterpret_cast<const void *>(&g4_relfn_14489_f10088b0) },
   { 0x10089e0u, reinterpret_cast<const void *>(&g4_relfn_14498) },
   { 0x1008af0u, reinterpret_cast<const void *>(&g4_relfn_14493) },
   { 0x1008b30u, reinterpret_cast<const void *>(&g4_relfn_14324) },
@@ -42565,20 +42765,20 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x1009050u, reinterpret_cast<const void *>(&g4_relfn_14491) },
   { 0x1009130u, reinterpret_cast<const void *>(&g4_relfn_14488) },
   { 0x10091d0u, reinterpret_cast<const void *>(&g4_relfn_14500) },
-  { 0x1009260u, reinterpret_cast<const void *>(&g4_relfn_14499) },
-  { 0x1009300u, reinterpret_cast<const void *>(&g4_relfn_14497) },
+  { 0x1009260u, reinterpret_cast<const void *>(&g4_relfn_14499_x1009260) },
+  { 0x1009300u, reinterpret_cast<const void *>(&g4_relfn_14497_x1009300) },
   { 0x10093c0u, reinterpret_cast<const void *>(&g4_relfn_14497) },
   { 0x10094c0u, reinterpret_cast<const void *>(&g4_relfn_14486) },
-  { 0x10095a0u, reinterpret_cast<const void *>(&g4_relfn_14485) },
+  { 0x10095a0u, reinterpret_cast<const void *>(&g4_relfn_14485_f10095a0) },
   { 0x1009a90u, reinterpret_cast<const void *>(&g4_relfn_14487) },
-  { 0x100a200u, reinterpret_cast<const void *>(&g4_relfn_14494) },
+  { 0x100a200u, reinterpret_cast<const void *>(&g4_relfn_14494_f100a200) },
   { 0x100ab40u, reinterpret_cast<const void *>(&g4_relfn_14484) },
   { 0x100b450u, reinterpret_cast<const void *>(&g4_relfn_14708) },
-  { 0x100b900u, reinterpret_cast<const void *>(&g4_relfn_14492) },
+  { 0x100b900u, reinterpret_cast<const void *>(&g4_relfn_14492_f100b900) },
   { 0x100c580u, reinterpret_cast<const void *>(&g4_relfn_14496) },
   { 0x100c6d0u, reinterpret_cast<const void *>(&g4_relfn_14481) },
   { 0x100c7f0u, reinterpret_cast<const void *>(&g4_relfn_14482) },
-  { 0x100c960u, reinterpret_cast<const void *>(&g4_relfn_14501) },
+  { 0x100c960u, reinterpret_cast<const void *>(&g4_relfn_14501_f100c960) },
   { 0x100d510u, reinterpret_cast<const void *>(&g4_relfn_14326) },
   { 0x100d520u, reinterpret_cast<const void *>(&g4_relfn_14321) },
   { 0x100d540u, reinterpret_cast<const void *>(&g4_relfn_14320) },
@@ -42689,7 +42889,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x1055950u, reinterpret_cast<const void *>(&g4_relfn_14367) },
   { 0x1055c40u, reinterpret_cast<const void *>(&g4_relfn_14361) },
   { 0x1056140u, reinterpret_cast<const void *>(&g4_relfn_14368) },
-  { 0x10561e0u, reinterpret_cast<const void *>(&g4_relfn_14365) },
+  { 0x10561e0u, reinterpret_cast<const void *>(&g4_relfn_14365_x10561e0) },
   { 0x1056380u, reinterpret_cast<const void *>(&g4_relfn_14303) },
   { 0x10563a0u, reinterpret_cast<const void *>(&g4_relfn_14305) },
   { 0x10563c0u, reinterpret_cast<const void *>(&g4_relfn_14306) },
@@ -42716,10 +42916,10 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x105f040u, reinterpret_cast<const void *>(&g4_relfn_19850) },
   { 0x105f080u, reinterpret_cast<const void *>(&g4_relfn_10142) },
   { 0x105f170u, reinterpret_cast<const void *>(&g4_relfn_10741) },
-  { 0x105f390u, reinterpret_cast<const void *>(&g4_relfn_10140) },
+  { 0x105f390u, reinterpret_cast<const void *>(&g4_relfn_10140_x105f390) },
   { 0x105f460u, reinterpret_cast<const void *>(&g4_relfn_10140) },
-  { 0x105f530u, reinterpret_cast<const void *>(&g4_relfn_10140) },
-  { 0x105f990u, reinterpret_cast<const void *>(&g4_relfn_10140) },
+  { 0x105f530u, reinterpret_cast<const void *>(&g4_relfn_10140_x105f530) },
+  { 0x105f990u, reinterpret_cast<const void *>(&g4_relfn_10140_x105f990) },
   { 0x105fb70u, reinterpret_cast<const void *>(&g4_relfn_19859) },
   { 0x105fdc0u, reinterpret_cast<const void *>(&g4_relfn_10743) },
   { 0x105fe60u, reinterpret_cast<const void *>(&g4_relfn_10738) },
@@ -42836,7 +43036,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x1072b30u, reinterpret_cast<const void *>(&g4_relfn_18840) },
   { 0x1079320u, reinterpret_cast<const void *>(&g4_relfn_20543) },
   { 0x1079760u, reinterpret_cast<const void *>(&g4_relfn_19415) },
-  { 0x1079770u, reinterpret_cast<const void *>(&g4_relfn_19417) },
+  { 0x1079770u, reinterpret_cast<const void *>(&g4_relfn_19417_f1079770) },
   { 0x1079790u, reinterpret_cast<const void *>(&g4_relfn_19423) },
   { 0x10797a0u, reinterpret_cast<const void *>(&g4_relfn_19408) },
   { 0x10797b0u, reinterpret_cast<const void *>(&g4_relfn_19407) },
@@ -42844,7 +43044,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x10797d0u, reinterpret_cast<const void *>(&g4_relfn_19418) },
   { 0x10797e0u, reinterpret_cast<const void *>(&g4_relfn_19403) },
   { 0x10797f0u, reinterpret_cast<const void *>(&g4_relfn_18407) },
-  { 0x1079810u, reinterpret_cast<const void *>(&g4_relfn_18409) },
+  { 0x1079810u, reinterpret_cast<const void *>(&g4_relfn_18409_f1079810) },
   { 0x1079830u, reinterpret_cast<const void *>(&g4_relfn_19264) },
   { 0x1079850u, reinterpret_cast<const void *>(&g4_relfn_18469) },
   { 0x1079870u, reinterpret_cast<const void *>(&g4_relfn_19001) },
@@ -43262,13 +43462,13 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x10e1fa0u, reinterpret_cast<const void *>(&g4_relfn_18763) },
   { 0x10e1fb0u, reinterpret_cast<const void *>(&g4_relfn_18755) },
   { 0x10e2020u, reinterpret_cast<const void *>(&g4_relfn_18791) },
-  { 0x10e2140u, reinterpret_cast<const void *>(&g4_relfn_18785) },
+  { 0x10e2140u, reinterpret_cast<const void *>(&g4_relfn_18785_x10e2140) },
   { 0x10e2190u, reinterpret_cast<const void *>(&g4_relfn_18785) },
   { 0x10e21f0u, reinterpret_cast<const void *>(&g4_relfn_18796) },
   { 0x10e2220u, reinterpret_cast<const void *>(&g4_relfn_18784) },
   { 0x10e2250u, reinterpret_cast<const void *>(&g4_relfn_20888) },
   { 0x10e2290u, reinterpret_cast<const void *>(&g4_relfn_18777) },
-  { 0x10e2300u, reinterpret_cast<const void *>(&g4_relfn_18799) },
+  { 0x10e2300u, reinterpret_cast<const void *>(&g4_relfn_18799_x10e2300) },
   { 0x10e2360u, reinterpret_cast<const void *>(&g4_relfn_18768) },
   { 0x10e2400u, reinterpret_cast<const void *>(&g4_relfn_18783) },
   { 0x10e2640u, reinterpret_cast<const void *>(&g4_relfn_18798) },
@@ -43287,9 +43487,9 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x10e4770u, reinterpret_cast<const void *>(&g4_relfn_18769) },
   { 0x10e4b30u, reinterpret_cast<const void *>(&g4_relfn_18792) },
   { 0x10e4ca0u, reinterpret_cast<const void *>(&g4_relfn_18775) },
-  { 0x10e51f0u, reinterpret_cast<const void *>(&g4_relfn_18801) },
+  { 0x10e51f0u, reinterpret_cast<const void *>(&g4_relfn_18801_x10e51f0) },
   { 0x10e5700u, reinterpret_cast<const void *>(&g4_relfn_18794) },
-  { 0x10e6060u, reinterpret_cast<const void *>(&g4_relfn_18803) },
+  { 0x10e6060u, reinterpret_cast<const void *>(&g4_relfn_18803_x10e6060) },
   { 0x10e6450u, reinterpret_cast<const void *>(&g4_relfn_18770) },
   { 0x10e6640u, reinterpret_cast<const void *>(&g4_relfn_18770) },
   { 0x10e6bb0u, reinterpret_cast<const void *>(&g4_relfn_18772) },
@@ -43304,7 +43504,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x10e9950u, reinterpret_cast<const void *>(&g4_relfn_18760) },
   { 0x10e9970u, reinterpret_cast<const void *>(&g4_relfn_18767) },
   { 0x10e9980u, reinterpret_cast<const void *>(&g4_relfn_18754) },
-  { 0x10e9990u, reinterpret_cast<const void *>(&g4_relfn_18793) },
+  { 0x10e9990u, reinterpret_cast<const void *>(&g4_relfn_18793_f10e9990) },
   { 0x10e99b0u, reinterpret_cast<const void *>(&g4_relfn_18782) },
   { 0x10e99f0u, reinterpret_cast<const void *>(&g4_relfn_18761) },
   { 0x10e9a40u, reinterpret_cast<const void *>(&g4_relfn_18762) },
@@ -43454,18 +43654,18 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x111bb60u, reinterpret_cast<const void *>(&g4_relfn_19261) },
   { 0x111bd80u, reinterpret_cast<const void *>(&g4_relfn_19260) },
   { 0x111beb0u, reinterpret_cast<const void *>(&g4_relfn_19259) },
-  { 0x111c6c0u, reinterpret_cast<const void *>(&g4_relfn_19259) },
+  { 0x111c6c0u, reinterpret_cast<const void *>(&g4_relfn_19259_x111c6c0) },
   { 0x111c730u, reinterpret_cast<const void *>(&g4_relfn_19246) },
   { 0x111ccb0u, reinterpret_cast<const void *>(&g4_relfn_19257) },
   { 0x111ea40u, reinterpret_cast<const void *>(&g4_relfn_19256) },
   { 0x111eb50u, reinterpret_cast<const void *>(&g4_relfn_19235) },
   { 0x111f360u, reinterpret_cast<const void *>(&g4_relfn_19249) },
   { 0x111f5c0u, reinterpret_cast<const void *>(&g4_relfn_19236) },
-  { 0x111f710u, reinterpret_cast<const void *>(&g4_relfn_19247) },
+  { 0x111f710u, reinterpret_cast<const void *>(&g4_relfn_19247_x111f710) },
   { 0x111f7a0u, reinterpret_cast<const void *>(&g4_relfn_19251) },
   { 0x111f960u, reinterpret_cast<const void *>(&g4_relfn_19252) },
   { 0x111fb80u, reinterpret_cast<const void *>(&g4_relfn_19238) },
-  { 0x111fcc0u, reinterpret_cast<const void *>(&g4_relfn_19243) },
+  { 0x111fcc0u, reinterpret_cast<const void *>(&g4_relfn_19243_x111fcc0) },
   { 0x111fdd0u, reinterpret_cast<const void *>(&g4_relfn_19237) },
   { 0x111fe10u, reinterpret_cast<const void *>(&g4_relfn_19239) },
   { 0x111feb0u, reinterpret_cast<const void *>(&g4_relfn_19250) },
@@ -43501,7 +43701,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x1129e20u, reinterpret_cast<const void *>(&g4_relfn_19274) },
   { 0x1129e90u, reinterpret_cast<const void *>(&g4_relfn_19269) },
   { 0x1129f00u, reinterpret_cast<const void *>(&g4_relfn_19220) },
-  { 0x1129f80u, reinterpret_cast<const void *>(&g4_relfn_19219) },
+  { 0x1129f80u, reinterpret_cast<const void *>(&g4_relfn_19219_x1129f80) },
   { 0x112a020u, reinterpret_cast<const void *>(&g4_relfn_19210) },
   { 0x112a0a0u, reinterpret_cast<const void *>(&g4_relfn_19222) },
   { 0x112a120u, reinterpret_cast<const void *>(&g4_relfn_19209) },
@@ -43591,13 +43791,13 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x1137760u, reinterpret_cast<const void *>(&g4_relfn_18495) },
   { 0x1137bb0u, reinterpret_cast<const void *>(&g4_relfn_18484) },
   { 0x1137d50u, reinterpret_cast<const void *>(&g4_relfn_18492) },
-  { 0x11382e0u, reinterpret_cast<const void *>(&g4_relfn_18488) },
-  { 0x1138420u, reinterpret_cast<const void *>(&g4_relfn_18491) },
+  { 0x11382e0u, reinterpret_cast<const void *>(&g4_relfn_18488_x11382e0) },
+  { 0x1138420u, reinterpret_cast<const void *>(&g4_relfn_18491_x1138420) },
   { 0x1138a00u, reinterpret_cast<const void *>(&g4_relfn_18494) },
-  { 0x1138a60u, reinterpret_cast<const void *>(&g4_relfn_18493) },
-  { 0x113aac0u, reinterpret_cast<const void *>(&g4_relfn_18489) },
-  { 0x113ab90u, reinterpret_cast<const void *>(&g4_relfn_18482) },
-  { 0x113ac20u, reinterpret_cast<const void *>(&g4_relfn_18490) },
+  { 0x1138a60u, reinterpret_cast<const void *>(&g4_relfn_18493_x1138a60) },
+  { 0x113aac0u, reinterpret_cast<const void *>(&g4_relfn_18489_x113aac0) },
+  { 0x113ab90u, reinterpret_cast<const void *>(&g4_relfn_18482_x113ab90) },
+  { 0x113ac20u, reinterpret_cast<const void *>(&g4_relfn_18490_x113ac20) },
   { 0x113b6e0u, reinterpret_cast<const void *>(&g4_relfn_18486) },
   { 0x113b7b0u, reinterpret_cast<const void *>(&g4_relfn_19231) },
   { 0x113b7d0u, reinterpret_cast<const void *>(&g4_relfn_18485) },
@@ -43733,7 +43933,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x114bbf0u, reinterpret_cast<const void *>(&g4_relfn_18517) },
   { 0x114c320u, reinterpret_cast<const void *>(&g4_relfn_18516) },
   { 0x114c5c0u, reinterpret_cast<const void *>(&g4_relfn_18521) },
-  { 0x114c5d0u, reinterpret_cast<const void *>(&g4_relfn_18520) },
+  { 0x114c5d0u, reinterpret_cast<const void *>(&g4_relfn_18520_x114c5d0) },
   { 0x114d190u, reinterpret_cast<const void *>(&g4_relfn_18519) },
   { 0x114d2d0u, reinterpret_cast<const void *>(&g4_relfn_18518) },
   { 0x114d2f0u, reinterpret_cast<const void *>(&g4_relfn_18522) },
@@ -43783,10 +43983,10 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x114e110u, reinterpret_cast<const void *>(&g4_relfn_18411) },
   { 0x114e2a0u, reinterpret_cast<const void *>(&g4_relfn_18566) },
   { 0x114e310u, reinterpret_cast<const void *>(&g4_relfn_18473) },
-  { 0x114e3d0u, reinterpret_cast<const void *>(&g4_relfn_19131) },
+  { 0x114e3d0u, reinterpret_cast<const void *>(&g4_relfn_19131_x114e3d0) },
   { 0x114e480u, reinterpret_cast<const void *>(&g4_relfn_19149) },
   { 0x114e4d0u, reinterpret_cast<const void *>(&g4_relfn_19132) },
-  { 0x114e5d0u, reinterpret_cast<const void *>(&g4_relfn_19134) },
+  { 0x114e5d0u, reinterpret_cast<const void *>(&g4_relfn_19134_f114e5d0) },
   { 0x114e650u, reinterpret_cast<const void *>(&g4_relfn_18809) },
   { 0x114e710u, reinterpret_cast<const void *>(&g4_relfn_18542) },
   { 0x114e790u, reinterpret_cast<const void *>(&g4_relfn_18472) },
@@ -43840,7 +44040,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x11548a0u, reinterpret_cast<const void *>(&g4_relfn_19139) },
   { 0x11550c0u, reinterpret_cast<const void *>(&g4_relfn_18808) },
   { 0x11556f0u, reinterpret_cast<const void *>(&g4_relfn_19369) },
-  { 0x1156200u, reinterpret_cast<const void *>(&g4_relfn_19151) },
+  { 0x1156200u, reinterpret_cast<const void *>(&g4_relfn_19151_x1156200) },
   { 0x11562b0u, reinterpret_cast<const void *>(&g4_relfn_19128) },
   { 0x1156640u, reinterpret_cast<const void *>(&g4_relfn_19367) },
   { 0x1157b30u, reinterpret_cast<const void *>(&g4_relfn_19368) },
@@ -43868,7 +44068,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x115d310u, reinterpret_cast<const void *>(&g4_relfn_19517) },
   { 0x115d420u, reinterpret_cast<const void *>(&g4_relfn_19527) },
   { 0x115d580u, reinterpret_cast<const void *>(&g4_relfn_19526) },
-  { 0x115e2c0u, reinterpret_cast<const void *>(&g4_relfn_18537) },
+  { 0x115e2c0u, reinterpret_cast<const void *>(&g4_relfn_18537_x115e2c0) },
   { 0x115f0b0u, reinterpret_cast<const void *>(&g4_relfn_19144) },
   { 0x1160fa0u, reinterpret_cast<const void *>(&g4_relfn_19150) },
   { 0x1161ba0u, reinterpret_cast<const void *>(&g4_relfn_19525) },
@@ -43942,11 +44142,11 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x1165830u, reinterpret_cast<const void *>(&g4_relfn_18862) },
   { 0x11658e0u, reinterpret_cast<const void *>(&g4_relfn_18558) },
   { 0x1165c90u, reinterpret_cast<const void *>(&g4_relfn_20890) },
-  { 0x1165de0u, reinterpret_cast<const void *>(&g4_relfn_18939) },
+  { 0x1165de0u, reinterpret_cast<const void *>(&g4_relfn_18939_x1165de0) },
   { 0x1165f60u, reinterpret_cast<const void *>(&g4_relfn_18937) },
   { 0x11668c0u, reinterpret_cast<const void *>(&g4_relfn_18947) },
-  { 0x11687b0u, reinterpret_cast<const void *>(&g4_relfn_18941) },
-  { 0x116a780u, reinterpret_cast<const void *>(&g4_relfn_18938) },
+  { 0x11687b0u, reinterpret_cast<const void *>(&g4_relfn_18941_x11687b0) },
+  { 0x116a780u, reinterpret_cast<const void *>(&g4_relfn_18938_x116a780) },
   { 0x116a9a0u, reinterpret_cast<const void *>(&g4_relfn_19286) },
   { 0x116a9c0u, reinterpret_cast<const void *>(&g4_relfn_18942) },
   { 0x116a9e0u, reinterpret_cast<const void *>(&g4_relfn_18575) },
@@ -44558,10 +44758,9 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x123b360u, reinterpret_cast<const void *>(&g4_relfn_15320) },
   { 0x123b450u, reinterpret_cast<const void *>(&g4_relfn_15322) },
   { 0x123ba70u, reinterpret_cast<const void *>(&g4_relfn_15322) },
-  { 0x123bce0u, reinterpret_cast<const void *>(&g4_relfn_15317) },
-  { 0x123c0d0u, reinterpret_cast<const void *>(&g4_relfn_15316) },
+  { 0x123bce0u, reinterpret_cast<const void *>(&g4_relfn_15317_f123bce0) },
   { 0x123ca00u, reinterpret_cast<const void *>(&g4_relfn_15314) },
-  { 0x123d1e0u, reinterpret_cast<const void *>(&g4_relfn_15319) },
+  { 0x123d1e0u, reinterpret_cast<const void *>(&g4_relfn_15319_f123d1e0) },
   { 0x123dcb0u, reinterpret_cast<const void *>(&g4_relfn_15318) },
   { 0x1241ac0u, reinterpret_cast<const void *>(&g4_relfn_15296) },
   { 0x1241ae0u, reinterpret_cast<const void *>(&g4_relfn_20554) },
@@ -44750,9 +44949,9 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x125f9c0u, reinterpret_cast<const void *>(&g4_relfn_15279) },
   { 0x125ff00u, reinterpret_cast<const void *>(&g4_relfn_15278) },
   { 0x12600f0u, reinterpret_cast<const void *>(&g4_relfn_15281) },
-  { 0x12603c0u, reinterpret_cast<const void *>(&g4_relfn_15284) },
+  { 0x12603c0u, reinterpret_cast<const void *>(&g4_relfn_15284_f12603c0) },
   { 0x1260aa0u, reinterpret_cast<const void *>(&g4_relfn_15275) },
-  { 0x1261230u, reinterpret_cast<const void *>(&g4_relfn_15283) },
+  { 0x1261230u, reinterpret_cast<const void *>(&g4_relfn_15283_f1261230) },
   { 0x1262410u, reinterpret_cast<const void *>(&g4_relfn_15277) },
   { 0x1262e70u, reinterpret_cast<const void *>(&g4_relfn_20567) },
   { 0x1262e90u, reinterpret_cast<const void *>(&g4_relfn_9857) },
@@ -44817,7 +45016,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x1273e30u, reinterpret_cast<const void *>(&g4_relfn_15244) },
   { 0x1274100u, reinterpret_cast<const void *>(&g4_relfn_15247) },
   { 0x1275b70u, reinterpret_cast<const void *>(&g4_relfn_15241) },
-  { 0x1275d30u, reinterpret_cast<const void *>(&g4_relfn_15242) },
+  { 0x1275d30u, reinterpret_cast<const void *>(&g4_relfn_15242_f1275d30) },
   { 0x12771d0u, reinterpret_cast<const void *>(&g4_relfn_15243) },
   { 0x1277670u, reinterpret_cast<const void *>(&g4_relfn_15246) },
   { 0x1277840u, reinterpret_cast<const void *>(&g4_relfn_15249) },
@@ -44862,11 +45061,6 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x1282eb0u, reinterpret_cast<const void *>(&g4_relfn_15272) },
   { 0x1283200u, reinterpret_cast<const void *>(&g4_relfn_15266) },
   { 0x1283930u, reinterpret_cast<const void *>(&g4_relfn_15264) },
-  { 0x1283c70u, reinterpret_cast<const void *>(&g4_relfn_15088) },
-  { 0x1283cc0u, reinterpret_cast<const void *>(&g4_relfn_15087) },
-  { 0x1283d10u, reinterpret_cast<const void *>(&g4_relfn_15089) },
-  { 0x1283d70u, reinterpret_cast<const void *>(&g4_relfn_15085) },
-  { 0x1283da0u, reinterpret_cast<const void *>(&g4_relfn_15086) },
   { 0x1285650u, reinterpret_cast<const void *>(&g4_relfn_15271) },
   { 0x12858a0u, reinterpret_cast<const void *>(&g4_relfn_15268) },
   { 0x128b9e0u, reinterpret_cast<const void *>(&g4_relfn_15109) },
@@ -45397,31 +45591,31 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x13cbe00u, reinterpret_cast<const void *>(&g4_relfn_20585) },
   { 0x13cc580u, reinterpret_cast<const void *>(&g4_relfn_8195) },
   { 0x13cfa10u, reinterpret_cast<const void *>(&g4_relfn_8196) },
-  { 0x13cfc80u, reinterpret_cast<const void *>(&g4_relfn_19767) },
-  { 0x13cfc90u, reinterpret_cast<const void *>(&g4_relfn_19767) },
-  { 0x13cfca0u, reinterpret_cast<const void *>(&g4_relfn_19767) },
+  { 0x13cfc80u, reinterpret_cast<const void *>(&g4_relfn_19767_x13cfc80) },
+  { 0x13cfc90u, reinterpret_cast<const void *>(&g4_relfn_19767_x13cfc90) },
+  { 0x13cfca0u, reinterpret_cast<const void *>(&g4_relfn_19767_x13cfca0) },
   { 0x13cfcb0u, reinterpret_cast<const void *>(&g4_relfn_19767) },
-  { 0x13cfcc0u, reinterpret_cast<const void *>(&g4_relfn_19767) },
-  { 0x13cfcf0u, reinterpret_cast<const void *>(&g4_relfn_19782) },
-  { 0x13cfd10u, reinterpret_cast<const void *>(&g4_relfn_19782) },
-  { 0x13cfd20u, reinterpret_cast<const void *>(&g4_relfn_19782) },
+  { 0x13cfcc0u, reinterpret_cast<const void *>(&g4_relfn_19767_x13cfcc0) },
+  { 0x13cfcf0u, reinterpret_cast<const void *>(&g4_relfn_19782_x13cfcf0) },
+  { 0x13cfd10u, reinterpret_cast<const void *>(&g4_relfn_19782_x13cfd10) },
+  { 0x13cfd20u, reinterpret_cast<const void *>(&g4_relfn_19782_x13cfd20) },
   { 0x13cfd40u, reinterpret_cast<const void *>(&g4_relfn_19782) },
-  { 0x13cfd60u, reinterpret_cast<const void *>(&g4_relfn_19782) },
-  { 0x13cfda0u, reinterpret_cast<const void *>(&g4_relfn_19783) },
-  { 0x13cfdc0u, reinterpret_cast<const void *>(&g4_relfn_19783) },
-  { 0x13cfde0u, reinterpret_cast<const void *>(&g4_relfn_19783) },
+  { 0x13cfd60u, reinterpret_cast<const void *>(&g4_relfn_19782_x13cfd60) },
+  { 0x13cfda0u, reinterpret_cast<const void *>(&g4_relfn_19783_x13cfda0) },
+  { 0x13cfdc0u, reinterpret_cast<const void *>(&g4_relfn_19783_x13cfdc0) },
+  { 0x13cfde0u, reinterpret_cast<const void *>(&g4_relfn_19783_x13cfde0) },
   { 0x13cfe00u, reinterpret_cast<const void *>(&g4_relfn_19783) },
-  { 0x13cfe30u, reinterpret_cast<const void *>(&g4_relfn_19783) },
-  { 0x13cfe70u, reinterpret_cast<const void *>(&g4_relfn_19777) },
-  { 0x13cfe90u, reinterpret_cast<const void *>(&g4_relfn_19777) },
-  { 0x13cfeb0u, reinterpret_cast<const void *>(&g4_relfn_19777) },
+  { 0x13cfe30u, reinterpret_cast<const void *>(&g4_relfn_19783_x13cfe30) },
+  { 0x13cfe70u, reinterpret_cast<const void *>(&g4_relfn_19777_x13cfe70) },
+  { 0x13cfe90u, reinterpret_cast<const void *>(&g4_relfn_19777_x13cfe90) },
+  { 0x13cfeb0u, reinterpret_cast<const void *>(&g4_relfn_19777_x13cfeb0) },
   { 0x13cfed0u, reinterpret_cast<const void *>(&g4_relfn_19777) },
-  { 0x13cfee0u, reinterpret_cast<const void *>(&g4_relfn_19777) },
+  { 0x13cfee0u, reinterpret_cast<const void *>(&g4_relfn_19777_x13cfee0) },
   { 0x13cff60u, reinterpret_cast<const void *>(&g4_relfn_19768) },
   { 0x13cfff0u, reinterpret_cast<const void *>(&g4_relfn_19768) },
   { 0x13d0080u, reinterpret_cast<const void *>(&g4_relfn_19768) },
   { 0x13d0110u, reinterpret_cast<const void *>(&g4_relfn_19768) },
-  { 0x13d0160u, reinterpret_cast<const void *>(&g4_relfn_19768) },
+  { 0x13d0160u, reinterpret_cast<const void *>(&g4_relfn_19768_x13d0160) },
   { 0x13d0e00u, reinterpret_cast<const void *>(&g4_relfn_19704) },
   { 0x13d0e40u, reinterpret_cast<const void *>(&g4_relfn_19703) },
   { 0x13d32f0u, reinterpret_cast<const void *>(&g4_relfn_19765) },
@@ -46167,10 +46361,10 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x153e2c0u, reinterpret_cast<const void *>(&g4_relfn_13297) },
   { 0x153e340u, reinterpret_cast<const void *>(&g4_relfn_13300) },
   { 0x153e3a0u, reinterpret_cast<const void *>(&g4_relfn_13296) },
-  { 0x153e3e0u, reinterpret_cast<const void *>(&g4_relfn_13302) },
+  { 0x153e3e0u, reinterpret_cast<const void *>(&g4_relfn_13302_x153e3e0) },
   { 0x153e470u, reinterpret_cast<const void *>(&g4_relfn_13289) },
   { 0x153e540u, reinterpret_cast<const void *>(&g4_relfn_13286) },
-  { 0x153e740u, reinterpret_cast<const void *>(&g4_relfn_13301) },
+  { 0x153e740u, reinterpret_cast<const void *>(&g4_relfn_13301_x153e740) },
   { 0x153ebc0u, reinterpret_cast<const void *>(&g4_relfn_13295) },
   { 0x153f0e0u, reinterpret_cast<const void *>(&g4_relfn_13299) },
   { 0x153f240u, reinterpret_cast<const void *>(&g4_relfn_13287) },
@@ -46179,7 +46373,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x1541ca0u, reinterpret_cast<const void *>(&g4_relfn_13293) },
   { 0x1541d00u, reinterpret_cast<const void *>(&g4_relfn_13290) },
   { 0x1541d40u, reinterpret_cast<const void *>(&g4_relfn_13292) },
-  { 0x1541ea0u, reinterpret_cast<const void *>(&g4_relfn_13291) },
+  { 0x1541ea0u, reinterpret_cast<const void *>(&g4_relfn_13291_x1541ea0) },
   { 0x1541f30u, reinterpret_cast<const void *>(&g4_relfn_13281) },
   { 0x1541fe0u, reinterpret_cast<const void *>(&g4_relfn_13277) },
   { 0x1542020u, reinterpret_cast<const void *>(&g4_relfn_13276) },
@@ -46444,7 +46638,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x157c7f0u, reinterpret_cast<const void *>(&g4_relfn_8275) },
   { 0x157d460u, reinterpret_cast<const void *>(&g4_relfn_8276) },
   { 0x157ed70u, reinterpret_cast<const void *>(&g4_relfn_8277) },
-  { 0x157fb30u, reinterpret_cast<const void *>(&g4_relfn_10003) },
+  { 0x157fb30u, reinterpret_cast<const void *>(&g4_relfn_10003_f157fb30) },
   { 0x1581100u, reinterpret_cast<const void *>(&g4_relfn_12054) },
   { 0x1581150u, reinterpret_cast<const void *>(&g4_relfn_12053) },
   { 0x1581160u, reinterpret_cast<const void *>(&g4_relfn_12057) },
@@ -46909,7 +47103,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x16a2c90u, reinterpret_cast<const void *>(&g4_relfn_10637) },
   { 0x16a2d00u, reinterpret_cast<const void *>(&g4_relfn_10636) },
   { 0x16a2d60u, reinterpret_cast<const void *>(&g4_relfn_10638) },
-  { 0x16a2dd0u, reinterpret_cast<const void *>(&g4_relfn_10642) },
+  { 0x16a2dd0u, reinterpret_cast<const void *>(&g4_relfn_10642_f16a2dd0) },
   { 0x16a2fe0u, reinterpret_cast<const void *>(&g4_relfn_10635) },
   { 0x16a3060u, reinterpret_cast<const void *>(&g4_relfn_10639) },
   { 0x16a30c0u, reinterpret_cast<const void *>(&g4_relfn_10640) },
@@ -46966,14 +47160,14 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x16ad9a0u, reinterpret_cast<const void *>(&g4_relfn_9842) },
   { 0x16ae280u, reinterpret_cast<const void *>(&g4_relfn_10320) },
   { 0x16af4c0u, reinterpret_cast<const void *>(&g4_relfn_10316) },
-  { 0x16af890u, reinterpret_cast<const void *>(&g4_relfn_10326) },
+  { 0x16af890u, reinterpret_cast<const void *>(&g4_relfn_10326_x16af890) },
   { 0x16afeb0u, reinterpret_cast<const void *>(&g4_relfn_10310) },
   { 0x16b0dc0u, reinterpret_cast<const void *>(&g4_relfn_10307) },
   { 0x16b0e10u, reinterpret_cast<const void *>(&g4_relfn_10319) },
   { 0x16b1100u, reinterpret_cast<const void *>(&g4_relfn_10323) },
   { 0x16b1140u, reinterpret_cast<const void *>(&g4_relfn_10302) },
   { 0x16b16e0u, reinterpret_cast<const void *>(&g4_relfn_10306) },
-  { 0x16b2940u, reinterpret_cast<const void *>(&g4_relfn_10304) },
+  { 0x16b2940u, reinterpret_cast<const void *>(&g4_relfn_10304_x16b2940) },
   { 0x16b2b30u, reinterpret_cast<const void *>(&g4_relfn_10304) },
   { 0x16b3550u, reinterpret_cast<const void *>(&g4_relfn_10300) },
   { 0x16b3930u, reinterpret_cast<const void *>(&g4_relfn_8350) },
@@ -46983,7 +47177,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x16b3c30u, reinterpret_cast<const void *>(&g4_relfn_10505) },
   { 0x16b3c90u, reinterpret_cast<const void *>(&g4_relfn_20898) },
   { 0x16b3d40u, reinterpret_cast<const void *>(&g4_relfn_20899) },
-  { 0x16b3db0u, reinterpret_cast<const void *>(&g4_relfn_10505) },
+  { 0x16b3db0u, reinterpret_cast<const void *>(&g4_relfn_10505_x16b3db0) },
   { 0x16b3e10u, reinterpret_cast<const void *>(&g4_relfn_20900) },
   { 0x16b4070u, reinterpret_cast<const void *>(&g4_relfn_13360) },
   { 0x16b40e0u, reinterpret_cast<const void *>(&g4_relfn_13432) },
@@ -47068,8 +47262,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x16be8f0u, reinterpret_cast<const void *>(&g4_relfn_10683) },
   { 0x16beb10u, reinterpret_cast<const void *>(&g4_relfn_10685) },
   { 0x16beb70u, reinterpret_cast<const void *>(&g4_relfn_10691) },
-  { 0x16bf4e0u, reinterpret_cast<const void *>(&g4_relfn_10687) },
-  { 0x16bfd40u, reinterpret_cast<const void *>(&g4_relfn_10686) },
+  { 0x16bf4e0u, reinterpret_cast<const void *>(&g4_relfn_10687_f16bf4e0) },
   { 0x16c0000u, reinterpret_cast<const void *>(&g4_relfn_8356) },
   { 0x16c0100u, reinterpret_cast<const void *>(&g4_relfn_8357) },
   { 0x16c0190u, reinterpret_cast<const void *>(&g4_relfn_12464) },
@@ -47850,7 +48043,6 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x172bb40u, reinterpret_cast<const void *>(&g4_relfn_12660) },
   { 0x172bb70u, reinterpret_cast<const void *>(&g4_relfn_13406) },
   { 0x172bc20u, reinterpret_cast<const void *>(&g4_relfn_12800) },
-  { 0x172c720u, reinterpret_cast<const void *>(&g4_relfn_11547) },
   { 0x172ca60u, reinterpret_cast<const void *>(&g4_relfn_8361) },
   { 0x172cc90u, reinterpret_cast<const void *>(&g4_relfn_8362) },
   { 0x172ce00u, reinterpret_cast<const void *>(&g4_relfn_13329) },
@@ -47960,12 +48152,12 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x173fc00u, reinterpret_cast<const void *>(&g4_relfn_19898) },
   { 0x173fc20u, reinterpret_cast<const void *>(&g4_relfn_19899) },
   { 0x173fc80u, reinterpret_cast<const void *>(&g4_relfn_19887) },
-  { 0x173fca0u, reinterpret_cast<const void *>(&g4_relfn_19887) },
+  { 0x173fca0u, reinterpret_cast<const void *>(&g4_relfn_19887_x173fca0) },
   { 0x173fcc0u, reinterpret_cast<const void *>(&g4_relfn_19892) },
   { 0x173fcf0u, reinterpret_cast<const void *>(&g4_relfn_19894) },
   { 0x173fd20u, reinterpret_cast<const void *>(&g4_relfn_19893) },
   { 0x173fd90u, reinterpret_cast<const void *>(&g4_relfn_19897) },
-  { 0x173ffa0u, reinterpret_cast<const void *>(&g4_relfn_19899) },
+  { 0x173ffa0u, reinterpret_cast<const void *>(&g4_relfn_19899_x173ffa0) },
   { 0x1740050u, reinterpret_cast<const void *>(&g4_relfn_19895) },
   { 0x1740080u, reinterpret_cast<const void *>(&g4_relfn_19888) },
   { 0x17400b0u, reinterpret_cast<const void *>(&g4_relfn_19889) },
@@ -48140,7 +48332,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x1768b20u, reinterpret_cast<const void *>(&g4_relfn_20913) },
   { 0x1768b60u, reinterpret_cast<const void *>(&g4_relfn_10180) },
   { 0x1768ba0u, reinterpret_cast<const void *>(&g4_relfn_10181) },
-  { 0x1768d60u, reinterpret_cast<const void *>(&g4_relfn_10193) },
+  { 0x1768d60u, reinterpret_cast<const void *>(&g4_relfn_10193_x1768d60) },
   { 0x1768df0u, reinterpret_cast<const void *>(&g4_relfn_10192) },
   { 0x1768e10u, reinterpret_cast<const void *>(&g4_relfn_10187) },
   { 0x1768f30u, reinterpret_cast<const void *>(&g4_relfn_10182) },
@@ -48364,7 +48556,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x17ce850u, reinterpret_cast<const void *>(&g4_relfn_8385) },
   { 0x17ce8e0u, reinterpret_cast<const void *>(&g4_relfn_11223) },
   { 0x17ce910u, reinterpret_cast<const void *>(&g4_relfn_11217) },
-  { 0x17ce940u, reinterpret_cast<const void *>(&g4_relfn_11217) },
+  { 0x17ce940u, reinterpret_cast<const void *>(&g4_relfn_11217_x17ce940) },
   { 0x17ce970u, reinterpret_cast<const void *>(&g4_relfn_11236) },
   { 0x17ce9b0u, reinterpret_cast<const void *>(&g4_relfn_11231) },
   { 0x17cec10u, reinterpret_cast<const void *>(&g4_relfn_11229) },
@@ -48420,7 +48612,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x17faca0u, reinterpret_cast<const void *>(&g4_relfn_12603) },
   { 0x17ffba0u, reinterpret_cast<const void *>(&g4_relfn_11639) },
   { 0x17ffbd0u, reinterpret_cast<const void *>(&g4_relfn_11633) },
-  { 0x17ffc00u, reinterpret_cast<const void *>(&g4_relfn_11633) },
+  { 0x17ffc00u, reinterpret_cast<const void *>(&g4_relfn_11633_x17ffc00) },
   { 0x17ffc30u, reinterpret_cast<const void *>(&g4_relfn_11652) },
   { 0x17ffc60u, reinterpret_cast<const void *>(&g4_relfn_11647) },
   { 0x17ffec0u, reinterpret_cast<const void *>(&g4_relfn_11645) },
@@ -48587,7 +48779,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x182de30u, reinterpret_cast<const void *>(&g4_relfn_11550) },
   { 0x182e270u, reinterpret_cast<const void *>(&g4_relfn_11554) },
   { 0x182e420u, reinterpret_cast<const void *>(&g4_relfn_13149) },
-  { 0x182e440u, reinterpret_cast<const void *>(&g4_relfn_13145) },
+  { 0x182e440u, reinterpret_cast<const void *>(&g4_relfn_13145_x182e440) },
   { 0x182e4d0u, reinterpret_cast<const void *>(&g4_relfn_13143) },
   { 0x182e530u, reinterpret_cast<const void *>(&g4_relfn_13146) },
   { 0x182ebc0u, reinterpret_cast<const void *>(&g4_relfn_13147) },
@@ -49162,7 +49354,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x1884780u, reinterpret_cast<const void *>(&g4_relfn_13055) },
   { 0x18847a0u, reinterpret_cast<const void *>(&g4_relfn_12766) },
   { 0x18847c0u, reinterpret_cast<const void *>(&g4_relfn_12864) },
-  { 0x1884800u, reinterpret_cast<const void *>(&g4_relfn_12866) },
+  { 0x1884800u, reinterpret_cast<const void *>(&g4_relfn_12866_x1884800) },
   { 0x1884890u, reinterpret_cast<const void *>(&g4_relfn_12863) },
   { 0x18848e0u, reinterpret_cast<const void *>(&g4_relfn_12867) },
   { 0x1884920u, reinterpret_cast<const void *>(&g4_relfn_12860) },
@@ -49291,13 +49483,13 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x18a3400u, reinterpret_cast<const void *>(&g4_relfn_11294) },
   { 0x18a3470u, reinterpret_cast<const void *>(&g4_relfn_11296) },
   { 0x18a34d0u, reinterpret_cast<const void *>(&g4_relfn_11297) },
-  { 0x18a3530u, reinterpret_cast<const void *>(&g4_relfn_11297) },
-  { 0x18a3590u, reinterpret_cast<const void *>(&g4_relfn_11297) },
+  { 0x18a3530u, reinterpret_cast<const void *>(&g4_relfn_11297_x18a3530) },
+  { 0x18a3590u, reinterpret_cast<const void *>(&g4_relfn_11297_x18a3590) },
   { 0x18a3610u, reinterpret_cast<const void *>(&g4_relfn_20942) },
-  { 0x18a3680u, reinterpret_cast<const void *>(&g4_relfn_11297) },
+  { 0x18a3680u, reinterpret_cast<const void *>(&g4_relfn_11297_x18a3680) },
   { 0x18a36c0u, reinterpret_cast<const void *>(&g4_relfn_20943) },
   { 0x18a3790u, reinterpret_cast<const void *>(&g4_relfn_10985) },
-  { 0x18a37f0u, reinterpret_cast<const void *>(&g4_relfn_11297) },
+  { 0x18a37f0u, reinterpret_cast<const void *>(&g4_relfn_11297_x18a37f0) },
   { 0x18a3870u, reinterpret_cast<const void *>(&g4_relfn_20944) },
   { 0x18a38e0u, reinterpret_cast<const void *>(&g4_relfn_11006) },
   { 0x18a3930u, reinterpret_cast<const void *>(&g4_relfn_11003) },
@@ -49316,16 +49508,16 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x18a46c0u, reinterpret_cast<const void *>(&g4_relfn_10587) },
   { 0x18a4720u, reinterpret_cast<const void *>(&g4_relfn_10770) },
   { 0x18a4780u, reinterpret_cast<const void *>(&g4_relfn_11001) },
-  { 0x18a4840u, reinterpret_cast<const void *>(&g4_relfn_10967) },
-  { 0x18a48b0u, reinterpret_cast<const void *>(&g4_relfn_10967) },
-  { 0x18a4920u, reinterpret_cast<const void *>(&g4_relfn_10967) },
+  { 0x18a4840u, reinterpret_cast<const void *>(&g4_relfn_10967_x18a4840) },
+  { 0x18a48b0u, reinterpret_cast<const void *>(&g4_relfn_10967_x18a48b0) },
+  { 0x18a4920u, reinterpret_cast<const void *>(&g4_relfn_10967_x18a4920) },
   { 0x18a4990u, reinterpret_cast<const void *>(&g4_relfn_20945) },
-  { 0x18a4a00u, reinterpret_cast<const void *>(&g4_relfn_10967) },
-  { 0x18a4a70u, reinterpret_cast<const void *>(&g4_relfn_10967) },
-  { 0x18a4ae0u, reinterpret_cast<const void *>(&g4_relfn_10967) },
-  { 0x18a4b50u, reinterpret_cast<const void *>(&g4_relfn_10967) },
+  { 0x18a4a00u, reinterpret_cast<const void *>(&g4_relfn_10967_x18a4a00) },
+  { 0x18a4a70u, reinterpret_cast<const void *>(&g4_relfn_10967_x18a4a70) },
+  { 0x18a4ae0u, reinterpret_cast<const void *>(&g4_relfn_10967_x18a4ae0) },
+  { 0x18a4b50u, reinterpret_cast<const void *>(&g4_relfn_10967_x18a4b50) },
   { 0x18a4bc0u, reinterpret_cast<const void *>(&g4_relfn_20946) },
-  { 0x18a4c30u, reinterpret_cast<const void *>(&g4_relfn_10967) },
+  { 0x18a4c30u, reinterpret_cast<const void *>(&g4_relfn_10967_x18a4c30) },
   { 0x18a4ca0u, reinterpret_cast<const void *>(&g4_relfn_20947) },
   { 0x18a4d10u, reinterpret_cast<const void *>(&g4_relfn_11298) },
   { 0x18a4d90u, reinterpret_cast<const void *>(&g4_relfn_11285) },
@@ -49450,7 +49642,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x18a7b70u, reinterpret_cast<const void *>(&g4_relfn_12980) },
   { 0x18a7bd0u, reinterpret_cast<const void *>(&g4_relfn_12984) },
   { 0x18a7c20u, reinterpret_cast<const void *>(&g4_relfn_10273) },
-  { 0x18a7c60u, reinterpret_cast<const void *>(&g4_relfn_13318) },
+  { 0x18a7c60u, reinterpret_cast<const void *>(&g4_relfn_13318_x18a7c60) },
   { 0x18a7da0u, reinterpret_cast<const void *>(&g4_relfn_14770) },
   { 0x18a7e40u, reinterpret_cast<const void *>(&g4_relfn_13612) },
   { 0x18a7ee0u, reinterpret_cast<const void *>(&g4_relfn_14818) },
@@ -49489,7 +49681,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x18a9490u, reinterpret_cast<const void *>(&g4_relfn_13606) },
   { 0x18a9540u, reinterpret_cast<const void *>(&g4_relfn_14764) },
   { 0x18a95f0u, reinterpret_cast<const void *>(&g4_relfn_12324) },
-  { 0x18a96a0u, reinterpret_cast<const void *>(&g4_relfn_13318) },
+  { 0x18a96a0u, reinterpret_cast<const void *>(&g4_relfn_13318_x18a96a0) },
   { 0x18a97b0u, reinterpret_cast<const void *>(&g4_relfn_14736) },
   { 0x18a9860u, reinterpret_cast<const void *>(&g4_relfn_14785) },
   { 0x18a9910u, reinterpret_cast<const void *>(&g4_relfn_12327) },
@@ -49527,13 +49719,13 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x18ab800u, reinterpret_cast<const void *>(&g4_relfn_10767) },
   { 0x18ab900u, reinterpret_cast<const void *>(&g4_relfn_10745) },
   { 0x18abaa0u, reinterpret_cast<const void *>(&g4_relfn_10594) },
-  { 0x18abcb0u, reinterpret_cast<const void *>(&g4_relfn_10758) },
-  { 0x18abe60u, reinterpret_cast<const void *>(&g4_relfn_10758) },
+  { 0x18abcb0u, reinterpret_cast<const void *>(&g4_relfn_10758_x18abcb0) },
+  { 0x18abe60u, reinterpret_cast<const void *>(&g4_relfn_10758_x18abe60) },
   { 0x18ac020u, reinterpret_cast<const void *>(&g4_relfn_20959) },
-  { 0x18ac1e0u, reinterpret_cast<const void *>(&g4_relfn_10758) },
+  { 0x18ac1e0u, reinterpret_cast<const void *>(&g4_relfn_10758_x18ac1e0) },
   { 0x18ac410u, reinterpret_cast<const void *>(&g4_relfn_20960) },
   { 0x18ac640u, reinterpret_cast<const void *>(&g4_relfn_10758) },
-  { 0x18ac800u, reinterpret_cast<const void *>(&g4_relfn_10758) },
+  { 0x18ac800u, reinterpret_cast<const void *>(&g4_relfn_10758_x18ac800) },
   { 0x18aca30u, reinterpret_cast<const void *>(&g4_relfn_10761) },
   { 0x18acc70u, reinterpret_cast<const void *>(&g4_relfn_10609) },
   { 0x18ad1c0u, reinterpret_cast<const void *>(&g4_relfn_10583) },
@@ -49549,13 +49741,13 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x18ae940u, reinterpret_cast<const void *>(&g4_relfn_12699) },
   { 0x18ae9a0u, reinterpret_cast<const void *>(&g4_relfn_12706) },
   { 0x18ae9f0u, reinterpret_cast<const void *>(&g4_relfn_12701) },
-  { 0x18aea40u, reinterpret_cast<const void *>(&g4_relfn_12701) },
+  { 0x18aea40u, reinterpret_cast<const void *>(&g4_relfn_12701_x18aea40) },
   { 0x18aea90u, reinterpret_cast<const void *>(&g4_relfn_20961) },
   { 0x18aeae0u, reinterpret_cast<const void *>(&g4_relfn_20962) },
   { 0x18aeb30u, reinterpret_cast<const void *>(&g4_relfn_20963) },
-  { 0x18aeb90u, reinterpret_cast<const void *>(&g4_relfn_12701) },
+  { 0x18aeb90u, reinterpret_cast<const void *>(&g4_relfn_12701_x18aeb90) },
   { 0x18aebf0u, reinterpret_cast<const void *>(&g4_relfn_20964) },
-  { 0x18aec40u, reinterpret_cast<const void *>(&g4_relfn_12701) },
+  { 0x18aec40u, reinterpret_cast<const void *>(&g4_relfn_12701_x18aec40) },
   { 0x18aeca0u, reinterpret_cast<const void *>(&g4_relfn_20965) },
   { 0x18aed00u, reinterpret_cast<const void *>(&g4_relfn_20966) },
   { 0x18aed50u, reinterpret_cast<const void *>(&g4_relfn_20967) },
@@ -49565,7 +49757,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x18af1e0u, reinterpret_cast<const void *>(&g4_relfn_10763) },
   { 0x18af230u, reinterpret_cast<const void *>(&g4_relfn_10755) },
   { 0x18af2b0u, reinterpret_cast<const void *>(&g4_relfn_10757) },
-  { 0x18af310u, reinterpret_cast<const void *>(&g4_relfn_10758) },
+  { 0x18af310u, reinterpret_cast<const void *>(&g4_relfn_10758_x18af310) },
   { 0x18af5a0u, reinterpret_cast<const void *>(&g4_relfn_20968) },
   { 0x18af800u, reinterpret_cast<const void *>(&g4_relfn_12516) },
   { 0x18af840u, reinterpret_cast<const void *>(&g4_relfn_10608) },
@@ -49753,7 +49945,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x18eac00u, reinterpret_cast<const void *>(&g4_relfn_11839) },
   { 0x18eac60u, reinterpret_cast<const void *>(&g4_relfn_11833) },
   { 0x18eacb0u, reinterpret_cast<const void *>(&g4_relfn_11840) },
-  { 0x18ead10u, reinterpret_cast<const void *>(&g4_relfn_11829) },
+  { 0x18ead10u, reinterpret_cast<const void *>(&g4_relfn_11829_x18ead10) },
   { 0x18ead60u, reinterpret_cast<const void *>(&g4_relfn_11829) },
   { 0x18eadb0u, reinterpret_cast<const void *>(&g4_relfn_11820) },
   { 0x18eae20u, reinterpret_cast<const void *>(&g4_relfn_11828) },
@@ -49803,7 +49995,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x18f01b0u, reinterpret_cast<const void *>(&g4_relfn_10283) },
   { 0x18f0680u, reinterpret_cast<const void *>(&g4_relfn_10284) },
   { 0x18f06b0u, reinterpret_cast<const void *>(&g4_relfn_10282) },
-  { 0x18f0720u, reinterpret_cast<const void *>(&g4_relfn_10285) },
+  { 0x18f0720u, reinterpret_cast<const void *>(&g4_relfn_10285_x18f0720) },
   { 0x18f14c0u, reinterpret_cast<const void *>(&g4_relfn_11509) },
   { 0x18f14f0u, reinterpret_cast<const void *>(&g4_relfn_11507) },
   { 0x18f1ab0u, reinterpret_cast<const void *>(&g4_relfn_11508) },
@@ -51244,7 +51436,7 @@ static const G4FnMapEntry kFnMap[] = {
   { 0x1a86810u, reinterpret_cast<const void *>(&g4_relfn_12555) },
   { 0x1a86820u, reinterpret_cast<const void *>(&g4_relfn_12558) },
   { 0x1a86840u, reinterpret_cast<const void *>(&g4_relfn_12554) },
-  { 0x1a86850u, reinterpret_cast<const void *>(&g4_relfn_12556) },
+  { 0x1a86850u, reinterpret_cast<const void *>(&g4_relfn_12556_f1a86850) },
   { 0x1a868c0u, reinterpret_cast<const void *>(&g4_relfn_12557) },
   { 0x1a868d0u, reinterpret_cast<const void *>(&g4_relfn_12559) },
   { 0x1a868f0u, reinterpret_cast<const void *>(&g4_relfn_12553) },
