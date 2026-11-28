@@ -3020,7 +3020,8 @@ glitch::io::Self * glitch::io::fromString(glitch::io::Self *self, const void **a
       g4_std_compat::basic_string_substr(
         (std::basic_string<char, std::char_traits<char>, glitch::core::SAllocator<char, (glitch::memory::E_MEMORY_HINT)0>> *)&v10,
         (unsigned int)(uintptr_t)(a2),
-        0);
+        0,
+        v9 != 0 ? (size_t)(v9 - 1) : (size_t)-1); // x86: n = pos of ';' or npos
       g4_std_compat::basic_string_substr(
         (std::basic_string<char, std::char_traits<char>, glitch::core::SAllocator<char, (glitch::memory::E_MEMORY_HINT)0>> *)&v11,
         (unsigned int)(uintptr_t)(a2),
@@ -4765,6 +4766,24 @@ LABEL_16:
   return self;
 }
 
+// SAllocator string substr (x86 0xe955d0), GNU COW layout: data pointer with the
+// length stored 12 bytes before it.
+extern "C" int g4_compat_sa_string_substr(void *dst, const void *src, size_t pos, size_t n)
+{
+  const char *data = *(const char *const *)src;
+  size_t len = *(const uint32_t *)(data - 12);
+  if (pos > len)
+    pos = len;
+  if (n > len - pos)
+    n = len - pos;
+  *(void **)dst = unk_20D3E78;
+  if (n != 0)
+    g4_std::basic_string_char_char_traits_char_SA_77cf59::assign(
+      (std::basic_string<char, std::char_traits<char>, glitch::core::SAllocator<char, (glitch::memory::E_MEMORY_HINT)0>> *)dst,
+      data + pos, n);
+  return 0;
+}
+
 // ----------------------------------------------------------------------------
 // Function: glitch::io::CZipReader::extractFilename  (binary VA: 0xe91580)
 // Original: glitch::io::CZipReader::extractFilename
@@ -4820,7 +4839,8 @@ LABEL_6:
       g4_std_compat::basic_string_substr(
         (std::basic_string<char, std::char_traits<char>, glitch::core::SAllocator<char, (glitch::memory::E_MEMORY_HINT)0>> *)v11,
         (unsigned int)(uintptr_t)(a2),
-        0);
+        0,
+        (size_t)(v10 - *(const char **)a2)); // x86 passes n = (s + 1) - data; Hex-Rays dropped it
       g4_std::basic_string_char_char_traits_char_SA_77cf59::opAssign(
         (std::basic_string<char, std::char_traits<char>, glitch::core::SAllocator<char, (glitch::memory::E_MEMORY_HINT)0>> *)((char *)a2 + 8),
         (const std::basic_string<char, std::char_traits<char>, glitch::core::SAllocator<char, (glitch::memory::E_MEMORY_HINT)0>> *)v11);
@@ -20352,7 +20372,8 @@ LABEL_29:
 LABEL_4:
   if ( v22 )
   {
-    (*(void (**)(uint32_t *))(**(uint32_t **)v5 + 28))(v26);
+    // IReadFile::clone(sret, this, bool) via vtable slot 7; Hex-Rays dropped this and the flag (x86 0xee444f).
+    (*(void (**)(uint32_t *, uint32_t, int))(**(uint32_t **)v5 + 28))(v26, *(uint32_t *)v5, 1);
     v10 = v26[0];
     if ( v26[0] != 0 )
       sub_8B1B00((volatile int32_t *)(v26[0] + 4));

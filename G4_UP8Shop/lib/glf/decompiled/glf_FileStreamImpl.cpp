@@ -650,8 +650,9 @@ int glf::FileStreamImpl::Open(int a1, int a2, char *a3)
   {
     G4_VCALL<void>(a1, 8);
     *(uint32_t *)(v3 + 36) = (uint32_t)(uintptr_t)(v4);
-    sa = (char *)glf::allocateEphemeralAllocation((glf::Self *)&reinterpret_cast<G4Elf32Sym *>(stru_7F4)->st_info, (unsigned int)(uintptr_t)(v48));
-    v39 = glf::fs::ResolvePath(v36, v4, (glf::Self *)sa, (char *)&reinterpret_cast<G4Elf32Sym *>(stru_7F4)->st_info);
+    // Path buffer size is the constant 0x800 (Hex-Rays rendered it as &((Elf32_Sym *)0x7F4)->st_info).
+    sa = (char *)glf::allocateEphemeralAllocation((glf::Self *)(uintptr_t)0x800u, (unsigned int)(uintptr_t)(v48));
+    v39 = glf::fs::ResolvePath(v36, v4, (glf::Self *)sa, (char *)(uintptr_t)0x800u);
     for ( i = sa; ; i += 2 )
     {
       v7 = strlen(i);

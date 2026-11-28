@@ -13698,7 +13698,7 @@ LABEL_136:
     {
       v59 = v58 - (uint32_t)(uintptr_t)(v57);
       _BitScanReverse(&v58, (int)(v58 - (uint32_t)(uintptr_t)(v57)) >> 3);
-      result = g4_std_compat::introsort_loop_cd63dd(
+      g4_std_compat::introsort_loop_cd63dd( // void: x86 only left the return value in eax
                  v57,
                  v133,
                  2 * (31 - (v58 ^ 0x1F)));
@@ -13877,7 +13877,7 @@ LABEL_18:
     }
     v44 = 8 * *v146;
     _BitScanReverse(&v45, v44 >> 3);
-    result = g4_std_compat::introsort_loop_cd63dd(
+    g4_std_compat::introsort_loop_cd63dd( // void: x86 only left the return value in eax
                v118,
                v132,
                2 * (31 - (v45 ^ 0x1F)));

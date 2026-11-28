@@ -10200,6 +10200,7 @@ extern uint32_t off_208EEC8; // 0x208eec8
 extern uint32_t off_208EF28; // 0x208ef28
 extern uint32_t off_208EFE0; // 0x208efe0
 extern uint32_t off_208F00C; // 0x208f00c
+extern uint32_t off_208F02C; // 0x208f02c (gameswf::SceneNode secondary vtable)
 extern uint32_t off_208F1C4; // 0x208f1c4
 extern uint32_t off_208F1F0; // 0x208f1f0
 extern uint32_t off_208F328; // 0x208f328

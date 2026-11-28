@@ -55,6 +55,14 @@ file(GLOB_RECURSE G4_LIB_C_SOURCES
 )
 # mpc_decoder.c / mpc_demux.c include Core/Utils/DecompTypes.h (C++ helpers)
 set_source_files_properties(${G4_LIB_C_SOURCES} PROPERTIES LANGUAGE CXX)
+# Force C++ mode explicitly: when the toolchain lives under a path with spaces,
+# CMake/Ninja on Windows invoke clang++ by its 8.3 short name (CLANG_~1.EXE),
+# which loses the "++" and makes clang treat .c inputs as C.
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+    set_source_files_properties(${G4_LIB_C_SOURCES} PROPERTIES COMPILE_OPTIONS "-xc++")
+    # Same issue at link time: without g++ driver mode libc++ is not linked.
+    add_link_options("--driver-mode=g++")
+endif()
 
 add_library(Gangstar4Core STATIC
     ${G4_CORE_SOURCES}

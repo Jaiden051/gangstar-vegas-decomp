@@ -684,6 +684,7 @@ int iap::Command::PopEvent(iap::Command::Self *self, iap::Event::Self *a2)
 // Function: iap::Command::ExecuteAction  (binary VA: 0x153aff0)
 // Original: iap::Command::ExecuteAction
 // ----------------------------------------------------------------------------
+namespace iap { namespace Command { int ExecuteAction(iap::Command::Self *self, char *a2); } }
 int iap::Command::ExecuteAction(iap::Command::Self *self, char *a2)
 {
   char *ServiceName;

@@ -8646,7 +8646,7 @@ int g4_thunk_0xf2f5a0_26(
         glitch::scene::CBillboardSceneNode::Self *self,
         void *a2)
 {
-  return glitch::scene::CBillboardSceneNode::renderInternal(
+  return (int)(uintptr_t)glitch::scene::CBillboardSceneNode::renderInternal(
            (glitch::scene::CBillboardSceneNode::Self *)((char *)self - 4),
            a2);
 }
@@ -26537,7 +26537,7 @@ glitch::scene::ISceneNode::Self *glitch::scene::ISceneNode::updateAbsolutePositi
 // ============================================================================
 int g4_thunk_0xf4ab40_102(uint32_t *a1)
 {
-  return glitch::scene::CSceneManager::deserializeAttributes((char *)a1 + *(uint32_t *)(*a1 - 20));
+  return (int)(uintptr_t)glitch::scene::CSceneManager::deserializeAttributes((char *)a1 + *(uint32_t *)(*a1 - 20)); // G4_PTR32: pointer narrowed to int (32-bit only)
 }
 
 

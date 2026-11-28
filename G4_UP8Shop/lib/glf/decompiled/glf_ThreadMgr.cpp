@@ -207,7 +207,7 @@ glf::ThreadMgr::Self * glf::ThreadMgr::Construct(glf::ThreadMgr::Self *self)
   *((uint32_t *)self + 1) = 0;
   *((uint32_t *)self + 2) = 0;
   glf::SpinLock::Construct((glf::ThreadMgr::Self *)((char *)self + 12));
-  glf::Thread::Thread((glf::ThreadMgr::Self *)((char *)self + 24));
+  glf::Thread::Thread((glf::Thread::Self *)((char *)self + 24));
   glf::SpinLock::Construct((glf::ThreadMgr::Self *)((char *)self + 316));
   *((uint32_t *)self + 4) = 0;
   *((uint32_t *)self + 5) = 0;
@@ -483,6 +483,56 @@ namespace Impl {
   void *RunThread(void *arg);
 }
 }
+}
+
+// RW data image (see GlobalSymbols.cpp / tools/extract_data_blobs.py)
+extern uint8_t g4_rwdata_image[1125064];
+
+// Declarations for the glf::Thread out-of-line definitions below
+// (signatures as recovered from x86 libGangstar4.so).
+namespace glf { namespace Thread {
+  void Run(glf::Thread::Self *self);
+  bool IsMinStackSizeSet();
+  uint32_t *SetMinStackSize(int a1);
+  char Init(glf::Thread::Self *self);
+  char Thread(glf::Thread::Self *self, unsigned int a2);
+  char ConstructMirror(glf::Thread::Self *a1);
+  char Thread(glf::Thread::Self *self);
+  int GetPriority(glf::Thread::Self *self);
+  int SetPriority(glf::Thread::Self *self, int a2);
+  int GetStatus(glf::Thread::Self *self);
+  int IsMain(glf::Thread::Self *self);
+  pthread_t Join(pthread_t *self);
+  void Destroy(pthread_t *self);
+  void Destroy_eac814e0(pthread_t *self);
+  uint32_t *OnStart();
+  int OnExit();
+  uint32_t *MyRun(glf::Thread::Self *self);
+  int Start(glf::Thread::Self *self, glf::Runnable::Self *a2, int a3);
+  int Start(glf::Thread::Self *self, int a2);
+  int AddStartExitHandlers(void (*a1)(void *), void (*a2)(void *), void *a3);
+  int RemoveStartExitHandlers(int a1);
+  int GetPriorityNorm();
+  int SetCoreAffinity(glf::Thread::Self *self, int a2);
+  int GetCoreAffinity(glf::Thread::Self *self);
+  int SetName(int a1, const void *a2);
+  glf::Thread::Self *GetCurrent();
+} }
+
+// Declarations for the glf::Fs / sort-helper definitions at the end of this TU.
+namespace glf { namespace Fs {
+  int CopyFile(int a1, int a2, int a3, int a4, int a5);
+  int DoesFileExist(int a1, char *a2, char *a3);
+  int DoesFileExist(glf::Fs::Self *self, char *a2);
+  int GetHomeDir(glf::Fs::Self *self);
+  int GetMountedDrive(glf::Fs::Self *self, char *a2);
+  bool RemoveFile(glf::Fs::Self *self, char *name);
+  int SetCachesDir(glf::Fs::Self *self, char *a2);
+  int SetTempDir(glf::Fs::Self *self, char *a2);
+  int UnmountDrive(glf::Fs::Self *self, char *a2);
+} }
+namespace g4_std_compat {
+  void introsort_loop_cd63dd(unsigned int *a1, unsigned int *a2, int a3);
 }
 
 void glf::Thread::Run(glf::Thread::Self *self)
@@ -909,7 +959,7 @@ int glf::Fs::CopyFile(int a1, int a2, int a3, int a4, int a5)
 int glf::Fs::DoesFileExist(int a1, char *a2, char *a3)
 {
   glf::Self *ephem = (glf::Self *)glf::allocateEphemeralAllocation((glf::Self *)(uintptr_t)0x800u);
-  int16_t v4 = (int16_t)glf::Fs::ResolvePath(a1, a2, (unsigned int)(uintptr_t)a3, ephem, (char *)(uintptr_t)0x800u);
+  int v4 = glf::Fs::ResolvePath(a1, a2, (unsigned int)(uintptr_t)a3, ephem, (char *)(uintptr_t)0x800u);
   glf::ArchiveManager::Self *v5 = (glf::ArchiveManager::Self *)glf::ArchiveManager::s_instance[0];
   if ( v5 == nullptr )
   {

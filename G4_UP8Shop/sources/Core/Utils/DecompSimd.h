@@ -183,6 +183,7 @@ inline __m128i _mm_unpacklo_epi32(__m128i a, __m128i b) { __m128i r{}; for (int 
 inline __m128i _mm_unpackhi_epi32(__m128i a, __m128i b) { __m128i r{}; for (int i=0;i<2;++i){ r.u32[2*i]=a.u32[2+i]; r.u32[2*i+1]=b.u32[2+i]; } return r; }
 inline __m128i _mm_unpackhi_epi64(__m128i a, __m128i b) { __m128i r{}; r.u64[0]=a.u64[1]; r.u64[1]=b.u64[1]; return r; }
 
+inline __m128 _mm_setzero_ps() { __m128 r{}; return r; }
 inline __m128 _mm_add_ps(__m128 a, __m128 b) { __m128 r{}; for (int i=0;i<4;++i) r.f32[i]=a.f32[i]+b.f32[i]; return r; }
 inline __m128 _mm_sub_ps(__m128 a, __m128 b) { __m128 r{}; for (int i=0;i<4;++i) r.f32[i]=a.f32[i]-b.f32[i]; return r; }
 inline __m128 _mm_mul_ps(__m128 a, __m128 b) { __m128 r{}; for (int i=0;i<4;++i) r.f32[i]=a.f32[i]*b.f32[i]; return r; }

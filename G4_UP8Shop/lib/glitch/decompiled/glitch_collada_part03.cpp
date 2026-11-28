@@ -992,7 +992,7 @@ volatile int32_t **glitch::collada::CRootSceneNode::addMaterial(
   v3 = a2;
   v4 = self;
   v7[0] = 16;
-  v5 = glitch::collada::CColladaDatabase::find((glitch::collada::CColladaDatabase::Self *)(a2 + 288), (const char *)a3, v7);
+  v5 = (int)(uintptr_t)glitch::collada::CColladaDatabase::find((glitch::collada::CColladaDatabase::Self *)(a2 + 288), (const char *)a3, v7); // G4_PTR32: pointer narrowed to int (32-bit only)
   if ( v5 != 0 && v7[0] == 16 )
     glitch::collada::CRootSceneNode::addMaterial(v4, v3, v5);
   else

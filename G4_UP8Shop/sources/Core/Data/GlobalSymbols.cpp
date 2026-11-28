@@ -53896,6 +53896,7 @@ __asm__(
   ".globl off_208EF28\n  .set off_208EF28, g4_rwdata_image + 386888\n"
   ".globl off_208EFE0\n  .set off_208EFE0, g4_rwdata_image + 387072\n"
   ".globl off_208F00C\n  .set off_208F00C, g4_rwdata_image + 387116\n"
+  ".globl off_208F02C\n  .set off_208F02C, g4_rwdata_image + 387148\n"
   ".globl off_208F1C4\n  .set off_208F1C4, g4_rwdata_image + 387556\n"
   ".globl off_208F1F0\n  .set off_208F1F0, g4_rwdata_image + 387600\n"
   ".globl off_208F328\n  .set off_208F328, g4_rwdata_image + 387912\n"

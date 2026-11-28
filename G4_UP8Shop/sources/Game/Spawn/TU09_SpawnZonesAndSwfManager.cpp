@@ -69104,7 +69104,7 @@ int sub_778D70(int a1)
   if ( (uint8_t)glf::Thread::IsMain(Current) == 0 )
   {
     g4_std::string::construct_from_cstr((int)(uintptr_t)(v16) + 1, "spawn thread", (int)(uintptr_t)(v16));
-    v12 = glf::Thread::GetCurrent((glf::Thread::Self *)v15);
+    v12 = (int)(uintptr_t)glf::Thread::GetCurrent((glf::Thread::Self *)v15);
     glf::Thread::SetName(v12, (char *)v16 + 1);
     g4_std::string::Destroy((char *)v16 + 1);
   }

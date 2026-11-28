@@ -57,7 +57,7 @@
 </p>
 
 > [!WARNING]
-> **Work-in-Progress Build Status** — This repo does **not** compile into a finished binary out of the box yet. Roughly **99.1%** of C++ translation units (`1,548 / 1,561`) compile cleanly under Clang/Ninja, with **13 translation units (78 compiler errors)** left to wire up across forward declarations and recovered middleware methods.
+> **Work-in-Progress Build Status** — All C++ translation units now compile for `armeabi-v7a` (NDK r27c, Clang 18), and `libGangstar4.so` / `libgenerator.so` link cleanly with `--no-undefined`, exporting every JNI entry point of the original library. The output has **not** been runtime-tested on a device yet. The module tables and compiler-error table below predate this and still list the 13 TUs that used to fail.
 
 ---
 
@@ -224,3 +224,26 @@
 
 > [!IMPORTANT]
 > **Bring Your Own Game Files** — Zero proprietary Gameloft assets, APKs, OBBs, UI resources, shaders, audio, or raw `.rodata`/`.data` binary blobs are stored in this repository. You must extract required runtime assets and binary sections from your own legally obtained copy of Gangstar Vegas v1.8.2f.
+
+---
+
+## Building (armeabi-v7a)
+
+The decompiled sources address the original game's data by its virtual address in the **x86** build of `libGangstar4.so` (`.rodata` at `0x1b14c40`, RW segment at `0x20307e0`), even though the target is ARM32. `GlobalSymbols.cpp` `.incbin`s those two regions, so extract them first from your own APK:
+
+```sh
+# 1. Pull the x86 library out of your APK and extract the data blobs
+unzip -j Gangstar_Vegas_v1.8.2f.apk lib/x86/libGangstar4.so -d bin/x86
+python tools/extract_data_blobs.py bin/x86/libGangstar4.so
+#    -> G4_UP8Shop/sources/Core/Data/g4_rodata_image.bin, g4_rwdata_init.bin (git-ignored)
+
+# 2. Configure and build with the Android NDK (tested with r27c)
+cmake -S . -B build-armv7 -G Ninja \
+  -DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK/build/cmake/android.toolchain.cmake \
+  -DANDROID_ABI=armeabi-v7a -DANDROID_PLATFORM=android-21 -DCMAKE_BUILD_TYPE=Release
+cmake --build build-armv7
+```
+
+Outputs: `build-armv7/libGangstar4.so` and `build-armv7/libgenerator.so`.
+
+Lines tagged `// G4_PTR32` narrow a pointer to `int`. They are correct on the 32-bit target and are known breakage points for a future 64-bit port.

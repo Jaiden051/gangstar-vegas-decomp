@@ -536,6 +536,7 @@ static void g4_vox_cow_str_assign(uint32_t *slot, const char *s, size_t n)
 // Function: vox::VoxArchive::Construct  (binary VA: 0x1056bf0)
 // Original: vox::VoxArchive::VoxArchive
 // ----------------------------------------------------------------------------
+namespace vox { namespace VoxArchive { vox::VoxArchive::Self * Construct( vox::VoxArchive::Self *self, vox::FileInterface::Self *a2, const vox::FileArchive::FileRange::Self *a3, bool a4, bool a5, bool a6, const char *a7); } }
 vox::VoxArchive::Self * vox::VoxArchive::Construct(
     vox::VoxArchive::Self *self,
     vox::FileInterface::Self *a2,

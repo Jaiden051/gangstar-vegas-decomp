@@ -38037,7 +38037,9 @@ LABEL_64:
   v35 = *(uint32_t *)(v53 + 40);
   v86 = v53;
   v85 = v35;
-  glitch::io::CZipReader::openFile((glitch::io::CZipReader::Self *)((char *)&v68 + 4), v75);
+  // x86 0x88d139 calls CZipReader::openFile(const char *) with glf::core::ARCHIVE_FILE_LISTING_NAME;
+  // Hex-Rays bound it to the index overload and dropped the name, so entry 0 (a sound file) was parsed.
+  glitch::io::CZipReader::openFile((glitch::io::CZipReader::Self *)((char *)&v68 + 4), (glitch::io::CZipReader::Self *)v75, (char *)glf::core::ARCHIVE_FILE_LISTING_NAME);
   if ( HIDWORD(v68) != 0 )
   {
     sub_19337B0(v87, 24);
@@ -69751,7 +69753,7 @@ uint32_t * sub_8B79A0(int a1)
   if ( (uint8_t)glf::Thread::IsMain(Current) == 0 )
   {
     g4_std::string::construct_from_cstr((int)(uintptr_t)(v6) + 1, "spawn thread", (int)(uintptr_t)(v6));
-    v3 = glf::Thread::GetCurrent(v5);
+    v3 = (int)(uintptr_t)glf::Thread::GetCurrent(v5);
     glf::Thread::SetName(v3, (char *)v6 + 1);
     g4_std::string::Destroy((char *)v6 + 1);
   }
