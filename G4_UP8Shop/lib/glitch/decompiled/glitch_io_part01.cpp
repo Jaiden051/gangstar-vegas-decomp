@@ -20372,7 +20372,8 @@ LABEL_29:
 LABEL_4:
   if ( v22 )
   {
-    (*(void (**)(uint32_t *))(**(uint32_t **)v5 + 28))(v26);
+    // IReadFile::clone(sret, this, bool) via vtable slot 7; Hex-Rays dropped this and the flag (x86 0xee444f).
+    (*(void (**)(uint32_t *, uint32_t, int))(**(uint32_t **)v5 + 28))(v26, *(uint32_t *)v5, 1);
     v10 = v26[0];
     if ( v26[0] != 0 )
       sub_8B1B00((volatile int32_t *)(v26[0] + 4));
